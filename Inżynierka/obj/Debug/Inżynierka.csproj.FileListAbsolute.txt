@@ -1,0 +1,55 @@
+c:\users\dawid\documents\visual studio 2015\Projects\Inżynierka\Inżynierka\bin\Debug\Inżynierka.exe.config
+c:\users\dawid\documents\visual studio 2015\Projects\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csprojResolveAssemblyReference.cache
+c:\users\dawid\documents\visual studio 2015\Projects\Inżynierka\Inżynierka\obj\Debug\Inżynierka.Properties.Resources.resources
+c:\users\dawid\documents\visual studio 2015\Projects\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csproj.GenerateResource.Cache
+c:\users\dawid\documents\visual studio 2015\Projects\Inżynierka\Inżynierka\bin\Debug\Inżynierka.exe
+c:\users\dawid\documents\visual studio 2015\Projects\Inżynierka\Inżynierka\bin\Debug\Inżynierka.pdb
+c:\users\dawid\documents\visual studio 2015\Projects\Inżynierka\Inżynierka\bin\Debug\OpenTK.dll
+c:\users\dawid\documents\visual studio 2015\Projects\Inżynierka\Inżynierka\bin\Debug\OpenTK.GLControl.dll
+c:\users\dawid\documents\visual studio 2015\Projects\Inżynierka\Inżynierka\bin\Debug\OpenTK.xml
+c:\users\dawid\documents\visual studio 2015\Projects\Inżynierka\Inżynierka\bin\Debug\OpenTK.GLControl.xml
+c:\users\dawid\documents\visual studio 2015\Projects\Inżynierka\Inżynierka\obj\Debug\Inżynierka.exe
+c:\users\dawid\documents\visual studio 2015\Projects\Inżynierka\Inżynierka\obj\Debug\Inżynierka.pdb
+c:\users\dawid\documents\visual studio 2015\Projects\Inżynierka\Inżynierka\obj\Debug\Inżynierka.Form1.resources
+C:\Users\dawid\Documents\Visual Studio 2015\Projects\Inżynierka\Inżynierka\bin\Debug\Examples.exe
+C:\Users\dawid\Documents\Visual Studio 2015\Projects\Inżynierka\Inżynierka\bin\Debug\OpenTK.Compatibility.dll
+C:\Users\dawid\Documents\Visual Studio 2015\Projects\Inżynierka\Inżynierka\bin\Debug\OpenTK.pdb
+C:\Users\dawid\Documents\Visual Studio 2015\Projects\Inżynierka\Inżynierka\bin\Debug\OpenTK.GLControl.pdb
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\Inżynierka.exe.config
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\Inżynierka.exe
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\Inżynierka.pdb
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\Examples.exe
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.Compatibility.dll
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.dll
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.GLControl.dll
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.pdb
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.xml
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.Compatibility.dll.config
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.GLControl.pdb
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csprojAssemblyReference.cache
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.Form1.resources
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.Properties.Resources.resources
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csproj.GenerateResource.cache
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csproj.CoreCompileInputs.cache
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csproj.CopyComplete
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.exe
+C:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.pdb
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\Inżynierka.exe.config
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\Inżynierka.exe
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\Inżynierka.pdb
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.dll
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.GLControl.dll
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.pdb
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.xml
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.Compatibility.dll.config
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.GLControl.pdb
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\bin\Debug\OpenTK.GLControl.xml
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csprojAssemblyReference.cache
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.Form1.resources
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.Properties.Resources.resources
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csproj.GenerateResource.cache
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csproj.CoreCompileInputs.cache
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csproj.CopyComplete
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.exe
+E:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.pdb
