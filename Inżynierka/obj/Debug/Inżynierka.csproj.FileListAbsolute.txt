@@ -53,3 +53,21 @@ E:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csproj.Cor
 E:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csproj.CopyComplete
 E:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.exe
 E:\Users\Wasu\Documents\Inżynierka\Inżynierka\obj\Debug\Inżynierka.pdb
+C:\z SSDka\Inżynierka\Inżynierka\bin\Debug\Inżynierka.exe.config
+C:\z SSDka\Inżynierka\Inżynierka\bin\Debug\Inżynierka.exe
+C:\z SSDka\Inżynierka\Inżynierka\bin\Debug\Inżynierka.pdb
+C:\z SSDka\Inżynierka\Inżynierka\bin\Debug\OpenTK.dll
+C:\z SSDka\Inżynierka\Inżynierka\bin\Debug\OpenTK.GLControl.dll
+C:\z SSDka\Inżynierka\Inżynierka\bin\Debug\OpenTK.pdb
+C:\z SSDka\Inżynierka\Inżynierka\bin\Debug\OpenTK.xml
+C:\z SSDka\Inżynierka\Inżynierka\bin\Debug\OpenTK.Compatibility.dll.config
+C:\z SSDka\Inżynierka\Inżynierka\bin\Debug\OpenTK.GLControl.pdb
+C:\z SSDka\Inżynierka\Inżynierka\bin\Debug\OpenTK.GLControl.xml
+C:\z SSDka\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csprojAssemblyReference.cache
+C:\z SSDka\Inżynierka\Inżynierka\obj\Debug\Inżynierka.Form1.resources
+C:\z SSDka\Inżynierka\Inżynierka\obj\Debug\Inżynierka.Properties.Resources.resources
+C:\z SSDka\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csproj.GenerateResource.cache
+C:\z SSDka\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csproj.CoreCompileInputs.cache
+C:\z SSDka\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csproj.CopyComplete
+C:\z SSDka\Inżynierka\Inżynierka\obj\Debug\Inżynierka.exe
+C:\z SSDka\Inżynierka\Inżynierka\obj\Debug\Inżynierka.pdb
