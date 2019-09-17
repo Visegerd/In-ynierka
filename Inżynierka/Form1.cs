@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,6 +42,7 @@ namespace Inżynierka
         bool onlyBuild = false;
         bool onlyErase = false;
         bool copyReady = false;
+        string save1 = "Save1.txt";
 
         public Form1()
         {
@@ -1831,14 +1833,82 @@ namespace Inżynierka
 
         private void CreateStlFile()
         {
-            //utworzenie pliku binarnego i przygotowanie go do zapisu
-            for(int i=0;i<boundaries_Y;i++) //można ująć że przejście przez warstwy / zapis do pliku
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e) //zapisz scenę
+        {
+            string path = Environment.CurrentDirectory + "/" + save1;
+            //File.CreateText(path);
+            using (StreamWriter sw = new StreamWriter(path))
             {
-                //dolne ściany warstwy
-                //boczne ściany warstwy
-                //górne ściany warstwy
+                //sw.WriteLine("solid save1");
+                sw.WriteLine(Convert.ToString(boundaries_X));
+                for (int i = 0; i < boundaries_X; i++)
+                {
+                    for (int j = 0; j < boundaries_Y; j++)
+                    {
+                        for (int k = 0; k < boundaries_Z; k++)
+                        {
+                            if (cubeMatrix[i, j, k]) sw.Write("1 ");
+                            else sw.Write("0 ");
+                        }
+                        sw.Write(Environment.NewLine);
+                    }
+                }
+                for (int i = 0; i < boundaries_X; i++)
+                {
+                    for (int j = 0; j < boundaries_Y; j++)
+                    {
+                        for (int k = 0; k < boundaries_Z; k++)
+                        {
+                            sw.Write(Convert.ToString((int)chosenColor[i, j, k].R));
+                            sw.Write(" ");
+                            sw.Write(Convert.ToString((int)chosenColor[i, j, k].G));
+                            sw.Write(" ");
+                            sw.Write(Convert.ToString((int)chosenColor[i, j, k].B));
+                            sw.Write(" ");
+                        }
+                        sw.Write(Environment.NewLine);
+                    }
+                }
             }
-            //przesłanie pliku do slicera
+        }
+
+        private void button2_Click(object sender, EventArgs e) //wczytaj scenę
+        {
+            string path = Environment.CurrentDirectory + "/" + save1;
+            using (StreamReader sr = new StreamReader(path))
+            {
+                boundaries_X = Convert.ToSingle(sr.ReadLine());
+                boundaries_Y = boundaries_X;
+                boundaries_Z = boundaries_X;
+                for (int i = 0; i < boundaries_X; i++)
+                {
+                    for (int j = 0; j < boundaries_Y; j++)
+                    {
+                        string line = sr.ReadLine();
+                        string[] splited = line.Split(' ');
+                        for (int k = 0; k < boundaries_Z; k++)
+                        {
+                            if (splited[k] == "1") cubeMatrix[i, j, k] = true;
+                            else cubeMatrix[i, j, k] = false;
+                        }
+                    }
+                }
+                for (int i = 0; i < boundaries_X; i++)
+                {
+                    for (int j = 0; j < boundaries_Y; j++)
+                    {
+                        string line = sr.ReadLine();
+                        string[] splited = line.Split(' ');
+                        for (int k = 0; k < boundaries_Z; k++)
+                        {
+                            chosenColor[i,j,k] = Color.FromArgb(Convert.ToByte(splited[3 * k]), Convert.ToByte(splited[3 * k + 1]), Convert.ToByte(splited[3 * k + 2]));
+                        }
+                    }
+                }
+            }
         }
     }
 }
