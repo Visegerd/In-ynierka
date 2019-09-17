@@ -1,57 +1,64 @@
 solid save1
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 1.5 0.5 5.5 
-vertex 1.5 0.5 6.5 
 vertex 2.5 0.5 6.5 
+vertex 2.5 0.5 5.5 
+vertex 1.5 0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 2.5 0.5 5.5 
 vertex 1.5 0.5 5.5 
+vertex 1.5 0.5 6.5 
 vertex 2.5 0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 1.5 -0.5 5.5 
 vertex 1.5 -0.5 6.5 
-vertex 2.5 -0.5 6.5 
+vertex 1.5 -0.5 5.5 
+vertex 2.5 -0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 2.5 -0.5 5.5 
-vertex 1.5 -0.5 5.5 
 vertex 2.5 -0.5 6.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 1.5 -0.5 5.5 
-vertex 1.5 0.5 5.5 
-vertex 2.5 0.5 5.5 
+vertex 1.5 -0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 2.5 -0.5 5.5 
 vertex 1.5 -0.5 5.5 
+vertex 1.5 0.5 5.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 1.5 0.5 5.5 
 vertex 2.5 0.5 5.5 
+vertex 2.5 -0.5 5.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 1.5 0.5 6.5 
+vertex 1.5 0.5 5.5 
+vertex 1.5 -0.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
 vertex 1.5 -0.5 5.5 
-vertex 1.5 0.5 5.5 
+vertex 1.5 -0.5 6.5 
 vertex 1.5 0.5 6.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 1.5 -0.5 6.5 
-vertex 1.5 -0.5 5.5 
+vertex 2.5 0.5 7.5 
+vertex 2.5 0.5 6.5 
 vertex 1.5 0.5 6.5 
 endloop
 endfacet
@@ -62,53 +69,53 @@ vertex 1.5 0.5 7.5
 vertex 2.5 0.5 7.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
+facet normal 0.0 -1.0 0.0
 outer loop
-vertex 2.5 0.5 6.5 
+vertex 1.5 -0.5 7.5 
+vertex 1.5 -0.5 6.5 
+vertex 2.5 -0.5 6.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 2.5 -0.5 6.5 
+vertex 2.5 -0.5 7.5 
+vertex 1.5 -0.5 7.5 
+endloop
+endfacet
+facet normal 0.0 0.0 1.0
+outer loop
+vertex 2.5 0.5 7.5 
+vertex 1.5 0.5 7.5 
+vertex 1.5 -0.5 7.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 1.5 -0.5 7.5 
+vertex 2.5 -0.5 7.5 
+vertex 2.5 0.5 7.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 1.5 0.5 7.5 
 vertex 1.5 0.5 6.5 
-vertex 2.5 0.5 7.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
 vertex 1.5 -0.5 6.5 
-vertex 1.5 -0.5 7.5 
-vertex 2.5 -0.5 7.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 2.5 -0.5 6.5 
-vertex 1.5 -0.5 6.5 
-vertex 2.5 -0.5 7.5 
-endloop
-endfacet
-facet normal 0.0 0.0 1.0
-outer loop
-vertex 1.5 -0.5 7.5 
-vertex 1.5 0.5 7.5 
-vertex 2.5 0.5 7.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 2.5 -0.5 7.5 
-vertex 1.5 -0.5 7.5 
-vertex 2.5 0.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
 vertex 1.5 -0.5 6.5 
-vertex 1.5 0.5 6.5 
+vertex 1.5 -0.5 7.5 
 vertex 1.5 0.5 7.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 1.5 -0.5 7.5 
-vertex 1.5 -0.5 6.5 
-vertex 1.5 0.5 7.5 
+vertex 3.5 0.5 5.5 
+vertex 3.5 0.5 4.5 
+vertex 2.5 0.5 4.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -118,52 +125,52 @@ vertex 2.5 0.5 5.5
 vertex 3.5 0.5 5.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 3.5 0.5 4.5 
-vertex 2.5 0.5 4.5 
-vertex 3.5 0.5 5.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 2.5 -0.5 4.5 
 vertex 2.5 -0.5 5.5 
-vertex 3.5 -0.5 5.5 
+vertex 2.5 -0.5 4.5 
+vertex 3.5 -0.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 3.5 -0.5 4.5 
-vertex 2.5 -0.5 4.5 
 vertex 3.5 -0.5 5.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 2.5 -0.5 4.5 
-vertex 2.5 0.5 4.5 
-vertex 3.5 0.5 4.5 
+vertex 2.5 -0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 3.5 -0.5 4.5 
 vertex 2.5 -0.5 4.5 
+vertex 2.5 0.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 2.5 0.5 4.5 
 vertex 3.5 0.5 4.5 
+vertex 3.5 -0.5 4.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 2.5 0.5 5.5 
+vertex 2.5 0.5 4.5 
+vertex 2.5 -0.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
 vertex 2.5 -0.5 4.5 
-vertex 2.5 0.5 4.5 
+vertex 2.5 -0.5 5.5 
 vertex 2.5 0.5 5.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 2.5 -0.5 5.5 
-vertex 2.5 -0.5 4.5 
+vertex 3.5 0.5 6.5 
+vertex 3.5 0.5 5.5 
 vertex 2.5 0.5 5.5 
 endloop
 endfacet
@@ -174,25 +181,25 @@ vertex 2.5 0.5 6.5
 vertex 3.5 0.5 6.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 3.5 0.5 5.5 
-vertex 2.5 0.5 5.5 
-vertex 3.5 0.5 6.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 2.5 -0.5 5.5 
 vertex 2.5 -0.5 6.5 
-vertex 3.5 -0.5 6.5 
+vertex 2.5 -0.5 5.5 
+vertex 3.5 -0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 3.5 -0.5 5.5 
-vertex 2.5 -0.5 5.5 
 vertex 3.5 -0.5 6.5 
+vertex 2.5 -0.5 6.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 3.5 0.5 7.5 
+vertex 3.5 0.5 6.5 
+vertex 2.5 0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -202,25 +209,25 @@ vertex 2.5 0.5 7.5
 vertex 3.5 0.5 7.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 3.5 0.5 6.5 
-vertex 2.5 0.5 6.5 
-vertex 3.5 0.5 7.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
+vertex 2.5 -0.5 7.5 
 vertex 2.5 -0.5 6.5 
-vertex 2.5 -0.5 7.5 
-vertex 3.5 -0.5 7.5 
+vertex 3.5 -0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 3.5 -0.5 6.5 
-vertex 2.5 -0.5 6.5 
 vertex 3.5 -0.5 7.5 
+vertex 2.5 -0.5 7.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 3.5 0.5 8.5 
+vertex 3.5 0.5 7.5 
+vertex 2.5 0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -230,53 +237,53 @@ vertex 2.5 0.5 8.5
 vertex 3.5 0.5 8.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
+facet normal 0.0 -1.0 0.0
 outer loop
-vertex 3.5 0.5 7.5 
+vertex 2.5 -0.5 8.5 
+vertex 2.5 -0.5 7.5 
+vertex 3.5 -0.5 7.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 3.5 -0.5 7.5 
+vertex 3.5 -0.5 8.5 
+vertex 2.5 -0.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 1.0
+outer loop
+vertex 3.5 0.5 8.5 
+vertex 2.5 0.5 8.5 
+vertex 2.5 -0.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 2.5 -0.5 8.5 
+vertex 3.5 -0.5 8.5 
+vertex 3.5 0.5 8.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 2.5 0.5 8.5 
 vertex 2.5 0.5 7.5 
-vertex 3.5 0.5 8.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
 vertex 2.5 -0.5 7.5 
-vertex 2.5 -0.5 8.5 
-vertex 3.5 -0.5 8.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 3.5 -0.5 7.5 
-vertex 2.5 -0.5 7.5 
-vertex 3.5 -0.5 8.5 
-endloop
-endfacet
-facet normal 0.0 0.0 1.0
-outer loop
-vertex 2.5 -0.5 8.5 
-vertex 2.5 0.5 8.5 
-vertex 3.5 0.5 8.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 3.5 -0.5 8.5 
-vertex 2.5 -0.5 8.5 
-vertex 3.5 0.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
 vertex 2.5 -0.5 7.5 
-vertex 2.5 0.5 7.5 
+vertex 2.5 -0.5 8.5 
 vertex 2.5 0.5 8.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 2.5 -0.5 8.5 
-vertex 2.5 -0.5 7.5 
-vertex 2.5 0.5 8.5 
+vertex 4.5 0.5 4.5 
+vertex 4.5 0.5 3.5 
+vertex 3.5 0.5 3.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -286,52 +293,52 @@ vertex 3.5 0.5 4.5
 vertex 4.5 0.5 4.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 4.5 0.5 3.5 
-vertex 3.5 0.5 3.5 
-vertex 4.5 0.5 4.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 3.5 -0.5 3.5 
 vertex 3.5 -0.5 4.5 
-vertex 4.5 -0.5 4.5 
+vertex 3.5 -0.5 3.5 
+vertex 4.5 -0.5 3.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 4.5 -0.5 3.5 
-vertex 3.5 -0.5 3.5 
 vertex 4.5 -0.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 3.5 -0.5 3.5 
-vertex 3.5 0.5 3.5 
-vertex 4.5 0.5 3.5 
+vertex 3.5 -0.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 4.5 -0.5 3.5 
 vertex 3.5 -0.5 3.5 
+vertex 3.5 0.5 3.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 3.5 0.5 3.5 
 vertex 4.5 0.5 3.5 
+vertex 4.5 -0.5 3.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 3.5 0.5 4.5 
+vertex 3.5 0.5 3.5 
+vertex 3.5 -0.5 3.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
 vertex 3.5 -0.5 3.5 
-vertex 3.5 0.5 3.5 
+vertex 3.5 -0.5 4.5 
 vertex 3.5 0.5 4.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 3.5 -0.5 4.5 
-vertex 3.5 -0.5 3.5 
+vertex 4.5 0.5 5.5 
+vertex 4.5 0.5 4.5 
 vertex 3.5 0.5 4.5 
 endloop
 endfacet
@@ -339,56 +346,56 @@ facet normal 0.0 1.0 0.0
 outer loop
 vertex 3.5 0.5 4.5 
 vertex 3.5 0.5 5.5 
-vertex 4.5 0.5 5.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 4.5 0.5 4.5 
-vertex 3.5 0.5 4.5 
-vertex 4.5 0.5 5.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 3.5 -0.5 4.5 
-vertex 3.5 -0.5 5.5 
-vertex 4.5 -0.5 5.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 4.5 -0.5 4.5 
-vertex 3.5 -0.5 4.5 
-vertex 4.5 -0.5 5.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 4.5 -0.5 4.5 
-vertex 4.5 0.5 4.5 
-vertex 4.5 0.5 5.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 4.5 -0.5 5.5 
-vertex 4.5 -0.5 4.5 
 vertex 4.5 0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 3.5 -0.5 5.5 
-vertex 3.5 -0.5 6.5 
-vertex 4.5 -0.5 6.5 
+vertex 3.5 -0.5 4.5 
+vertex 4.5 -0.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
+vertex 4.5 -0.5 4.5 
 vertex 4.5 -0.5 5.5 
 vertex 3.5 -0.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 0.5 5.5 
+vertex 4.5 -0.5 5.5 
+vertex 4.5 -0.5 4.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 -0.5 4.5 
+vertex 4.5 0.5 4.5 
+vertex 4.5 0.5 5.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 3.5 -0.5 6.5 
+vertex 3.5 -0.5 5.5 
+vertex 4.5 -0.5 5.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 4.5 -0.5 5.5 
 vertex 4.5 -0.5 6.5 
+vertex 3.5 -0.5 6.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 0.5 6.5 
+vertex 4.5 -0.5 6.5 
+vertex 4.5 -0.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -398,25 +405,25 @@ vertex 4.5 0.5 5.5
 vertex 4.5 0.5 6.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 4.5 -0.5 6.5 
-vertex 4.5 -0.5 5.5 
-vertex 4.5 0.5 6.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 3.5 -0.5 6.5 
 vertex 3.5 -0.5 7.5 
-vertex 4.5 -0.5 7.5 
+vertex 3.5 -0.5 6.5 
+vertex 4.5 -0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 4.5 -0.5 6.5 
-vertex 3.5 -0.5 6.5 
 vertex 4.5 -0.5 7.5 
+vertex 3.5 -0.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 0.5 7.5 
+vertex 4.5 -0.5 7.5 
+vertex 4.5 -0.5 6.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -426,11 +433,11 @@ vertex 4.5 0.5 6.5
 vertex 4.5 0.5 7.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 4.5 -0.5 7.5 
-vertex 4.5 -0.5 6.5 
+vertex 4.5 0.5 8.5 
 vertex 4.5 0.5 7.5 
+vertex 3.5 0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -440,39 +447,39 @@ vertex 3.5 0.5 8.5
 vertex 4.5 0.5 8.5 
 endloop
 endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 3.5 -0.5 8.5 
+vertex 3.5 -0.5 7.5 
+vertex 4.5 -0.5 7.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 4.5 -0.5 7.5 
+vertex 4.5 -0.5 8.5 
+vertex 3.5 -0.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 0.5 8.5 
+vertex 4.5 -0.5 8.5 
+vertex 4.5 -0.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 -0.5 7.5 
+vertex 4.5 0.5 7.5 
+vertex 4.5 0.5 8.5 
+endloop
+endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 4.5 0.5 7.5 
-vertex 3.5 0.5 7.5 
+vertex 4.5 0.5 9.5 
 vertex 4.5 0.5 8.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 3.5 -0.5 7.5 
-vertex 3.5 -0.5 8.5 
-vertex 4.5 -0.5 8.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 4.5 -0.5 7.5 
-vertex 3.5 -0.5 7.5 
-vertex 4.5 -0.5 8.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 4.5 -0.5 7.5 
-vertex 4.5 0.5 7.5 
-vertex 4.5 0.5 8.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 4.5 -0.5 8.5 
-vertex 4.5 -0.5 7.5 
-vertex 4.5 0.5 8.5 
+vertex 3.5 0.5 8.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -482,206 +489,206 @@ vertex 3.5 0.5 9.5
 vertex 4.5 0.5 9.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 4.5 0.5 8.5 
-vertex 3.5 0.5 8.5 
-vertex 4.5 0.5 9.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 3.5 -0.5 8.5 
 vertex 3.5 -0.5 9.5 
-vertex 4.5 -0.5 9.5 
+vertex 3.5 -0.5 8.5 
+vertex 4.5 -0.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 4.5 -0.5 8.5 
-vertex 3.5 -0.5 8.5 
 vertex 4.5 -0.5 9.5 
+vertex 3.5 -0.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 -0.5 9.5 
-vertex 3.5 0.5 9.5 
 vertex 4.5 0.5 9.5 
+vertex 3.5 0.5 9.5 
+vertex 3.5 -0.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 3.5 -0.5 9.5 
 vertex 4.5 -0.5 9.5 
-vertex 3.5 -0.5 9.5 
 vertex 4.5 0.5 9.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 -0.5 8.5 
-vertex 3.5 0.5 8.5 
 vertex 3.5 0.5 9.5 
+vertex 3.5 0.5 8.5 
+vertex 3.5 -0.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 -0.5 9.5 
 vertex 3.5 -0.5 8.5 
+vertex 3.5 -0.5 9.5 
 vertex 3.5 0.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 3.5 0.5 5.5 
-vertex 3.5 1.5 5.5 
-vertex 4.5 1.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 4.5 0.5 5.5 
 vertex 3.5 0.5 5.5 
-vertex 4.5 1.5 5.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 3.5 0.5 5.5 
 vertex 3.5 1.5 5.5 
-vertex 3.5 1.5 6.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 3.5 1.5 5.5 
+vertex 4.5 1.5 5.5 
+vertex 4.5 0.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 0.5 6.5 
+vertex 3.5 1.5 6.5 
+vertex 3.5 1.5 5.5 
 vertex 3.5 0.5 5.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 3.5 0.5 5.5 
+vertex 3.5 0.5 6.5 
 vertex 3.5 1.5 6.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 0.5 7.5 
-vertex 3.5 1.5 7.5 
 vertex 4.5 1.5 7.5 
+vertex 3.5 1.5 7.5 
+vertex 3.5 0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 3.5 0.5 7.5 
 vertex 4.5 0.5 7.5 
-vertex 3.5 0.5 7.5 
 vertex 4.5 1.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 0.5 6.5 
-vertex 3.5 1.5 6.5 
 vertex 3.5 1.5 7.5 
+vertex 3.5 1.5 6.5 
+vertex 3.5 0.5 6.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 0.5 7.5 
 vertex 3.5 0.5 6.5 
+vertex 3.5 0.5 7.5 
 vertex 3.5 1.5 7.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 3.5 1.5 5.5 
-vertex 3.5 2.5 5.5 
-vertex 4.5 2.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 4.5 1.5 5.5 
 vertex 3.5 1.5 5.5 
-vertex 4.5 2.5 5.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 3.5 1.5 5.5 
 vertex 3.5 2.5 5.5 
-vertex 3.5 2.5 6.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 3.5 2.5 5.5 
+vertex 4.5 2.5 5.5 
+vertex 4.5 1.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 1.5 6.5 
+vertex 3.5 2.5 6.5 
+vertex 3.5 2.5 5.5 
 vertex 3.5 1.5 5.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 3.5 1.5 5.5 
+vertex 3.5 1.5 6.5 
 vertex 3.5 2.5 6.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 1.5 7.5 
-vertex 3.5 2.5 7.5 
 vertex 4.5 2.5 7.5 
+vertex 3.5 2.5 7.5 
+vertex 3.5 1.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 3.5 1.5 7.5 
 vertex 4.5 1.5 7.5 
-vertex 3.5 1.5 7.5 
 vertex 4.5 2.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 1.5 6.5 
-vertex 3.5 2.5 6.5 
 vertex 3.5 2.5 7.5 
+vertex 3.5 2.5 6.5 
+vertex 3.5 1.5 6.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 1.5 7.5 
 vertex 3.5 1.5 6.5 
+vertex 3.5 1.5 7.5 
 vertex 3.5 2.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 3.5 2.5 4.5 
 vertex 3.5 2.5 5.5 
-vertex 4.5 2.5 5.5 
+vertex 3.5 2.5 4.5 
+vertex 4.5 2.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 4.5 2.5 4.5 
-vertex 3.5 2.5 4.5 
 vertex 4.5 2.5 5.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 3.5 2.5 4.5 
-vertex 3.5 3.5 4.5 
-vertex 4.5 3.5 4.5 
+vertex 3.5 2.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 4.5 2.5 4.5 
 vertex 3.5 2.5 4.5 
+vertex 3.5 3.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 3.5 3.5 4.5 
 vertex 4.5 3.5 4.5 
+vertex 4.5 2.5 4.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 3.5 3.5 5.5 
+vertex 3.5 3.5 4.5 
+vertex 3.5 2.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
 vertex 3.5 2.5 4.5 
-vertex 3.5 3.5 4.5 
+vertex 3.5 2.5 5.5 
 vertex 3.5 3.5 5.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 3.5 2.5 5.5 
-vertex 3.5 2.5 4.5 
+vertex 4.5 3.5 6.5 
+vertex 4.5 3.5 5.5 
 vertex 3.5 3.5 5.5 
 endloop
 endfacet
@@ -692,11 +699,11 @@ vertex 3.5 3.5 6.5
 vertex 4.5 3.5 6.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
+facet normal 1.0 0.0 0.0
 outer loop
-vertex 4.5 3.5 5.5 
-vertex 3.5 3.5 5.5 
 vertex 4.5 3.5 6.5 
+vertex 4.5 2.5 6.5 
+vertex 4.5 2.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -706,24 +713,24 @@ vertex 4.5 3.5 5.5
 vertex 4.5 3.5 6.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 4.5 2.5 6.5 
-vertex 4.5 2.5 5.5 
-vertex 4.5 3.5 6.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 2.5 5.5 
+vertex 3.5 3.5 6.5 
 vertex 3.5 3.5 5.5 
-vertex 3.5 3.5 6.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 3.5 2.5 6.5 
 vertex 3.5 2.5 5.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 3.5 2.5 5.5 
+vertex 3.5 2.5 6.5 
+vertex 3.5 3.5 6.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 4.5 3.5 7.5 
+vertex 4.5 3.5 6.5 
 vertex 3.5 3.5 6.5 
 endloop
 endfacet
@@ -734,122 +741,122 @@ vertex 3.5 3.5 7.5
 vertex 4.5 3.5 7.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 4.5 3.5 6.5 
-vertex 3.5 3.5 6.5 
-vertex 4.5 3.5 7.5 
-endloop
-endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 4.5 2.5 6.5 
-vertex 4.5 3.5 6.5 
 vertex 4.5 3.5 7.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 4.5 2.5 7.5 
 vertex 4.5 2.5 6.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 2.5 6.5 
+vertex 4.5 3.5 6.5 
 vertex 4.5 3.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 2.5 6.5 
-vertex 3.5 3.5 6.5 
 vertex 3.5 3.5 7.5 
+vertex 3.5 3.5 6.5 
+vertex 3.5 2.5 6.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 2.5 7.5 
 vertex 3.5 2.5 6.5 
+vertex 3.5 2.5 7.5 
 vertex 3.5 3.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 3.5 2.5 7.5 
 vertex 3.5 2.5 8.5 
-vertex 4.5 2.5 8.5 
+vertex 3.5 2.5 7.5 
+vertex 4.5 2.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 4.5 2.5 7.5 
-vertex 3.5 2.5 7.5 
 vertex 4.5 2.5 8.5 
+vertex 3.5 2.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 2.5 8.5 
-vertex 3.5 3.5 8.5 
 vertex 4.5 3.5 8.5 
+vertex 3.5 3.5 8.5 
+vertex 3.5 2.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 4.5 2.5 8.5 
 vertex 3.5 2.5 8.5 
+vertex 4.5 2.5 8.5 
 vertex 4.5 3.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 2.5 7.5 
-vertex 3.5 3.5 7.5 
 vertex 3.5 3.5 8.5 
+vertex 3.5 3.5 7.5 
+vertex 3.5 2.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 2.5 8.5 
 vertex 3.5 2.5 7.5 
+vertex 3.5 2.5 8.5 
 vertex 3.5 3.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 3.5 3.5 3.5 
 vertex 3.5 3.5 4.5 
-vertex 4.5 3.5 4.5 
+vertex 3.5 3.5 3.5 
+vertex 4.5 3.5 3.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 4.5 3.5 3.5 
-vertex 3.5 3.5 3.5 
 vertex 4.5 3.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 3.5 3.5 3.5 
-vertex 3.5 4.5 3.5 
-vertex 4.5 4.5 3.5 
+vertex 3.5 3.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 4.5 3.5 3.5 
 vertex 3.5 3.5 3.5 
+vertex 3.5 4.5 3.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 3.5 4.5 3.5 
 vertex 4.5 4.5 3.5 
+vertex 4.5 3.5 3.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 3.5 4.5 4.5 
+vertex 3.5 4.5 3.5 
+vertex 3.5 3.5 3.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
 vertex 3.5 3.5 3.5 
-vertex 3.5 4.5 3.5 
+vertex 3.5 3.5 4.5 
 vertex 3.5 4.5 4.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 3.5 3.5 4.5 
-vertex 3.5 3.5 3.5 
+vertex 4.5 4.5 5.5 
+vertex 4.5 4.5 4.5 
 vertex 3.5 4.5 4.5 
 endloop
 endfacet
@@ -857,28 +864,28 @@ facet normal 0.0 1.0 0.0
 outer loop
 vertex 3.5 4.5 4.5 
 vertex 3.5 4.5 5.5 
-vertex 4.5 4.5 5.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 4.5 4.5 4.5 
-vertex 3.5 4.5 4.5 
 vertex 4.5 4.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 3.5 5.5 
-vertex 3.5 4.5 5.5 
 vertex 4.5 4.5 5.5 
+vertex 3.5 4.5 5.5 
+vertex 3.5 3.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 4.5 3.5 5.5 
 vertex 3.5 3.5 5.5 
+vertex 4.5 3.5 5.5 
 vertex 4.5 4.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 4.5 5.5 
+vertex 4.5 3.5 5.5 
+vertex 4.5 3.5 4.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -888,431 +895,431 @@ vertex 4.5 4.5 4.5
 vertex 4.5 4.5 5.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 3.5 5.5 
-vertex 4.5 3.5 4.5 
-vertex 4.5 4.5 5.5 
+vertex 3.5 4.5 5.5 
+vertex 3.5 4.5 4.5 
+vertex 3.5 3.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
 vertex 3.5 3.5 4.5 
-vertex 3.5 4.5 4.5 
-vertex 3.5 4.5 5.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
 vertex 3.5 3.5 5.5 
-vertex 3.5 3.5 4.5 
 vertex 3.5 4.5 5.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
+vertex 4.5 4.5 8.5 
+vertex 4.5 4.5 7.5 
+vertex 3.5 4.5 7.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
 vertex 3.5 4.5 7.5 
 vertex 3.5 4.5 8.5 
 vertex 4.5 4.5 8.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 4.5 4.5 7.5 
-vertex 3.5 4.5 7.5 
-vertex 4.5 4.5 8.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 3.5 3.5 7.5 
-vertex 3.5 4.5 7.5 
-vertex 4.5 4.5 7.5 
-endloop
-endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 4.5 3.5 7.5 
 vertex 3.5 3.5 7.5 
-vertex 4.5 4.5 7.5 
+vertex 3.5 4.5 7.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 0.0 -1.0
 outer loop
+vertex 3.5 4.5 7.5 
+vertex 4.5 4.5 7.5 
 vertex 4.5 3.5 7.5 
-vertex 4.5 4.5 7.5 
-vertex 4.5 4.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
+vertex 4.5 4.5 8.5 
 vertex 4.5 3.5 8.5 
 vertex 4.5 3.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 3.5 7.5 
+vertex 4.5 4.5 7.5 
 vertex 4.5 4.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 3.5 7.5 
-vertex 3.5 4.5 7.5 
 vertex 3.5 4.5 8.5 
+vertex 3.5 4.5 7.5 
+vertex 3.5 3.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 3.5 8.5 
 vertex 3.5 3.5 7.5 
+vertex 3.5 3.5 8.5 
 vertex 3.5 4.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 3.5 3.5 8.5 
 vertex 3.5 3.5 9.5 
-vertex 4.5 3.5 9.5 
+vertex 3.5 3.5 8.5 
+vertex 4.5 3.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 4.5 3.5 8.5 
-vertex 3.5 3.5 8.5 
-vertex 4.5 3.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 1.0
-outer loop
-vertex 3.5 3.5 9.5 
-vertex 3.5 4.5 9.5 
-vertex 4.5 4.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
 vertex 4.5 3.5 9.5 
 vertex 3.5 3.5 9.5 
-vertex 4.5 4.5 9.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 3.5 8.5 
-vertex 3.5 4.5 8.5 
+vertex 4.5 4.5 9.5 
 vertex 3.5 4.5 9.5 
+vertex 3.5 3.5 9.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 0.0 -1.0
 outer loop
 vertex 3.5 3.5 9.5 
+vertex 4.5 3.5 9.5 
+vertex 4.5 4.5 9.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 3.5 4.5 9.5 
+vertex 3.5 4.5 8.5 
 vertex 3.5 3.5 8.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 3.5 3.5 8.5 
+vertex 3.5 3.5 9.5 
 vertex 3.5 4.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 4.5 4.5 
-vertex 3.5 5.5 4.5 
 vertex 4.5 5.5 4.5 
+vertex 3.5 5.5 4.5 
+vertex 3.5 4.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 3.5 4.5 4.5 
 vertex 4.5 4.5 4.5 
-vertex 3.5 4.5 4.5 
 vertex 4.5 5.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 4.5 4.5 3.5 
 vertex 3.5 4.5 3.5 
 vertex 3.5 5.5 3.5 
-vertex 4.5 5.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 4.5 4.5 3.5 
-vertex 3.5 4.5 3.5 
+vertex 3.5 5.5 3.5 
 vertex 4.5 5.5 3.5 
+vertex 4.5 4.5 3.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 4.5 4.5 3.5 
-vertex 4.5 5.5 3.5 
 vertex 4.5 5.5 4.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 4.5 4.5 4.5 
 vertex 4.5 4.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 4.5 3.5 
+vertex 4.5 5.5 3.5 
 vertex 4.5 5.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 4.5 3.5 
-vertex 3.5 5.5 3.5 
 vertex 3.5 5.5 4.5 
+vertex 3.5 5.5 3.5 
+vertex 3.5 4.5 3.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
+vertex 3.5 4.5 3.5 
 vertex 3.5 4.5 4.5 
-vertex 3.5 4.5 3.5 
 vertex 3.5 5.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 4.5 9.5 
+vertex 4.5 5.5 9.5 
 vertex 3.5 5.5 9.5 
-vertex 4.5 5.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 4.5 4.5 9.5 
 vertex 3.5 4.5 9.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 3.5 4.5 9.5 
+vertex 4.5 4.5 9.5 
 vertex 4.5 5.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 4.5 4.5 8.5 
 vertex 3.5 4.5 8.5 
 vertex 3.5 5.5 8.5 
-vertex 4.5 5.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 4.5 4.5 8.5 
-vertex 3.5 4.5 8.5 
+vertex 3.5 5.5 8.5 
 vertex 4.5 5.5 8.5 
+vertex 4.5 4.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 4.5 4.5 8.5 
-vertex 4.5 5.5 8.5 
 vertex 4.5 5.5 9.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 4.5 4.5 9.5 
 vertex 4.5 4.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 4.5 8.5 
+vertex 4.5 5.5 8.5 
 vertex 4.5 5.5 9.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 4.5 8.5 
-vertex 3.5 5.5 8.5 
 vertex 3.5 5.5 9.5 
+vertex 3.5 5.5 8.5 
+vertex 3.5 4.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
+vertex 3.5 4.5 8.5 
 vertex 3.5 4.5 9.5 
-vertex 3.5 4.5 8.5 
 vertex 3.5 5.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 5.5 4.5 
+vertex 4.5 6.5 4.5 
 vertex 3.5 6.5 4.5 
-vertex 4.5 6.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 4.5 5.5 4.5 
 vertex 3.5 5.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 3.5 5.5 4.5 
+vertex 4.5 5.5 4.5 
 vertex 4.5 6.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 4.5 5.5 3.5 
 vertex 3.5 5.5 3.5 
 vertex 3.5 6.5 3.5 
-vertex 4.5 6.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 4.5 5.5 3.5 
-vertex 3.5 5.5 3.5 
+vertex 3.5 6.5 3.5 
 vertex 4.5 6.5 3.5 
+vertex 4.5 5.5 3.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 4.5 5.5 3.5 
-vertex 4.5 6.5 3.5 
 vertex 4.5 6.5 4.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 4.5 5.5 4.5 
 vertex 4.5 5.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 5.5 3.5 
+vertex 4.5 6.5 3.5 
 vertex 4.5 6.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 5.5 3.5 
-vertex 3.5 6.5 3.5 
 vertex 3.5 6.5 4.5 
+vertex 3.5 6.5 3.5 
+vertex 3.5 5.5 3.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
+vertex 3.5 5.5 3.5 
 vertex 3.5 5.5 4.5 
-vertex 3.5 5.5 3.5 
 vertex 3.5 6.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 5.5 9.5 
+vertex 4.5 6.5 9.5 
 vertex 3.5 6.5 9.5 
-vertex 4.5 6.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 4.5 5.5 9.5 
 vertex 3.5 5.5 9.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 3.5 5.5 9.5 
+vertex 4.5 5.5 9.5 
 vertex 4.5 6.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 4.5 5.5 8.5 
 vertex 3.5 5.5 8.5 
 vertex 3.5 6.5 8.5 
-vertex 4.5 6.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 4.5 5.5 8.5 
-vertex 3.5 5.5 8.5 
+vertex 3.5 6.5 8.5 
 vertex 4.5 6.5 8.5 
+vertex 4.5 5.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 4.5 5.5 8.5 
-vertex 4.5 6.5 8.5 
 vertex 4.5 6.5 9.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 4.5 5.5 9.5 
 vertex 4.5 5.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 5.5 8.5 
+vertex 4.5 6.5 8.5 
 vertex 4.5 6.5 9.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 5.5 8.5 
-vertex 3.5 6.5 8.5 
 vertex 3.5 6.5 9.5 
+vertex 3.5 6.5 8.5 
+vertex 3.5 5.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
+vertex 3.5 5.5 8.5 
 vertex 3.5 5.5 9.5 
-vertex 3.5 5.5 8.5 
 vertex 3.5 6.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 6.5 4.5 
+vertex 4.5 7.5 4.5 
 vertex 3.5 7.5 4.5 
-vertex 4.5 7.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 4.5 6.5 4.5 
 vertex 3.5 6.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 3.5 6.5 4.5 
+vertex 4.5 6.5 4.5 
 vertex 4.5 7.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 4.5 6.5 3.5 
 vertex 3.5 6.5 3.5 
 vertex 3.5 7.5 3.5 
-vertex 4.5 7.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 4.5 6.5 3.5 
-vertex 3.5 6.5 3.5 
+vertex 3.5 7.5 3.5 
 vertex 4.5 7.5 3.5 
+vertex 4.5 6.5 3.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 4.5 6.5 3.5 
-vertex 4.5 7.5 3.5 
 vertex 4.5 7.5 4.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 4.5 6.5 4.5 
 vertex 4.5 6.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 6.5 3.5 
+vertex 4.5 7.5 3.5 
 vertex 4.5 7.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 6.5 3.5 
-vertex 3.5 7.5 3.5 
 vertex 3.5 7.5 4.5 
+vertex 3.5 7.5 3.5 
+vertex 3.5 6.5 3.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 6.5 4.5 
 vertex 3.5 6.5 3.5 
+vertex 3.5 6.5 4.5 
 vertex 3.5 7.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 6.5 9.5 
+vertex 4.5 7.5 9.5 
 vertex 3.5 7.5 9.5 
-vertex 4.5 7.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 4.5 6.5 9.5 
 vertex 3.5 6.5 9.5 
-vertex 4.5 7.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 3.5 6.5 8.5 
-vertex 3.5 7.5 8.5 
-vertex 4.5 7.5 8.5 
+vertex 3.5 6.5 9.5 
+vertex 4.5 6.5 9.5 
+vertex 4.5 7.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 4.5 6.5 8.5 
 vertex 3.5 6.5 8.5 
+vertex 3.5 7.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 3.5 7.5 8.5 
 vertex 4.5 7.5 8.5 
+vertex 4.5 6.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 7.5 9.5 
+vertex 4.5 6.5 9.5 
+vertex 4.5 6.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -1322,25 +1329,25 @@ vertex 4.5 7.5 8.5
 vertex 4.5 7.5 9.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 4.5 6.5 9.5 
-vertex 4.5 6.5 8.5 
-vertex 4.5 7.5 9.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 6.5 8.5 
+vertex 3.5 7.5 9.5 
 vertex 3.5 7.5 8.5 
-vertex 3.5 7.5 9.5 
+vertex 3.5 6.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 6.5 9.5 
 vertex 3.5 6.5 8.5 
+vertex 3.5 6.5 9.5 
 vertex 3.5 7.5 9.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 4.5 8.5 4.5 
+vertex 4.5 8.5 3.5 
+vertex 3.5 8.5 3.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -1348,69 +1355,69 @@ outer loop
 vertex 3.5 8.5 3.5 
 vertex 3.5 8.5 4.5 
 vertex 4.5 8.5 4.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 4.5 8.5 3.5 
-vertex 3.5 8.5 3.5 
-vertex 4.5 8.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 3.5 7.5 3.5 
-vertex 3.5 8.5 3.5 
-vertex 4.5 8.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 4.5 7.5 3.5 
 vertex 3.5 7.5 3.5 
-vertex 4.5 8.5 3.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 3.5 7.5 3.5 
 vertex 3.5 8.5 3.5 
-vertex 3.5 8.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 3.5 8.5 3.5 
+vertex 4.5 8.5 3.5 
+vertex 4.5 7.5 3.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 7.5 4.5 
+vertex 3.5 8.5 4.5 
+vertex 3.5 8.5 3.5 
 vertex 3.5 7.5 3.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 3.5 7.5 3.5 
+vertex 3.5 7.5 4.5 
 vertex 3.5 8.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 3.5 7.5 4.5 
 vertex 3.5 7.5 5.5 
-vertex 4.5 7.5 5.5 
+vertex 3.5 7.5 4.5 
+vertex 4.5 7.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 4.5 7.5 4.5 
-vertex 3.5 7.5 4.5 
 vertex 4.5 7.5 5.5 
+vertex 3.5 7.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 7.5 5.5 
-vertex 3.5 8.5 5.5 
 vertex 4.5 8.5 5.5 
+vertex 3.5 8.5 5.5 
+vertex 3.5 7.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 4.5 7.5 5.5 
 vertex 3.5 7.5 5.5 
+vertex 4.5 7.5 5.5 
 vertex 4.5 8.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 8.5 5.5 
+vertex 4.5 7.5 5.5 
+vertex 4.5 7.5 4.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -1420,80 +1427,80 @@ vertex 4.5 8.5 4.5
 vertex 4.5 8.5 5.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 4.5 7.5 5.5 
-vertex 4.5 7.5 4.5 
-vertex 4.5 8.5 5.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 7.5 4.5 
-vertex 3.5 8.5 4.5 
 vertex 3.5 8.5 5.5 
+vertex 3.5 8.5 4.5 
+vertex 3.5 7.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 7.5 5.5 
 vertex 3.5 7.5 4.5 
+vertex 3.5 7.5 5.5 
 vertex 3.5 8.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
+outer loop
+vertex 3.5 7.5 8.5 
+vertex 3.5 7.5 7.5 
+vertex 4.5 7.5 7.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 4.5 7.5 7.5 
+vertex 4.5 7.5 8.5 
+vertex 3.5 7.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 4.5 7.5 7.5 
+vertex 3.5 7.5 7.5 
+vertex 3.5 8.5 7.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 3.5 8.5 7.5 
+vertex 4.5 8.5 7.5 
+vertex 4.5 7.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 8.5 8.5 
+vertex 4.5 7.5 8.5 
+vertex 4.5 7.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 7.5 7.5 
+vertex 4.5 8.5 7.5 
+vertex 4.5 8.5 8.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 3.5 8.5 8.5 
+vertex 3.5 8.5 7.5 
+vertex 3.5 7.5 7.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
 outer loop
 vertex 3.5 7.5 7.5 
 vertex 3.5 7.5 8.5 
-vertex 4.5 7.5 8.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 4.5 7.5 7.5 
-vertex 3.5 7.5 7.5 
-vertex 4.5 7.5 8.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 3.5 7.5 7.5 
-vertex 3.5 8.5 7.5 
-vertex 4.5 8.5 7.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 4.5 7.5 7.5 
-vertex 3.5 7.5 7.5 
-vertex 4.5 8.5 7.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 4.5 7.5 7.5 
-vertex 4.5 8.5 7.5 
-vertex 4.5 8.5 8.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 4.5 7.5 8.5 
-vertex 4.5 7.5 7.5 
-vertex 4.5 8.5 8.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 3.5 7.5 7.5 
-vertex 3.5 8.5 7.5 
 vertex 3.5 8.5 8.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 3.5 7.5 8.5 
-vertex 3.5 7.5 7.5 
+vertex 4.5 8.5 9.5 
+vertex 4.5 8.5 8.5 
 vertex 3.5 8.5 8.5 
 endloop
 endfacet
@@ -1501,42 +1508,42 @@ facet normal 0.0 1.0 0.0
 outer loop
 vertex 3.5 8.5 8.5 
 vertex 3.5 8.5 9.5 
-vertex 4.5 8.5 9.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 4.5 8.5 8.5 
-vertex 3.5 8.5 8.5 
 vertex 4.5 8.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 7.5 9.5 
-vertex 3.5 8.5 9.5 
 vertex 4.5 8.5 9.5 
+vertex 3.5 8.5 9.5 
+vertex 3.5 7.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 3.5 7.5 9.5 
 vertex 4.5 7.5 9.5 
-vertex 3.5 7.5 9.5 
 vertex 4.5 8.5 9.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 7.5 8.5 
-vertex 3.5 8.5 8.5 
 vertex 3.5 8.5 9.5 
+vertex 3.5 8.5 8.5 
+vertex 3.5 7.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 7.5 9.5 
 vertex 3.5 7.5 8.5 
+vertex 3.5 7.5 9.5 
 vertex 3.5 8.5 9.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 4.5 9.5 5.5 
+vertex 4.5 9.5 4.5 
+vertex 3.5 9.5 4.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -1544,40 +1551,40 @@ outer loop
 vertex 3.5 9.5 4.5 
 vertex 3.5 9.5 5.5 
 vertex 4.5 9.5 5.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 4.5 9.5 4.5 
-vertex 3.5 9.5 4.5 
-vertex 4.5 9.5 5.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 3.5 8.5 4.5 
-vertex 3.5 9.5 4.5 
-vertex 4.5 9.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 4.5 8.5 4.5 
 vertex 3.5 8.5 4.5 
-vertex 4.5 9.5 4.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 3.5 8.5 4.5 
 vertex 3.5 9.5 4.5 
-vertex 3.5 9.5 5.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 3.5 9.5 4.5 
+vertex 4.5 9.5 4.5 
+vertex 4.5 8.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 8.5 5.5 
+vertex 3.5 9.5 5.5 
+vertex 3.5 9.5 4.5 
 vertex 3.5 8.5 4.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 3.5 8.5 4.5 
+vertex 3.5 8.5 5.5 
+vertex 3.5 9.5 5.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 4.5 9.5 6.5 
+vertex 4.5 9.5 5.5 
 vertex 3.5 9.5 5.5 
 endloop
 endfacet
@@ -1588,52 +1595,52 @@ vertex 3.5 9.5 6.5
 vertex 4.5 9.5 6.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 4.5 9.5 5.5 
-vertex 3.5 9.5 5.5 
-vertex 4.5 9.5 6.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 3.5 8.5 5.5 
 vertex 3.5 8.5 6.5 
-vertex 4.5 8.5 6.5 
+vertex 3.5 8.5 5.5 
+vertex 4.5 8.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 4.5 8.5 5.5 
-vertex 3.5 8.5 5.5 
 vertex 4.5 8.5 6.5 
+vertex 3.5 8.5 6.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 9.5 6.5 
+vertex 4.5 8.5 6.5 
+vertex 4.5 8.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
 vertex 4.5 8.5 5.5 
 vertex 4.5 9.5 5.5 
-vertex 4.5 9.5 6.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 4.5 8.5 6.5 
-vertex 4.5 8.5 5.5 
 vertex 4.5 9.5 6.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 8.5 5.5 
+vertex 3.5 9.5 6.5 
 vertex 3.5 9.5 5.5 
+vertex 3.5 8.5 5.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 3.5 8.5 5.5 
+vertex 3.5 8.5 6.5 
 vertex 3.5 9.5 6.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 3.5 8.5 6.5 
-vertex 3.5 8.5 5.5 
+vertex 4.5 9.5 7.5 
+vertex 4.5 9.5 6.5 
 vertex 3.5 9.5 6.5 
 endloop
 endfacet
@@ -1644,52 +1651,52 @@ vertex 3.5 9.5 7.5
 vertex 4.5 9.5 7.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 4.5 9.5 6.5 
-vertex 3.5 9.5 6.5 
-vertex 4.5 9.5 7.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 3.5 8.5 6.5 
 vertex 3.5 8.5 7.5 
-vertex 4.5 8.5 7.5 
+vertex 3.5 8.5 6.5 
+vertex 4.5 8.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 4.5 8.5 6.5 
-vertex 3.5 8.5 6.5 
 vertex 4.5 8.5 7.5 
+vertex 3.5 8.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 4.5 9.5 7.5 
+vertex 4.5 8.5 7.5 
+vertex 4.5 8.5 6.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
 vertex 4.5 8.5 6.5 
 vertex 4.5 9.5 6.5 
-vertex 4.5 9.5 7.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 4.5 8.5 7.5 
-vertex 4.5 8.5 6.5 
 vertex 4.5 9.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 8.5 6.5 
+vertex 3.5 9.5 7.5 
 vertex 3.5 9.5 6.5 
+vertex 3.5 8.5 6.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 3.5 8.5 6.5 
+vertex 3.5 8.5 7.5 
 vertex 3.5 9.5 7.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 3.5 8.5 7.5 
-vertex 3.5 8.5 6.5 
+vertex 4.5 9.5 8.5 
+vertex 4.5 9.5 7.5 
 vertex 3.5 9.5 7.5 
 endloop
 endfacet
@@ -1697,42 +1704,42 @@ facet normal 0.0 1.0 0.0
 outer loop
 vertex 3.5 9.5 7.5 
 vertex 3.5 9.5 8.5 
-vertex 4.5 9.5 8.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 4.5 9.5 7.5 
-vertex 3.5 9.5 7.5 
 vertex 4.5 9.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 3.5 8.5 8.5 
-vertex 3.5 9.5 8.5 
 vertex 4.5 9.5 8.5 
+vertex 3.5 9.5 8.5 
+vertex 3.5 8.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 4.5 8.5 8.5 
 vertex 3.5 8.5 8.5 
+vertex 4.5 8.5 8.5 
 vertex 4.5 9.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 8.5 7.5 
-vertex 3.5 9.5 7.5 
 vertex 3.5 9.5 8.5 
+vertex 3.5 9.5 7.5 
+vertex 3.5 8.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 3.5 8.5 8.5 
 vertex 3.5 8.5 7.5 
+vertex 3.5 8.5 8.5 
 vertex 3.5 9.5 8.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 5.5 0.5 3.5 
+vertex 5.5 0.5 2.5 
+vertex 4.5 0.5 2.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -1742,52 +1749,52 @@ vertex 4.5 0.5 3.5
 vertex 5.5 0.5 3.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 5.5 0.5 2.5 
-vertex 4.5 0.5 2.5 
-vertex 5.5 0.5 3.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 4.5 -0.5 2.5 
 vertex 4.5 -0.5 3.5 
-vertex 5.5 -0.5 3.5 
+vertex 4.5 -0.5 2.5 
+vertex 5.5 -0.5 2.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 5.5 -0.5 2.5 
-vertex 4.5 -0.5 2.5 
 vertex 5.5 -0.5 3.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 4.5 -0.5 2.5 
-vertex 4.5 0.5 2.5 
-vertex 5.5 0.5 2.5 
+vertex 4.5 -0.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 5.5 -0.5 2.5 
 vertex 4.5 -0.5 2.5 
+vertex 4.5 0.5 2.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 4.5 0.5 2.5 
 vertex 5.5 0.5 2.5 
+vertex 5.5 -0.5 2.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 4.5 0.5 3.5 
+vertex 4.5 0.5 2.5 
+vertex 4.5 -0.5 2.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
 vertex 4.5 -0.5 2.5 
-vertex 4.5 0.5 2.5 
+vertex 4.5 -0.5 3.5 
 vertex 4.5 0.5 3.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 4.5 -0.5 3.5 
-vertex 4.5 -0.5 2.5 
+vertex 5.5 0.5 4.5 
+vertex 5.5 0.5 3.5 
 vertex 4.5 0.5 3.5 
 endloop
 endfacet
@@ -1798,81 +1805,81 @@ vertex 4.5 0.5 4.5
 vertex 5.5 0.5 4.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 5.5 0.5 3.5 
-vertex 4.5 0.5 3.5 
-vertex 5.5 0.5 4.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 4.5 -0.5 3.5 
 vertex 4.5 -0.5 4.5 
-vertex 5.5 -0.5 4.5 
+vertex 4.5 -0.5 3.5 
+vertex 5.5 -0.5 3.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 5.5 -0.5 3.5 
-vertex 4.5 -0.5 3.5 
 vertex 5.5 -0.5 4.5 
+vertex 4.5 -0.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 4.5 -0.5 4.5 
+vertex 5.5 0.5 4.5 
 vertex 4.5 0.5 4.5 
-vertex 5.5 0.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 5.5 -0.5 4.5 
 vertex 4.5 -0.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 4.5 -0.5 4.5 
+vertex 5.5 -0.5 4.5 
 vertex 5.5 0.5 4.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
+vertex 5.5 0.5 9.5 
+vertex 5.5 0.5 8.5 
+vertex 4.5 0.5 8.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
 vertex 4.5 0.5 8.5 
 vertex 4.5 0.5 9.5 
 vertex 5.5 0.5 9.5 
 endloop
 endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 4.5 -0.5 9.5 
+vertex 4.5 -0.5 8.5 
+vertex 5.5 -0.5 8.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 5.5 -0.5 8.5 
+vertex 5.5 -0.5 9.5 
+vertex 4.5 -0.5 9.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 5.5 -0.5 8.5 
+vertex 4.5 -0.5 8.5 
+vertex 4.5 0.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 4.5 0.5 8.5 
+vertex 5.5 0.5 8.5 
+vertex 5.5 -0.5 8.5 
+endloop
+endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 5.5 0.5 8.5 
-vertex 4.5 0.5 8.5 
+vertex 5.5 0.5 10.5 
 vertex 5.5 0.5 9.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 4.5 -0.5 8.5 
-vertex 4.5 -0.5 9.5 
-vertex 5.5 -0.5 9.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 5.5 -0.5 8.5 
-vertex 4.5 -0.5 8.5 
-vertex 5.5 -0.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 4.5 -0.5 8.5 
-vertex 4.5 0.5 8.5 
-vertex 5.5 0.5 8.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 5.5 -0.5 8.5 
-vertex 4.5 -0.5 8.5 
-vertex 5.5 0.5 8.5 
+vertex 4.5 0.5 9.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -1882,165 +1889,165 @@ vertex 4.5 0.5 10.5
 vertex 5.5 0.5 10.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 5.5 0.5 9.5 
-vertex 4.5 0.5 9.5 
-vertex 5.5 0.5 10.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 4.5 -0.5 9.5 
 vertex 4.5 -0.5 10.5 
-vertex 5.5 -0.5 10.5 
+vertex 4.5 -0.5 9.5 
+vertex 5.5 -0.5 9.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 5.5 -0.5 9.5 
-vertex 4.5 -0.5 9.5 
 vertex 5.5 -0.5 10.5 
+vertex 4.5 -0.5 10.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 4.5 -0.5 10.5 
-vertex 4.5 0.5 10.5 
 vertex 5.5 0.5 10.5 
+vertex 4.5 0.5 10.5 
+vertex 4.5 -0.5 10.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 -0.5 10.5 
 vertex 4.5 -0.5 10.5 
+vertex 5.5 -0.5 10.5 
 vertex 5.5 0.5 10.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 -0.5 9.5 
-vertex 4.5 0.5 9.5 
 vertex 4.5 0.5 10.5 
+vertex 4.5 0.5 9.5 
+vertex 4.5 -0.5 9.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 -0.5 10.5 
 vertex 4.5 -0.5 9.5 
+vertex 4.5 -0.5 10.5 
 vertex 4.5 0.5 10.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 4.5 0.5 5.5 
 vertex 4.5 0.5 6.5 
-vertex 5.5 0.5 6.5 
+vertex 4.5 0.5 5.5 
+vertex 5.5 0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 5.5 0.5 5.5 
-vertex 4.5 0.5 5.5 
 vertex 5.5 0.5 6.5 
+vertex 4.5 0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 5.5 0.5 5.5 
 vertex 4.5 0.5 5.5 
 vertex 4.5 1.5 5.5 
-vertex 5.5 1.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 0.5 5.5 
-vertex 4.5 0.5 5.5 
+vertex 4.5 1.5 5.5 
 vertex 5.5 1.5 5.5 
+vertex 5.5 0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 4.5 0.5 6.5 
 vertex 4.5 0.5 7.5 
-vertex 5.5 0.5 7.5 
+vertex 4.5 0.5 6.5 
+vertex 5.5 0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 5.5 0.5 6.5 
-vertex 4.5 0.5 6.5 
 vertex 5.5 0.5 7.5 
+vertex 4.5 0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 4.5 0.5 7.5 
+vertex 5.5 1.5 7.5 
 vertex 4.5 1.5 7.5 
-vertex 5.5 1.5 7.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 5.5 0.5 7.5 
 vertex 4.5 0.5 7.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 4.5 0.5 7.5 
+vertex 5.5 0.5 7.5 
 vertex 5.5 1.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 4.5 1.5 4.5 
 vertex 4.5 1.5 5.5 
-vertex 5.5 1.5 5.5 
+vertex 4.5 1.5 4.5 
+vertex 5.5 1.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 5.5 1.5 4.5 
-vertex 4.5 1.5 4.5 
 vertex 5.5 1.5 5.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 4.5 1.5 4.5 
-vertex 4.5 2.5 4.5 
-vertex 5.5 2.5 4.5 
+vertex 4.5 1.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 5.5 1.5 4.5 
 vertex 4.5 1.5 4.5 
-vertex 5.5 2.5 4.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 4.5 1.5 4.5 
 vertex 4.5 2.5 4.5 
-vertex 4.5 2.5 5.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 4.5 2.5 4.5 
+vertex 5.5 2.5 4.5 
+vertex 5.5 1.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 1.5 5.5 
+vertex 4.5 2.5 5.5 
+vertex 4.5 2.5 4.5 
 vertex 4.5 1.5 4.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 4.5 1.5 4.5 
+vertex 4.5 1.5 5.5 
 vertex 4.5 2.5 5.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 4.5 2.5 5.5 
-vertex 4.5 2.5 6.5 
 vertex 5.5 2.5 6.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
 vertex 5.5 2.5 5.5 
 vertex 4.5 2.5 5.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 4.5 2.5 5.5 
+vertex 4.5 2.5 6.5 
 vertex 5.5 2.5 6.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 5.5 2.5 7.5 
+vertex 5.5 2.5 6.5 
+vertex 4.5 2.5 6.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -2050,94 +2057,94 @@ vertex 4.5 2.5 7.5
 vertex 5.5 2.5 7.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 5.5 2.5 6.5 
-vertex 4.5 2.5 6.5 
-vertex 5.5 2.5 7.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 4.5 1.5 7.5 
 vertex 4.5 1.5 8.5 
-vertex 5.5 1.5 8.5 
+vertex 4.5 1.5 7.5 
+vertex 5.5 1.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 5.5 1.5 7.5 
-vertex 4.5 1.5 7.5 
 vertex 5.5 1.5 8.5 
+vertex 4.5 1.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 4.5 1.5 8.5 
-vertex 4.5 2.5 8.5 
 vertex 5.5 2.5 8.5 
+vertex 4.5 2.5 8.5 
+vertex 4.5 1.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 1.5 8.5 
 vertex 4.5 1.5 8.5 
+vertex 5.5 1.5 8.5 
 vertex 5.5 2.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 1.5 7.5 
-vertex 4.5 2.5 7.5 
 vertex 4.5 2.5 8.5 
+vertex 4.5 2.5 7.5 
+vertex 4.5 1.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 1.5 8.5 
 vertex 4.5 1.5 7.5 
+vertex 4.5 1.5 8.5 
 vertex 4.5 2.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
+outer loop
+vertex 4.5 2.5 4.5 
+vertex 4.5 2.5 3.5 
+vertex 5.5 2.5 3.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 5.5 2.5 3.5 
+vertex 5.5 2.5 4.5 
+vertex 4.5 2.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 5.5 2.5 3.5 
+vertex 4.5 2.5 3.5 
+vertex 4.5 3.5 3.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 4.5 3.5 3.5 
+vertex 5.5 3.5 3.5 
+vertex 5.5 2.5 3.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 4.5 3.5 4.5 
+vertex 4.5 3.5 3.5 
+vertex 4.5 2.5 3.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
 outer loop
 vertex 4.5 2.5 3.5 
 vertex 4.5 2.5 4.5 
-vertex 5.5 2.5 4.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 5.5 2.5 3.5 
-vertex 4.5 2.5 3.5 
-vertex 5.5 2.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 4.5 2.5 3.5 
-vertex 4.5 3.5 3.5 
-vertex 5.5 3.5 3.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 5.5 2.5 3.5 
-vertex 4.5 2.5 3.5 
-vertex 5.5 3.5 3.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 4.5 2.5 3.5 
-vertex 4.5 3.5 3.5 
 vertex 4.5 3.5 4.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 4.5 2.5 4.5 
-vertex 4.5 2.5 3.5 
+vertex 5.5 3.5 5.5 
+vertex 5.5 3.5 4.5 
 vertex 4.5 3.5 4.5 
 endloop
 endfacet
@@ -2148,123 +2155,123 @@ vertex 4.5 3.5 5.5
 vertex 5.5 3.5 5.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 5.5 3.5 4.5 
-vertex 4.5 3.5 4.5 
-vertex 5.5 3.5 5.5 
-endloop
-endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 4.5 2.5 5.5 
+vertex 5.5 3.5 5.5 
 vertex 4.5 3.5 5.5 
-vertex 5.5 3.5 5.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 5.5 2.5 5.5 
 vertex 4.5 2.5 5.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 4.5 2.5 5.5 
+vertex 5.5 2.5 5.5 
 vertex 5.5 3.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 5.5 2.5 4.5 
-vertex 5.5 3.5 4.5 
 vertex 5.5 3.5 5.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 5.5 2.5 5.5 
 vertex 5.5 2.5 4.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 5.5 2.5 4.5 
+vertex 5.5 3.5 4.5 
 vertex 5.5 3.5 5.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 4.5 3.5 7.5 
-vertex 4.5 3.5 8.5 
 vertex 5.5 3.5 8.5 
+vertex 5.5 3.5 7.5 
+vertex 4.5 3.5 7.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 5.5 3.5 7.5 
 vertex 4.5 3.5 7.5 
+vertex 4.5 3.5 8.5 
 vertex 5.5 3.5 8.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 4.5 2.5 7.5 
-vertex 4.5 3.5 7.5 
-vertex 5.5 3.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 5.5 2.5 7.5 
 vertex 4.5 2.5 7.5 
-vertex 5.5 3.5 7.5 
+vertex 4.5 3.5 7.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 0.0 -1.0
 outer loop
+vertex 4.5 3.5 7.5 
+vertex 5.5 3.5 7.5 
 vertex 5.5 2.5 7.5 
-vertex 5.5 3.5 7.5 
-vertex 5.5 3.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
+vertex 5.5 3.5 8.5 
 vertex 5.5 2.5 8.5 
 vertex 5.5 2.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 5.5 2.5 7.5 
+vertex 5.5 3.5 7.5 
 vertex 5.5 3.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 4.5 2.5 8.5 
 vertex 4.5 2.5 9.5 
-vertex 5.5 2.5 9.5 
+vertex 4.5 2.5 8.5 
+vertex 5.5 2.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 5.5 2.5 8.5 
-vertex 4.5 2.5 8.5 
 vertex 5.5 2.5 9.5 
+vertex 4.5 2.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 4.5 2.5 9.5 
-vertex 4.5 3.5 9.5 
 vertex 5.5 3.5 9.5 
+vertex 4.5 3.5 9.5 
+vertex 4.5 2.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 2.5 9.5 
 vertex 4.5 2.5 9.5 
+vertex 5.5 2.5 9.5 
 vertex 5.5 3.5 9.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 2.5 8.5 
-vertex 4.5 3.5 8.5 
 vertex 4.5 3.5 9.5 
+vertex 4.5 3.5 8.5 
+vertex 4.5 2.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 2.5 9.5 
 vertex 4.5 2.5 8.5 
+vertex 4.5 2.5 9.5 
 vertex 4.5 3.5 9.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 5.5 4.5 4.5 
+vertex 5.5 4.5 3.5 
+vertex 4.5 4.5 3.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -2274,221 +2281,221 @@ vertex 4.5 4.5 4.5
 vertex 5.5 4.5 4.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 5.5 4.5 3.5 
-vertex 4.5 4.5 3.5 
-vertex 5.5 4.5 4.5 
-endloop
-endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 4.5 3.5 4.5 
+vertex 5.5 4.5 4.5 
 vertex 4.5 4.5 4.5 
-vertex 5.5 4.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 5.5 3.5 4.5 
 vertex 4.5 3.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 4.5 3.5 4.5 
+vertex 5.5 3.5 4.5 
 vertex 5.5 4.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 5.5 3.5 3.5 
 vertex 4.5 3.5 3.5 
 vertex 4.5 4.5 3.5 
-vertex 5.5 4.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 3.5 3.5 
-vertex 4.5 3.5 3.5 
+vertex 4.5 4.5 3.5 
 vertex 5.5 4.5 3.5 
+vertex 5.5 3.5 3.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 5.5 3.5 3.5 
-vertex 5.5 4.5 3.5 
 vertex 5.5 4.5 4.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 5.5 3.5 4.5 
 vertex 5.5 3.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 5.5 3.5 3.5 
+vertex 5.5 4.5 3.5 
 vertex 5.5 4.5 4.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 4.5 4.5 8.5 
-vertex 4.5 4.5 9.5 
 vertex 5.5 4.5 9.5 
+vertex 5.5 4.5 8.5 
+vertex 4.5 4.5 8.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 5.5 4.5 8.5 
 vertex 4.5 4.5 8.5 
+vertex 4.5 4.5 9.5 
 vertex 5.5 4.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 4.5 3.5 9.5 
+vertex 5.5 4.5 9.5 
 vertex 4.5 4.5 9.5 
-vertex 5.5 4.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 5.5 3.5 9.5 
 vertex 4.5 3.5 9.5 
-vertex 5.5 4.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 4.5 3.5 8.5 
-vertex 4.5 4.5 8.5 
-vertex 5.5 4.5 8.5 
+vertex 4.5 3.5 9.5 
+vertex 5.5 3.5 9.5 
+vertex 5.5 4.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 5.5 3.5 8.5 
 vertex 4.5 3.5 8.5 
-vertex 5.5 4.5 8.5 
+vertex 4.5 4.5 8.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 0.0 -1.0
 outer loop
+vertex 4.5 4.5 8.5 
+vertex 5.5 4.5 8.5 
 vertex 5.5 3.5 8.5 
-vertex 5.5 4.5 8.5 
-vertex 5.5 4.5 9.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
+vertex 5.5 4.5 9.5 
 vertex 5.5 3.5 9.5 
 vertex 5.5 3.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 5.5 3.5 8.5 
+vertex 5.5 4.5 8.5 
 vertex 5.5 4.5 9.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 4.5 7.5 3.5 
 vertex 4.5 7.5 4.5 
-vertex 5.5 7.5 4.5 
+vertex 4.5 7.5 3.5 
+vertex 5.5 7.5 3.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 5.5 7.5 3.5 
-vertex 4.5 7.5 3.5 
 vertex 5.5 7.5 4.5 
+vertex 4.5 7.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 4.5 7.5 4.5 
+vertex 5.5 8.5 4.5 
 vertex 4.5 8.5 4.5 
-vertex 5.5 8.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 5.5 7.5 4.5 
 vertex 4.5 7.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 4.5 7.5 4.5 
+vertex 5.5 7.5 4.5 
 vertex 5.5 8.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 5.5 7.5 3.5 
 vertex 4.5 7.5 3.5 
 vertex 4.5 8.5 3.5 
-vertex 5.5 8.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 7.5 3.5 
-vertex 4.5 7.5 3.5 
+vertex 4.5 8.5 3.5 
 vertex 5.5 8.5 3.5 
+vertex 5.5 7.5 3.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 5.5 7.5 3.5 
-vertex 5.5 8.5 3.5 
 vertex 5.5 8.5 4.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 5.5 7.5 4.5 
 vertex 5.5 7.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 5.5 7.5 3.5 
+vertex 5.5 8.5 3.5 
 vertex 5.5 8.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 4.5 7.5 8.5 
 vertex 4.5 7.5 9.5 
-vertex 5.5 7.5 9.5 
+vertex 4.5 7.5 8.5 
+vertex 5.5 7.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 5.5 7.5 8.5 
-vertex 4.5 7.5 8.5 
 vertex 5.5 7.5 9.5 
+vertex 4.5 7.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 4.5 7.5 9.5 
+vertex 5.5 8.5 9.5 
 vertex 4.5 8.5 9.5 
-vertex 5.5 8.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 5.5 7.5 9.5 
 vertex 4.5 7.5 9.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 4.5 7.5 9.5 
+vertex 5.5 7.5 9.5 
 vertex 5.5 8.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 5.5 7.5 8.5 
 vertex 4.5 7.5 8.5 
 vertex 4.5 8.5 8.5 
-vertex 5.5 8.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 7.5 8.5 
-vertex 4.5 7.5 8.5 
+vertex 4.5 8.5 8.5 
 vertex 5.5 8.5 8.5 
+vertex 5.5 7.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 5.5 7.5 8.5 
-vertex 5.5 8.5 8.5 
 vertex 5.5 8.5 9.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 5.5 7.5 9.5 
 vertex 5.5 7.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 5.5 7.5 8.5 
+vertex 5.5 8.5 8.5 
 vertex 5.5 8.5 9.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 5.5 9.5 4.5 
+vertex 5.5 9.5 3.5 
+vertex 4.5 9.5 3.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -2496,69 +2503,69 @@ outer loop
 vertex 4.5 9.5 3.5 
 vertex 4.5 9.5 4.5 
 vertex 5.5 9.5 4.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 5.5 9.5 3.5 
-vertex 4.5 9.5 3.5 
-vertex 5.5 9.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 4.5 8.5 3.5 
-vertex 4.5 9.5 3.5 
-vertex 5.5 9.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 5.5 8.5 3.5 
 vertex 4.5 8.5 3.5 
-vertex 5.5 9.5 3.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 4.5 8.5 3.5 
 vertex 4.5 9.5 3.5 
-vertex 4.5 9.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 4.5 9.5 3.5 
+vertex 5.5 9.5 3.5 
+vertex 5.5 8.5 3.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 8.5 4.5 
+vertex 4.5 9.5 4.5 
+vertex 4.5 9.5 3.5 
 vertex 4.5 8.5 3.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 4.5 8.5 3.5 
+vertex 4.5 8.5 4.5 
 vertex 4.5 9.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 4.5 8.5 4.5 
 vertex 4.5 8.5 5.5 
-vertex 5.5 8.5 5.5 
+vertex 4.5 8.5 4.5 
+vertex 5.5 8.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 5.5 8.5 4.5 
-vertex 4.5 8.5 4.5 
 vertex 5.5 8.5 5.5 
+vertex 4.5 8.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 4.5 8.5 5.5 
-vertex 4.5 9.5 5.5 
 vertex 5.5 9.5 5.5 
+vertex 4.5 9.5 5.5 
+vertex 4.5 8.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 8.5 5.5 
 vertex 4.5 8.5 5.5 
+vertex 5.5 8.5 5.5 
 vertex 5.5 9.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 5.5 9.5 5.5 
+vertex 5.5 8.5 5.5 
+vertex 5.5 8.5 4.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -2568,95 +2575,95 @@ vertex 5.5 9.5 4.5
 vertex 5.5 9.5 5.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 5.5 8.5 5.5 
-vertex 5.5 8.5 4.5 
-vertex 5.5 9.5 5.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 4.5 8.5 7.5 
 vertex 4.5 8.5 8.5 
-vertex 5.5 8.5 8.5 
+vertex 4.5 8.5 7.5 
+vertex 5.5 8.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 5.5 8.5 7.5 
-vertex 4.5 8.5 7.5 
 vertex 5.5 8.5 8.5 
+vertex 4.5 8.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 5.5 8.5 7.5 
 vertex 4.5 8.5 7.5 
 vertex 4.5 9.5 7.5 
-vertex 5.5 9.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 8.5 7.5 
-vertex 4.5 8.5 7.5 
+vertex 4.5 9.5 7.5 
 vertex 5.5 9.5 7.5 
+vertex 5.5 8.5 7.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 5.5 8.5 7.5 
-vertex 5.5 9.5 7.5 
 vertex 5.5 9.5 8.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 5.5 8.5 8.5 
 vertex 5.5 8.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 5.5 8.5 7.5 
+vertex 5.5 9.5 7.5 
 vertex 5.5 9.5 8.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 5.5 9.5 9.5 
+vertex 5.5 9.5 8.5 
+vertex 4.5 9.5 8.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
 vertex 4.5 9.5 8.5 
 vertex 4.5 9.5 9.5 
-vertex 5.5 9.5 9.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 5.5 9.5 8.5 
-vertex 4.5 9.5 8.5 
 vertex 5.5 9.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 4.5 8.5 9.5 
-vertex 4.5 9.5 9.5 
 vertex 5.5 9.5 9.5 
+vertex 4.5 9.5 9.5 
+vertex 4.5 8.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 8.5 9.5 
 vertex 4.5 8.5 9.5 
+vertex 5.5 8.5 9.5 
 vertex 5.5 9.5 9.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 8.5 8.5 
-vertex 4.5 9.5 8.5 
 vertex 4.5 9.5 9.5 
+vertex 4.5 9.5 8.5 
+vertex 4.5 8.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 8.5 9.5 
 vertex 4.5 8.5 8.5 
+vertex 4.5 8.5 9.5 
 vertex 4.5 9.5 9.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 5.5 10.5 5.5 
+vertex 5.5 10.5 4.5 
+vertex 4.5 10.5 4.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -2664,55 +2671,55 @@ outer loop
 vertex 4.5 10.5 4.5 
 vertex 4.5 10.5 5.5 
 vertex 5.5 10.5 5.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 5.5 10.5 4.5 
-vertex 4.5 10.5 4.5 
-vertex 5.5 10.5 5.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 4.5 9.5 4.5 
-vertex 4.5 10.5 4.5 
-vertex 5.5 10.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 5.5 9.5 4.5 
 vertex 4.5 9.5 4.5 
-vertex 5.5 10.5 4.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 4.5 9.5 4.5 
 vertex 4.5 10.5 4.5 
-vertex 4.5 10.5 5.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 4.5 10.5 4.5 
+vertex 5.5 10.5 4.5 
+vertex 5.5 9.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 9.5 5.5 
+vertex 4.5 10.5 5.5 
+vertex 4.5 10.5 4.5 
 vertex 4.5 9.5 4.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 4.5 9.5 4.5 
+vertex 4.5 9.5 5.5 
 vertex 4.5 10.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 4.5 9.5 5.5 
 vertex 4.5 9.5 6.5 
-vertex 5.5 9.5 6.5 
+vertex 4.5 9.5 5.5 
+vertex 5.5 9.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 5.5 9.5 5.5 
-vertex 4.5 9.5 5.5 
 vertex 5.5 9.5 6.5 
+vertex 4.5 9.5 6.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 5.5 10.5 6.5 
+vertex 5.5 9.5 6.5 
+vertex 5.5 9.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -2722,66 +2729,66 @@ vertex 5.5 10.5 5.5
 vertex 5.5 10.5 6.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 5.5 9.5 6.5 
-vertex 5.5 9.5 5.5 
-vertex 5.5 10.5 6.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 9.5 5.5 
-vertex 4.5 10.5 5.5 
 vertex 4.5 10.5 6.5 
+vertex 4.5 10.5 5.5 
+vertex 4.5 9.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 9.5 6.5 
 vertex 4.5 9.5 5.5 
+vertex 4.5 9.5 6.5 
 vertex 4.5 10.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
+outer loop
+vertex 4.5 9.5 7.5 
+vertex 4.5 9.5 6.5 
+vertex 5.5 9.5 6.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 5.5 9.5 6.5 
+vertex 5.5 9.5 7.5 
+vertex 4.5 9.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 5.5 10.5 7.5 
+vertex 5.5 9.5 7.5 
+vertex 5.5 9.5 6.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 5.5 9.5 6.5 
+vertex 5.5 10.5 6.5 
+vertex 5.5 10.5 7.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 4.5 10.5 7.5 
+vertex 4.5 10.5 6.5 
+vertex 4.5 9.5 6.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
 outer loop
 vertex 4.5 9.5 6.5 
 vertex 4.5 9.5 7.5 
-vertex 5.5 9.5 7.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 5.5 9.5 6.5 
-vertex 4.5 9.5 6.5 
-vertex 5.5 9.5 7.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 5.5 9.5 6.5 
-vertex 5.5 10.5 6.5 
-vertex 5.5 10.5 7.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 5.5 9.5 7.5 
-vertex 5.5 9.5 6.5 
-vertex 5.5 10.5 7.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 4.5 9.5 6.5 
-vertex 4.5 10.5 6.5 
 vertex 4.5 10.5 7.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 4.5 9.5 7.5 
-vertex 4.5 9.5 6.5 
+vertex 5.5 10.5 8.5 
+vertex 5.5 10.5 7.5 
 vertex 4.5 10.5 7.5 
 endloop
 endfacet
@@ -2789,42 +2796,42 @@ facet normal 0.0 1.0 0.0
 outer loop
 vertex 4.5 10.5 7.5 
 vertex 4.5 10.5 8.5 
-vertex 5.5 10.5 8.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 5.5 10.5 7.5 
-vertex 4.5 10.5 7.5 
 vertex 5.5 10.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 4.5 9.5 8.5 
-vertex 4.5 10.5 8.5 
 vertex 5.5 10.5 8.5 
+vertex 4.5 10.5 8.5 
+vertex 4.5 9.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 9.5 8.5 
 vertex 4.5 9.5 8.5 
+vertex 5.5 9.5 8.5 
 vertex 5.5 10.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 9.5 7.5 
-vertex 4.5 10.5 7.5 
 vertex 4.5 10.5 8.5 
+vertex 4.5 10.5 7.5 
+vertex 4.5 9.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 9.5 8.5 
 vertex 4.5 9.5 7.5 
+vertex 4.5 9.5 8.5 
 vertex 4.5 10.5 8.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 5.5 11.5 6.5 
+vertex 5.5 11.5 5.5 
+vertex 4.5 11.5 5.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -2832,40 +2839,40 @@ outer loop
 vertex 4.5 11.5 5.5 
 vertex 4.5 11.5 6.5 
 vertex 5.5 11.5 6.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 5.5 11.5 5.5 
-vertex 4.5 11.5 5.5 
-vertex 5.5 11.5 6.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 4.5 10.5 5.5 
-vertex 4.5 11.5 5.5 
-vertex 5.5 11.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 5.5 10.5 5.5 
 vertex 4.5 10.5 5.5 
+vertex 4.5 11.5 5.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 4.5 11.5 5.5 
 vertex 5.5 11.5 5.5 
+vertex 5.5 10.5 5.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 4.5 11.5 6.5 
+vertex 4.5 11.5 5.5 
+vertex 4.5 10.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
 vertex 4.5 10.5 5.5 
-vertex 4.5 11.5 5.5 
+vertex 4.5 10.5 6.5 
 vertex 4.5 11.5 6.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 4.5 10.5 6.5 
-vertex 4.5 10.5 5.5 
+vertex 5.5 11.5 7.5 
+vertex 5.5 11.5 6.5 
 vertex 4.5 11.5 6.5 
 endloop
 endfacet
@@ -2873,42 +2880,42 @@ facet normal 0.0 1.0 0.0
 outer loop
 vertex 4.5 11.5 6.5 
 vertex 4.5 11.5 7.5 
-vertex 5.5 11.5 7.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 5.5 11.5 6.5 
-vertex 4.5 11.5 6.5 
 vertex 5.5 11.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 4.5 10.5 7.5 
-vertex 4.5 11.5 7.5 
 vertex 5.5 11.5 7.5 
+vertex 4.5 11.5 7.5 
+vertex 4.5 10.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 10.5 7.5 
 vertex 4.5 10.5 7.5 
+vertex 5.5 10.5 7.5 
 vertex 5.5 11.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 10.5 6.5 
-vertex 4.5 11.5 6.5 
 vertex 4.5 11.5 7.5 
+vertex 4.5 11.5 6.5 
+vertex 4.5 10.5 6.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 4.5 10.5 7.5 
 vertex 4.5 10.5 6.5 
+vertex 4.5 10.5 7.5 
 vertex 4.5 11.5 7.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 6.5 0.5 2.5 
+vertex 6.5 0.5 1.5 
+vertex 5.5 0.5 1.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -2918,66 +2925,66 @@ vertex 5.5 0.5 2.5
 vertex 6.5 0.5 2.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 6.5 0.5 1.5 
-vertex 5.5 0.5 1.5 
-vertex 6.5 0.5 2.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 -0.5 1.5 
 vertex 5.5 -0.5 2.5 
-vertex 6.5 -0.5 2.5 
+vertex 5.5 -0.5 1.5 
+vertex 6.5 -0.5 1.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 -0.5 1.5 
-vertex 5.5 -0.5 1.5 
 vertex 6.5 -0.5 2.5 
+vertex 5.5 -0.5 2.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 6.5 -0.5 1.5 
 vertex 5.5 -0.5 1.5 
 vertex 5.5 0.5 1.5 
-vertex 6.5 0.5 1.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 -0.5 1.5 
-vertex 5.5 -0.5 1.5 
+vertex 5.5 0.5 1.5 
 vertex 6.5 0.5 1.5 
+vertex 6.5 -0.5 1.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 6.5 -0.5 1.5 
-vertex 6.5 0.5 1.5 
 vertex 6.5 0.5 2.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 6.5 -0.5 2.5 
 vertex 6.5 -0.5 1.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 -0.5 1.5 
+vertex 6.5 0.5 1.5 
 vertex 6.5 0.5 2.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 -0.5 1.5 
+vertex 5.5 0.5 2.5 
 vertex 5.5 0.5 1.5 
+vertex 5.5 -0.5 1.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 5.5 -0.5 1.5 
+vertex 5.5 -0.5 2.5 
 vertex 5.5 0.5 2.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 5.5 -0.5 2.5 
-vertex 5.5 -0.5 1.5 
+vertex 6.5 0.5 3.5 
+vertex 6.5 0.5 2.5 
 vertex 5.5 0.5 2.5 
 endloop
 endfacet
@@ -2988,81 +2995,81 @@ vertex 5.5 0.5 3.5
 vertex 6.5 0.5 3.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 6.5 0.5 2.5 
-vertex 5.5 0.5 2.5 
-vertex 6.5 0.5 3.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 -0.5 2.5 
 vertex 5.5 -0.5 3.5 
-vertex 6.5 -0.5 3.5 
+vertex 5.5 -0.5 2.5 
+vertex 6.5 -0.5 2.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 -0.5 2.5 
-vertex 5.5 -0.5 2.5 
 vertex 6.5 -0.5 3.5 
+vertex 5.5 -0.5 3.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 -0.5 3.5 
 vertex 5.5 -0.5 4.5 
-vertex 6.5 -0.5 4.5 
+vertex 5.5 -0.5 3.5 
+vertex 6.5 -0.5 3.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 -0.5 3.5 
-vertex 5.5 -0.5 3.5 
 vertex 6.5 -0.5 4.5 
+vertex 5.5 -0.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 -0.5 4.5 
+vertex 6.5 0.5 4.5 
 vertex 5.5 0.5 4.5 
-vertex 6.5 0.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 -0.5 4.5 
 vertex 5.5 -0.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 5.5 -0.5 4.5 
+vertex 6.5 -0.5 4.5 
 vertex 6.5 0.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 -0.5 5.5 
 vertex 5.5 -0.5 6.5 
-vertex 6.5 -0.5 6.5 
+vertex 5.5 -0.5 5.5 
+vertex 6.5 -0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 -0.5 5.5 
-vertex 5.5 -0.5 5.5 
 vertex 6.5 -0.5 6.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 5.5 -0.5 5.5 
-vertex 5.5 0.5 5.5 
-vertex 6.5 0.5 5.5 
+vertex 5.5 -0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 6.5 -0.5 5.5 
 vertex 5.5 -0.5 5.5 
+vertex 5.5 0.5 5.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 5.5 0.5 5.5 
 vertex 6.5 0.5 5.5 
+vertex 6.5 -0.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 0.5 6.5 
+vertex 6.5 -0.5 6.5 
+vertex 6.5 -0.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -3072,53 +3079,53 @@ vertex 6.5 0.5 5.5
 vertex 6.5 0.5 6.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 6.5 -0.5 6.5 
-vertex 6.5 -0.5 5.5 
-vertex 6.5 0.5 6.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 -0.5 5.5 
-vertex 5.5 0.5 5.5 
 vertex 5.5 0.5 6.5 
+vertex 5.5 0.5 5.5 
+vertex 5.5 -0.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 -0.5 6.5 
 vertex 5.5 -0.5 5.5 
+vertex 5.5 -0.5 6.5 
 vertex 5.5 0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 -0.5 6.5 
 vertex 5.5 -0.5 7.5 
-vertex 6.5 -0.5 7.5 
+vertex 5.5 -0.5 6.5 
+vertex 6.5 -0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 -0.5 6.5 
-vertex 5.5 -0.5 6.5 
 vertex 6.5 -0.5 7.5 
+vertex 5.5 -0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 -0.5 7.5 
-vertex 5.5 0.5 7.5 
 vertex 6.5 0.5 7.5 
+vertex 5.5 0.5 7.5 
+vertex 5.5 -0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 -0.5 7.5 
 vertex 5.5 -0.5 7.5 
+vertex 6.5 -0.5 7.5 
 vertex 6.5 0.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 0.5 7.5 
+vertex 6.5 -0.5 7.5 
+vertex 6.5 -0.5 6.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -3128,81 +3135,81 @@ vertex 6.5 0.5 6.5
 vertex 6.5 0.5 7.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 6.5 -0.5 7.5 
-vertex 6.5 -0.5 6.5 
-vertex 6.5 0.5 7.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 -0.5 6.5 
-vertex 5.5 0.5 6.5 
 vertex 5.5 0.5 7.5 
+vertex 5.5 0.5 6.5 
+vertex 5.5 -0.5 6.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 -0.5 7.5 
 vertex 5.5 -0.5 6.5 
+vertex 5.5 -0.5 7.5 
 vertex 5.5 0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 -0.5 8.5 
 vertex 5.5 -0.5 9.5 
-vertex 6.5 -0.5 9.5 
+vertex 5.5 -0.5 8.5 
+vertex 6.5 -0.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 -0.5 8.5 
-vertex 5.5 -0.5 8.5 
 vertex 6.5 -0.5 9.5 
+vertex 5.5 -0.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 6.5 -0.5 8.5 
 vertex 5.5 -0.5 8.5 
 vertex 5.5 0.5 8.5 
-vertex 6.5 0.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 -0.5 8.5 
-vertex 5.5 -0.5 8.5 
+vertex 5.5 0.5 8.5 
 vertex 6.5 0.5 8.5 
+vertex 6.5 -0.5 8.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 5.5 0.5 9.5 
-vertex 5.5 0.5 10.5 
 vertex 6.5 0.5 10.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
 vertex 6.5 0.5 9.5 
 vertex 5.5 0.5 9.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 5.5 0.5 9.5 
+vertex 5.5 0.5 10.5 
 vertex 6.5 0.5 10.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 -0.5 9.5 
 vertex 5.5 -0.5 10.5 
-vertex 6.5 -0.5 10.5 
+vertex 5.5 -0.5 9.5 
+vertex 6.5 -0.5 9.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 -0.5 9.5 
-vertex 5.5 -0.5 9.5 
 vertex 6.5 -0.5 10.5 
+vertex 5.5 -0.5 10.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 6.5 0.5 11.5 
+vertex 6.5 0.5 10.5 
+vertex 5.5 0.5 10.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -3212,39 +3219,39 @@ vertex 5.5 0.5 11.5
 vertex 6.5 0.5 11.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 6.5 0.5 10.5 
-vertex 5.5 0.5 10.5 
-vertex 6.5 0.5 11.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 -0.5 10.5 
 vertex 5.5 -0.5 11.5 
-vertex 6.5 -0.5 11.5 
+vertex 5.5 -0.5 10.5 
+vertex 6.5 -0.5 10.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 -0.5 10.5 
-vertex 5.5 -0.5 10.5 
 vertex 6.5 -0.5 11.5 
+vertex 5.5 -0.5 11.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 -0.5 11.5 
-vertex 5.5 0.5 11.5 
 vertex 6.5 0.5 11.5 
+vertex 5.5 0.5 11.5 
+vertex 5.5 -0.5 11.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 -0.5 11.5 
 vertex 5.5 -0.5 11.5 
+vertex 6.5 -0.5 11.5 
 vertex 6.5 0.5 11.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 0.5 11.5 
+vertex 6.5 -0.5 11.5 
+vertex 6.5 -0.5 10.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -3254,81 +3261,81 @@ vertex 6.5 0.5 10.5
 vertex 6.5 0.5 11.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 6.5 -0.5 11.5 
-vertex 6.5 -0.5 10.5 
-vertex 6.5 0.5 11.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 -0.5 10.5 
+vertex 5.5 0.5 11.5 
 vertex 5.5 0.5 10.5 
-vertex 5.5 0.5 11.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 5.5 -0.5 11.5 
 vertex 5.5 -0.5 10.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 5.5 -0.5 10.5 
+vertex 5.5 -0.5 11.5 
 vertex 5.5 0.5 11.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 6.5 0.5 3.5 
 vertex 5.5 0.5 3.5 
 vertex 5.5 1.5 3.5 
-vertex 6.5 1.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 0.5 3.5 
-vertex 5.5 0.5 3.5 
-vertex 6.5 1.5 3.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 6.5 0.5 3.5 
-vertex 6.5 1.5 3.5 
-vertex 6.5 1.5 4.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 6.5 0.5 4.5 
-vertex 6.5 0.5 3.5 
-vertex 6.5 1.5 4.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 5.5 0.5 3.5 
 vertex 5.5 1.5 3.5 
-vertex 5.5 1.5 4.5 
+vertex 6.5 1.5 3.5 
+vertex 6.5 0.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 1.5 4.5 
+vertex 6.5 0.5 4.5 
+vertex 6.5 0.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 0.5 3.5 
+vertex 6.5 1.5 3.5 
+vertex 6.5 1.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 0.5 4.5 
+vertex 5.5 1.5 4.5 
+vertex 5.5 1.5 3.5 
 vertex 5.5 0.5 3.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 5.5 0.5 3.5 
+vertex 5.5 0.5 4.5 
 vertex 5.5 1.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 0.5 4.5 
 vertex 5.5 0.5 5.5 
-vertex 6.5 0.5 5.5 
+vertex 5.5 0.5 4.5 
+vertex 6.5 0.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 0.5 4.5 
-vertex 5.5 0.5 4.5 
 vertex 6.5 0.5 5.5 
+vertex 5.5 0.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 1.5 5.5 
+vertex 6.5 0.5 5.5 
+vertex 6.5 0.5 4.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -3338,39 +3345,39 @@ vertex 6.5 1.5 4.5
 vertex 6.5 1.5 5.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 6.5 0.5 5.5 
-vertex 6.5 0.5 4.5 
-vertex 6.5 1.5 5.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 0.5 4.5 
-vertex 5.5 1.5 4.5 
 vertex 5.5 1.5 5.5 
+vertex 5.5 1.5 4.5 
+vertex 5.5 0.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 0.5 5.5 
 vertex 5.5 0.5 4.5 
+vertex 5.5 0.5 5.5 
 vertex 5.5 1.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 0.5 7.5 
 vertex 5.5 0.5 8.5 
-vertex 6.5 0.5 8.5 
+vertex 5.5 0.5 7.5 
+vertex 6.5 0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 0.5 7.5 
-vertex 5.5 0.5 7.5 
 vertex 6.5 0.5 8.5 
+vertex 5.5 0.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 1.5 8.5 
+vertex 6.5 0.5 8.5 
+vertex 6.5 0.5 7.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -3380,39 +3387,39 @@ vertex 6.5 1.5 7.5
 vertex 6.5 1.5 8.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 6.5 0.5 8.5 
-vertex 6.5 0.5 7.5 
-vertex 6.5 1.5 8.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 0.5 7.5 
+vertex 5.5 1.5 8.5 
 vertex 5.5 1.5 7.5 
-vertex 5.5 1.5 8.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 5.5 0.5 8.5 
 vertex 5.5 0.5 7.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 5.5 0.5 7.5 
+vertex 5.5 0.5 8.5 
 vertex 5.5 1.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 0.5 9.5 
-vertex 5.5 1.5 9.5 
 vertex 6.5 1.5 9.5 
+vertex 5.5 1.5 9.5 
+vertex 5.5 0.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 0.5 9.5 
 vertex 5.5 0.5 9.5 
+vertex 6.5 0.5 9.5 
 vertex 6.5 1.5 9.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 1.5 9.5 
+vertex 6.5 0.5 9.5 
+vertex 6.5 0.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -3422,66 +3429,66 @@ vertex 6.5 1.5 8.5
 vertex 6.5 1.5 9.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 6.5 0.5 9.5 
-vertex 6.5 0.5 8.5 
-vertex 6.5 1.5 9.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 0.5 8.5 
-vertex 5.5 1.5 8.5 
 vertex 5.5 1.5 9.5 
+vertex 5.5 1.5 8.5 
+vertex 5.5 0.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 0.5 9.5 
 vertex 5.5 0.5 8.5 
+vertex 5.5 0.5 9.5 
 vertex 5.5 1.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 6.5 1.5 3.5 
 vertex 5.5 1.5 3.5 
 vertex 5.5 2.5 3.5 
-vertex 6.5 2.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 1.5 3.5 
-vertex 5.5 1.5 3.5 
+vertex 5.5 2.5 3.5 
 vertex 6.5 2.5 3.5 
+vertex 6.5 1.5 3.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 6.5 1.5 3.5 
-vertex 6.5 2.5 3.5 
 vertex 6.5 2.5 4.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 6.5 1.5 4.5 
 vertex 6.5 1.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 1.5 3.5 
+vertex 6.5 2.5 3.5 
 vertex 6.5 2.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 1.5 3.5 
-vertex 5.5 2.5 3.5 
 vertex 5.5 2.5 4.5 
+vertex 5.5 2.5 3.5 
+vertex 5.5 1.5 3.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
+vertex 5.5 1.5 3.5 
 vertex 5.5 1.5 4.5 
-vertex 5.5 1.5 3.5 
+vertex 5.5 2.5 4.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 6.5 2.5 5.5 
+vertex 6.5 2.5 4.5 
 vertex 5.5 2.5 4.5 
 endloop
 endfacet
@@ -3494,9 +3501,9 @@ endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 6.5 2.5 4.5 
-vertex 5.5 2.5 4.5 
+vertex 6.5 2.5 6.5 
 vertex 6.5 2.5 5.5 
+vertex 5.5 2.5 5.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -3508,9 +3515,9 @@ endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 6.5 2.5 5.5 
-vertex 5.5 2.5 5.5 
+vertex 6.5 2.5 7.5 
 vertex 6.5 2.5 6.5 
+vertex 5.5 2.5 6.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -3522,37 +3529,37 @@ endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 6.5 2.5 6.5 
-vertex 5.5 2.5 6.5 
+vertex 6.5 2.5 8.5 
 vertex 6.5 2.5 7.5 
+vertex 5.5 2.5 7.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
 vertex 5.5 2.5 7.5 
 vertex 5.5 2.5 8.5 
-vertex 6.5 2.5 8.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 6.5 2.5 7.5 
-vertex 5.5 2.5 7.5 
 vertex 6.5 2.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 1.5 9.5 
-vertex 5.5 2.5 9.5 
 vertex 6.5 2.5 9.5 
+vertex 5.5 2.5 9.5 
+vertex 5.5 1.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 1.5 9.5 
 vertex 5.5 1.5 9.5 
+vertex 6.5 1.5 9.5 
 vertex 6.5 2.5 9.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 2.5 9.5 
+vertex 6.5 1.5 9.5 
+vertex 6.5 1.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -3562,25 +3569,25 @@ vertex 6.5 2.5 8.5
 vertex 6.5 2.5 9.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 6.5 1.5 9.5 
-vertex 6.5 1.5 8.5 
-vertex 6.5 2.5 9.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 1.5 8.5 
+vertex 5.5 2.5 9.5 
 vertex 5.5 2.5 8.5 
-vertex 5.5 2.5 9.5 
+vertex 5.5 1.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 1.5 9.5 
 vertex 5.5 1.5 8.5 
+vertex 5.5 1.5 9.5 
 vertex 5.5 2.5 9.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 6.5 3.5 4.5 
+vertex 6.5 3.5 3.5 
+vertex 5.5 3.5 3.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -3590,39 +3597,39 @@ vertex 5.5 3.5 4.5
 vertex 6.5 3.5 4.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 6.5 3.5 3.5 
-vertex 5.5 3.5 3.5 
-vertex 6.5 3.5 4.5 
-endloop
-endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 2.5 4.5 
+vertex 6.5 3.5 4.5 
 vertex 5.5 3.5 4.5 
-vertex 6.5 3.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 2.5 4.5 
 vertex 5.5 2.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 5.5 2.5 4.5 
+vertex 6.5 2.5 4.5 
 vertex 6.5 3.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 6.5 2.5 3.5 
 vertex 5.5 2.5 3.5 
 vertex 5.5 3.5 3.5 
-vertex 6.5 3.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 2.5 3.5 
-vertex 5.5 2.5 3.5 
+vertex 5.5 3.5 3.5 
 vertex 6.5 3.5 3.5 
+vertex 6.5 2.5 3.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 6.5 3.5 9.5 
+vertex 6.5 3.5 8.5 
+vertex 5.5 3.5 8.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -3632,39 +3639,39 @@ vertex 5.5 3.5 9.5
 vertex 6.5 3.5 9.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 6.5 3.5 8.5 
-vertex 5.5 3.5 8.5 
-vertex 6.5 3.5 9.5 
-endloop
-endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 2.5 9.5 
+vertex 6.5 3.5 9.5 
 vertex 5.5 3.5 9.5 
-vertex 6.5 3.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 2.5 9.5 
 vertex 5.5 2.5 9.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 5.5 2.5 9.5 
+vertex 6.5 2.5 9.5 
 vertex 6.5 3.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 6.5 2.5 8.5 
 vertex 5.5 2.5 8.5 
 vertex 5.5 3.5 8.5 
-vertex 6.5 3.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 2.5 8.5 
-vertex 5.5 2.5 8.5 
+vertex 5.5 3.5 8.5 
 vertex 6.5 3.5 8.5 
+vertex 6.5 2.5 8.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 6.5 9.5 4.5 
+vertex 6.5 9.5 3.5 
+vertex 5.5 9.5 3.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -3674,53 +3681,53 @@ vertex 5.5 9.5 4.5
 vertex 6.5 9.5 4.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 6.5 9.5 3.5 
-vertex 5.5 9.5 3.5 
-vertex 6.5 9.5 4.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 8.5 3.5 
 vertex 5.5 8.5 4.5 
-vertex 6.5 8.5 4.5 
+vertex 5.5 8.5 3.5 
+vertex 6.5 8.5 3.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 8.5 3.5 
-vertex 5.5 8.5 3.5 
 vertex 6.5 8.5 4.5 
+vertex 5.5 8.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 8.5 4.5 
+vertex 6.5 9.5 4.5 
 vertex 5.5 9.5 4.5 
-vertex 6.5 9.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 8.5 4.5 
 vertex 5.5 8.5 4.5 
-vertex 6.5 9.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 8.5 3.5 
-vertex 5.5 9.5 3.5 
-vertex 6.5 9.5 3.5 
+vertex 5.5 8.5 4.5 
+vertex 6.5 8.5 4.5 
+vertex 6.5 9.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 6.5 8.5 3.5 
 vertex 5.5 8.5 3.5 
+vertex 5.5 9.5 3.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 5.5 9.5 3.5 
 vertex 6.5 9.5 3.5 
+vertex 6.5 8.5 3.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 6.5 9.5 9.5 
+vertex 6.5 9.5 8.5 
+vertex 5.5 9.5 8.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -3730,137 +3737,137 @@ vertex 5.5 9.5 9.5
 vertex 6.5 9.5 9.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 6.5 9.5 8.5 
-vertex 5.5 9.5 8.5 
-vertex 6.5 9.5 9.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 8.5 8.5 
 vertex 5.5 8.5 9.5 
-vertex 6.5 8.5 9.5 
+vertex 5.5 8.5 8.5 
+vertex 6.5 8.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 8.5 8.5 
-vertex 5.5 8.5 8.5 
 vertex 6.5 8.5 9.5 
+vertex 5.5 8.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 8.5 9.5 
+vertex 6.5 9.5 9.5 
 vertex 5.5 9.5 9.5 
-vertex 6.5 9.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 8.5 9.5 
 vertex 5.5 8.5 9.5 
-vertex 6.5 9.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 8.5 8.5 
-vertex 5.5 9.5 8.5 
-vertex 6.5 9.5 8.5 
+vertex 5.5 8.5 9.5 
+vertex 6.5 8.5 9.5 
+vertex 6.5 9.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 6.5 8.5 8.5 
 vertex 5.5 8.5 8.5 
+vertex 5.5 9.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 5.5 9.5 8.5 
 vertex 6.5 9.5 8.5 
+vertex 6.5 8.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 9.5 4.5 
 vertex 5.5 9.5 5.5 
-vertex 6.5 9.5 5.5 
+vertex 5.5 9.5 4.5 
+vertex 6.5 9.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 9.5 4.5 
-vertex 5.5 9.5 4.5 
 vertex 6.5 9.5 5.5 
+vertex 5.5 9.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 9.5 5.5 
+vertex 6.5 10.5 5.5 
 vertex 5.5 10.5 5.5 
-vertex 6.5 10.5 5.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 9.5 5.5 
 vertex 5.5 9.5 5.5 
-vertex 6.5 10.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 9.5 4.5 
-vertex 5.5 10.5 4.5 
-vertex 6.5 10.5 4.5 
+vertex 5.5 9.5 5.5 
+vertex 6.5 9.5 5.5 
+vertex 6.5 10.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 6.5 9.5 4.5 
 vertex 5.5 9.5 4.5 
+vertex 5.5 10.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 5.5 10.5 4.5 
 vertex 6.5 10.5 4.5 
+vertex 6.5 9.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 9.5 7.5 
 vertex 5.5 9.5 8.5 
-vertex 6.5 9.5 8.5 
+vertex 5.5 9.5 7.5 
+vertex 6.5 9.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 9.5 7.5 
-vertex 5.5 9.5 7.5 
 vertex 6.5 9.5 8.5 
+vertex 5.5 9.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 9.5 8.5 
+vertex 6.5 10.5 8.5 
 vertex 5.5 10.5 8.5 
-vertex 6.5 10.5 8.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 9.5 8.5 
 vertex 5.5 9.5 8.5 
-vertex 6.5 10.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 9.5 7.5 
-vertex 5.5 10.5 7.5 
-vertex 6.5 10.5 7.5 
+vertex 5.5 9.5 8.5 
+vertex 6.5 9.5 8.5 
+vertex 6.5 10.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 6.5 9.5 7.5 
 vertex 5.5 9.5 7.5 
+vertex 5.5 10.5 7.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 5.5 10.5 7.5 
 vertex 6.5 10.5 7.5 
+vertex 6.5 9.5 7.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 6.5 11.5 5.5 
+vertex 6.5 11.5 4.5 
+vertex 5.5 11.5 4.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -3870,109 +3877,109 @@ vertex 5.5 11.5 5.5
 vertex 6.5 11.5 5.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 6.5 11.5 4.5 
-vertex 5.5 11.5 4.5 
-vertex 6.5 11.5 5.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 5.5 10.5 4.5 
-vertex 5.5 11.5 4.5 
-vertex 6.5 11.5 4.5 
-endloop
-endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 6.5 10.5 4.5 
 vertex 5.5 10.5 4.5 
-vertex 6.5 11.5 4.5 
+vertex 5.5 11.5 4.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 0.0 -1.0
 outer loop
+vertex 5.5 11.5 4.5 
+vertex 6.5 11.5 4.5 
 vertex 6.5 10.5 4.5 
-vertex 6.5 11.5 4.5 
-vertex 6.5 11.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
+vertex 6.5 11.5 5.5 
 vertex 6.5 10.5 5.5 
 vertex 6.5 10.5 4.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 10.5 4.5 
+vertex 6.5 11.5 4.5 
 vertex 6.5 11.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 10.5 4.5 
-vertex 5.5 11.5 4.5 
 vertex 5.5 11.5 5.5 
+vertex 5.5 11.5 4.5 
+vertex 5.5 10.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 10.5 5.5 
 vertex 5.5 10.5 4.5 
+vertex 5.5 10.5 5.5 
 vertex 5.5 11.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 10.5 5.5 
 vertex 5.5 10.5 6.5 
-vertex 6.5 10.5 6.5 
+vertex 5.5 10.5 5.5 
+vertex 6.5 10.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 6.5 10.5 5.5 
-vertex 5.5 10.5 5.5 
+vertex 6.5 10.5 6.5 
+vertex 5.5 10.5 6.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 5.5 10.5 7.5 
+vertex 5.5 10.5 6.5 
 vertex 6.5 10.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 5.5 10.5 6.5 
-vertex 5.5 10.5 7.5 
-vertex 6.5 10.5 7.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
 vertex 6.5 10.5 6.5 
-vertex 5.5 10.5 6.5 
 vertex 6.5 10.5 7.5 
+vertex 5.5 10.5 7.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 6.5 11.5 8.5 
+vertex 6.5 11.5 7.5 
+vertex 5.5 11.5 7.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
 vertex 5.5 11.5 7.5 
 vertex 5.5 11.5 8.5 
-vertex 6.5 11.5 8.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 6.5 11.5 7.5 
-vertex 5.5 11.5 7.5 
 vertex 6.5 11.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 10.5 8.5 
-vertex 5.5 11.5 8.5 
 vertex 6.5 11.5 8.5 
+vertex 5.5 11.5 8.5 
+vertex 5.5 10.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 10.5 8.5 
 vertex 5.5 10.5 8.5 
+vertex 6.5 10.5 8.5 
 vertex 6.5 11.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 11.5 8.5 
+vertex 6.5 10.5 8.5 
+vertex 6.5 10.5 7.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -3982,66 +3989,66 @@ vertex 6.5 11.5 7.5
 vertex 6.5 11.5 8.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal -1.0 0.0 0.0
 outer loop
-vertex 6.5 10.5 8.5 
-vertex 6.5 10.5 7.5 
-vertex 6.5 11.5 8.5 
+vertex 5.5 11.5 8.5 
+vertex 5.5 11.5 7.5 
+vertex 5.5 10.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
 vertex 5.5 10.5 7.5 
-vertex 5.5 11.5 7.5 
-vertex 5.5 11.5 8.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
 vertex 5.5 10.5 8.5 
-vertex 5.5 10.5 7.5 
 vertex 5.5 11.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 6.5 11.5 5.5 
 vertex 5.5 11.5 5.5 
 vertex 5.5 12.5 5.5 
-vertex 6.5 12.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 11.5 5.5 
-vertex 5.5 11.5 5.5 
+vertex 5.5 12.5 5.5 
 vertex 6.5 12.5 5.5 
+vertex 6.5 11.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 6.5 11.5 5.5 
-vertex 6.5 12.5 5.5 
 vertex 6.5 12.5 6.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 6.5 11.5 6.5 
 vertex 6.5 11.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 11.5 5.5 
+vertex 6.5 12.5 5.5 
 vertex 6.5 12.5 6.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 11.5 5.5 
+vertex 5.5 12.5 6.5 
 vertex 5.5 12.5 5.5 
+vertex 5.5 11.5 5.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 5.5 11.5 5.5 
+vertex 5.5 11.5 6.5 
 vertex 5.5 12.5 6.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 5.5 11.5 6.5 
-vertex 5.5 11.5 5.5 
+vertex 6.5 12.5 7.5 
+vertex 6.5 12.5 6.5 
 vertex 5.5 12.5 6.5 
 endloop
 endfacet
@@ -4049,84 +4056,84 @@ facet normal 0.0 1.0 0.0
 outer loop
 vertex 5.5 12.5 6.5 
 vertex 5.5 12.5 7.5 
-vertex 6.5 12.5 7.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 6.5 12.5 6.5 
-vertex 5.5 12.5 6.5 
 vertex 6.5 12.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 11.5 7.5 
-vertex 5.5 12.5 7.5 
 vertex 6.5 12.5 7.5 
+vertex 5.5 12.5 7.5 
+vertex 5.5 11.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 11.5 7.5 
 vertex 5.5 11.5 7.5 
+vertex 6.5 11.5 7.5 
 vertex 6.5 12.5 7.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 6.5 11.5 6.5 
-vertex 6.5 12.5 6.5 
 vertex 6.5 12.5 7.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 6.5 11.5 7.5 
 vertex 6.5 11.5 6.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 11.5 6.5 
+vertex 6.5 12.5 6.5 
 vertex 6.5 12.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 11.5 6.5 
-vertex 5.5 12.5 6.5 
 vertex 5.5 12.5 7.5 
+vertex 5.5 12.5 6.5 
+vertex 5.5 11.5 6.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
+vertex 5.5 11.5 6.5 
 vertex 5.5 11.5 7.5 
-vertex 5.5 11.5 6.5 
 vertex 5.5 12.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 12.5 6.5 
+vertex 6.5 13.5 6.5 
 vertex 5.5 13.5 6.5 
-vertex 6.5 13.5 6.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 12.5 6.5 
 vertex 5.5 12.5 6.5 
-vertex 6.5 13.5 6.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 12.5 5.5 
-vertex 5.5 13.5 5.5 
-vertex 6.5 13.5 5.5 
+vertex 5.5 12.5 6.5 
+vertex 6.5 12.5 6.5 
+vertex 6.5 13.5 6.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 6.5 12.5 5.5 
 vertex 5.5 12.5 5.5 
+vertex 5.5 13.5 5.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 5.5 13.5 5.5 
 vertex 6.5 13.5 5.5 
+vertex 6.5 12.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 13.5 6.5 
+vertex 6.5 12.5 6.5 
+vertex 6.5 12.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -4136,67 +4143,67 @@ vertex 6.5 13.5 5.5
 vertex 6.5 13.5 6.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 6.5 12.5 6.5 
-vertex 6.5 12.5 5.5 
-vertex 6.5 13.5 6.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 12.5 5.5 
+vertex 5.5 13.5 6.5 
 vertex 5.5 13.5 5.5 
-vertex 5.5 13.5 6.5 
+vertex 5.5 12.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 12.5 6.5 
 vertex 5.5 12.5 5.5 
+vertex 5.5 12.5 6.5 
 vertex 5.5 13.5 6.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 6.5 14.5 6.5 
+vertex 6.5 14.5 5.5 
+vertex 5.5 14.5 5.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
 vertex 5.5 14.5 5.5 
 vertex 5.5 14.5 6.5 
-vertex 6.5 14.5 6.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 6.5 14.5 5.5 
-vertex 5.5 14.5 5.5 
 vertex 6.5 14.5 6.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 5.5 13.5 6.5 
+vertex 6.5 14.5 6.5 
 vertex 5.5 14.5 6.5 
-vertex 6.5 14.5 6.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 13.5 6.5 
 vertex 5.5 13.5 6.5 
-vertex 6.5 14.5 6.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 5.5 13.5 5.5 
-vertex 5.5 14.5 5.5 
-vertex 6.5 14.5 5.5 
+vertex 5.5 13.5 6.5 
+vertex 6.5 13.5 6.5 
+vertex 6.5 14.5 6.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 6.5 13.5 5.5 
 vertex 5.5 13.5 5.5 
+vertex 5.5 14.5 5.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 5.5 14.5 5.5 
 vertex 6.5 14.5 5.5 
+vertex 6.5 13.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 6.5 14.5 6.5 
+vertex 6.5 13.5 6.5 
+vertex 6.5 13.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -4206,25 +4213,25 @@ vertex 6.5 14.5 5.5
 vertex 6.5 14.5 6.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 6.5 13.5 6.5 
-vertex 6.5 13.5 5.5 
-vertex 6.5 14.5 6.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 13.5 5.5 
+vertex 5.5 14.5 6.5 
 vertex 5.5 14.5 5.5 
-vertex 5.5 14.5 6.5 
+vertex 5.5 13.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 5.5 13.5 6.5 
 vertex 5.5 13.5 5.5 
+vertex 5.5 13.5 6.5 
 vertex 5.5 14.5 6.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 7.5 0.5 3.5 
+vertex 7.5 0.5 2.5 
+vertex 6.5 0.5 2.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -4234,53 +4241,53 @@ vertex 6.5 0.5 3.5
 vertex 7.5 0.5 3.5 
 endloop
 endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 6.5 -0.5 3.5 
+vertex 6.5 -0.5 2.5 
+vertex 7.5 -0.5 2.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 7.5 -0.5 2.5 
+vertex 7.5 -0.5 3.5 
+vertex 6.5 -0.5 3.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 -0.5 2.5 
+vertex 6.5 -0.5 2.5 
+vertex 6.5 0.5 2.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 6.5 0.5 2.5 
+vertex 7.5 0.5 2.5 
+vertex 7.5 -0.5 2.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 0.5 3.5 
+vertex 7.5 -0.5 3.5 
+vertex 7.5 -0.5 2.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 -0.5 2.5 
+vertex 7.5 0.5 2.5 
+vertex 7.5 0.5 3.5 
+endloop
+endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 7.5 0.5 2.5 
-vertex 6.5 0.5 2.5 
+vertex 7.5 0.5 4.5 
 vertex 7.5 0.5 3.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 6.5 -0.5 2.5 
-vertex 6.5 -0.5 3.5 
-vertex 7.5 -0.5 3.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 7.5 -0.5 2.5 
-vertex 6.5 -0.5 2.5 
-vertex 7.5 -0.5 3.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 -0.5 2.5 
-vertex 6.5 0.5 2.5 
-vertex 7.5 0.5 2.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 -0.5 2.5 
-vertex 6.5 -0.5 2.5 
-vertex 7.5 0.5 2.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 7.5 -0.5 2.5 
-vertex 7.5 0.5 2.5 
-vertex 7.5 0.5 3.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 7.5 -0.5 3.5 
-vertex 7.5 -0.5 2.5 
-vertex 7.5 0.5 3.5 
+vertex 6.5 0.5 3.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -4290,81 +4297,81 @@ vertex 6.5 0.5 4.5
 vertex 7.5 0.5 4.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 7.5 0.5 3.5 
-vertex 6.5 0.5 3.5 
-vertex 7.5 0.5 4.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 6.5 -0.5 3.5 
 vertex 6.5 -0.5 4.5 
-vertex 7.5 -0.5 4.5 
+vertex 6.5 -0.5 3.5 
+vertex 7.5 -0.5 3.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 7.5 -0.5 3.5 
-vertex 6.5 -0.5 3.5 
 vertex 7.5 -0.5 4.5 
+vertex 6.5 -0.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 6.5 -0.5 4.5 
+vertex 7.5 0.5 4.5 
 vertex 6.5 0.5 4.5 
-vertex 7.5 0.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 -0.5 4.5 
 vertex 6.5 -0.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 6.5 -0.5 4.5 
+vertex 7.5 -0.5 4.5 
 vertex 7.5 0.5 4.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
+vertex 7.5 0.5 9.5 
+vertex 7.5 0.5 8.5 
+vertex 6.5 0.5 8.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
 vertex 6.5 0.5 8.5 
 vertex 6.5 0.5 9.5 
 vertex 7.5 0.5 9.5 
 endloop
 endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 6.5 -0.5 9.5 
+vertex 6.5 -0.5 8.5 
+vertex 7.5 -0.5 8.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 7.5 -0.5 8.5 
+vertex 7.5 -0.5 9.5 
+vertex 6.5 -0.5 9.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 -0.5 8.5 
+vertex 6.5 -0.5 8.5 
+vertex 6.5 0.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 6.5 0.5 8.5 
+vertex 7.5 0.5 8.5 
+vertex 7.5 -0.5 8.5 
+endloop
+endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 7.5 0.5 8.5 
-vertex 6.5 0.5 8.5 
+vertex 7.5 0.5 10.5 
 vertex 7.5 0.5 9.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 6.5 -0.5 8.5 
-vertex 6.5 -0.5 9.5 
-vertex 7.5 -0.5 9.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 7.5 -0.5 8.5 
-vertex 6.5 -0.5 8.5 
-vertex 7.5 -0.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 -0.5 8.5 
-vertex 6.5 0.5 8.5 
-vertex 7.5 0.5 8.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 -0.5 8.5 
-vertex 6.5 -0.5 8.5 
-vertex 7.5 0.5 8.5 
+vertex 6.5 0.5 9.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -4374,39 +4381,39 @@ vertex 6.5 0.5 10.5
 vertex 7.5 0.5 10.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 7.5 0.5 9.5 
-vertex 6.5 0.5 9.5 
-vertex 7.5 0.5 10.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 6.5 -0.5 9.5 
 vertex 6.5 -0.5 10.5 
-vertex 7.5 -0.5 10.5 
+vertex 6.5 -0.5 9.5 
+vertex 7.5 -0.5 9.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 7.5 -0.5 9.5 
-vertex 6.5 -0.5 9.5 
 vertex 7.5 -0.5 10.5 
+vertex 6.5 -0.5 10.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 6.5 -0.5 10.5 
+vertex 7.5 0.5 10.5 
 vertex 6.5 0.5 10.5 
-vertex 7.5 0.5 10.5 
+vertex 6.5 -0.5 10.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 7.5 -0.5 10.5 
 vertex 6.5 -0.5 10.5 
+vertex 7.5 -0.5 10.5 
 vertex 7.5 0.5 10.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 0.5 10.5 
+vertex 7.5 -0.5 10.5 
+vertex 7.5 -0.5 9.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -4416,109 +4423,109 @@ vertex 7.5 0.5 9.5
 vertex 7.5 0.5 10.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 7.5 -0.5 10.5 
-vertex 7.5 -0.5 9.5 
-vertex 7.5 0.5 10.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 6.5 0.5 5.5 
 vertex 6.5 0.5 6.5 
-vertex 7.5 0.5 6.5 
+vertex 6.5 0.5 5.5 
+vertex 7.5 0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 7.5 0.5 5.5 
-vertex 6.5 0.5 5.5 
 vertex 7.5 0.5 6.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 0.5 5.5 
-vertex 6.5 1.5 5.5 
-vertex 7.5 1.5 5.5 
+vertex 6.5 0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 7.5 0.5 5.5 
 vertex 6.5 0.5 5.5 
+vertex 6.5 1.5 5.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 6.5 1.5 5.5 
 vertex 7.5 1.5 5.5 
+vertex 7.5 0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 6.5 0.5 6.5 
 vertex 6.5 0.5 7.5 
-vertex 7.5 0.5 7.5 
+vertex 6.5 0.5 6.5 
+vertex 7.5 0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 7.5 0.5 6.5 
-vertex 6.5 0.5 6.5 
 vertex 7.5 0.5 7.5 
+vertex 6.5 0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 6.5 0.5 7.5 
-vertex 6.5 1.5 7.5 
 vertex 7.5 1.5 7.5 
+vertex 6.5 1.5 7.5 
+vertex 6.5 0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 7.5 0.5 7.5 
 vertex 6.5 0.5 7.5 
+vertex 7.5 0.5 7.5 
 vertex 7.5 1.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 6.5 1.5 4.5 
 vertex 6.5 1.5 5.5 
-vertex 7.5 1.5 5.5 
+vertex 6.5 1.5 4.5 
+vertex 7.5 1.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 7.5 1.5 4.5 
-vertex 6.5 1.5 4.5 
 vertex 7.5 1.5 5.5 
+vertex 6.5 1.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 7.5 1.5 4.5 
 vertex 6.5 1.5 4.5 
 vertex 6.5 2.5 4.5 
-vertex 7.5 2.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 7.5 1.5 4.5 
-vertex 6.5 1.5 4.5 
+vertex 6.5 2.5 4.5 
 vertex 7.5 2.5 4.5 
+vertex 7.5 1.5 4.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 7.5 1.5 4.5 
-vertex 7.5 2.5 4.5 
 vertex 7.5 2.5 5.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 7.5 1.5 5.5 
 vertex 7.5 1.5 4.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 1.5 4.5 
+vertex 7.5 2.5 4.5 
 vertex 7.5 2.5 5.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 7.5 2.5 6.5 
+vertex 7.5 2.5 5.5 
+vertex 6.5 2.5 5.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -4530,9 +4537,9 @@ endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 7.5 2.5 5.5 
-vertex 6.5 2.5 5.5 
+vertex 7.5 2.5 7.5 
 vertex 7.5 2.5 6.5 
+vertex 6.5 2.5 6.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -4542,39 +4549,39 @@ vertex 6.5 2.5 7.5
 vertex 7.5 2.5 7.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 7.5 2.5 6.5 
-vertex 6.5 2.5 6.5 
-vertex 7.5 2.5 7.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
+vertex 6.5 1.5 8.5 
 vertex 6.5 1.5 7.5 
-vertex 6.5 1.5 8.5 
-vertex 7.5 1.5 8.5 
+vertex 7.5 1.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 7.5 1.5 7.5 
-vertex 6.5 1.5 7.5 
 vertex 7.5 1.5 8.5 
+vertex 6.5 1.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 6.5 1.5 8.5 
-vertex 6.5 2.5 8.5 
 vertex 7.5 2.5 8.5 
+vertex 6.5 2.5 8.5 
+vertex 6.5 1.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 7.5 1.5 8.5 
 vertex 6.5 1.5 8.5 
+vertex 7.5 1.5 8.5 
 vertex 7.5 2.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 2.5 8.5 
+vertex 7.5 1.5 8.5 
+vertex 7.5 1.5 7.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -4584,95 +4591,95 @@ vertex 7.5 2.5 7.5
 vertex 7.5 2.5 8.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 7.5 1.5 8.5 
-vertex 7.5 1.5 7.5 
-vertex 7.5 2.5 8.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 6.5 2.5 3.5 
 vertex 6.5 2.5 4.5 
-vertex 7.5 2.5 4.5 
+vertex 6.5 2.5 3.5 
+vertex 7.5 2.5 3.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 7.5 2.5 3.5 
-vertex 6.5 2.5 3.5 
 vertex 7.5 2.5 4.5 
+vertex 6.5 2.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 7.5 2.5 3.5 
 vertex 6.5 2.5 3.5 
 vertex 6.5 3.5 3.5 
-vertex 7.5 3.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 7.5 2.5 3.5 
-vertex 6.5 2.5 3.5 
+vertex 6.5 3.5 3.5 
 vertex 7.5 3.5 3.5 
+vertex 7.5 2.5 3.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 7.5 2.5 3.5 
-vertex 7.5 3.5 3.5 
 vertex 7.5 3.5 4.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 7.5 2.5 4.5 
 vertex 7.5 2.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 2.5 3.5 
+vertex 7.5 3.5 3.5 
 vertex 7.5 3.5 4.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 7.5 3.5 5.5 
+vertex 7.5 3.5 4.5 
+vertex 6.5 3.5 4.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
 vertex 6.5 3.5 4.5 
 vertex 6.5 3.5 5.5 
-vertex 7.5 3.5 5.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 7.5 3.5 4.5 
-vertex 6.5 3.5 4.5 
 vertex 7.5 3.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 6.5 2.5 5.5 
-vertex 6.5 3.5 5.5 
 vertex 7.5 3.5 5.5 
+vertex 6.5 3.5 5.5 
+vertex 6.5 2.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 6.5 2.5 5.5 
 vertex 7.5 2.5 5.5 
-vertex 6.5 2.5 5.5 
 vertex 7.5 3.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 6.5 2.5 4.5 
-vertex 6.5 3.5 4.5 
 vertex 6.5 3.5 5.5 
+vertex 6.5 3.5 4.5 
+vertex 6.5 2.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 6.5 2.5 5.5 
 vertex 6.5 2.5 4.5 
+vertex 6.5 2.5 5.5 
 vertex 6.5 3.5 5.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 7.5 3.5 8.5 
+vertex 7.5 3.5 7.5 
+vertex 6.5 3.5 7.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -4680,69 +4687,69 @@ outer loop
 vertex 6.5 3.5 7.5 
 vertex 6.5 3.5 8.5 
 vertex 7.5 3.5 8.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 7.5 3.5 7.5 
-vertex 6.5 3.5 7.5 
-vertex 7.5 3.5 8.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 2.5 7.5 
-vertex 6.5 3.5 7.5 
-vertex 7.5 3.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 7.5 2.5 7.5 
 vertex 6.5 2.5 7.5 
-vertex 7.5 3.5 7.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 6.5 2.5 7.5 
 vertex 6.5 3.5 7.5 
-vertex 6.5 3.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 6.5 3.5 7.5 
+vertex 7.5 3.5 7.5 
+vertex 7.5 2.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 6.5 2.5 8.5 
+vertex 6.5 3.5 8.5 
+vertex 6.5 3.5 7.5 
 vertex 6.5 2.5 7.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 6.5 2.5 7.5 
+vertex 6.5 2.5 8.5 
 vertex 6.5 3.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 6.5 2.5 8.5 
 vertex 6.5 2.5 9.5 
-vertex 7.5 2.5 9.5 
+vertex 6.5 2.5 8.5 
+vertex 7.5 2.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 7.5 2.5 8.5 
-vertex 6.5 2.5 8.5 
 vertex 7.5 2.5 9.5 
+vertex 6.5 2.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 6.5 2.5 9.5 
-vertex 6.5 3.5 9.5 
 vertex 7.5 3.5 9.5 
+vertex 6.5 3.5 9.5 
+vertex 6.5 2.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 7.5 2.5 9.5 
 vertex 6.5 2.5 9.5 
+vertex 7.5 2.5 9.5 
 vertex 7.5 3.5 9.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 3.5 9.5 
+vertex 7.5 2.5 9.5 
+vertex 7.5 2.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -4752,235 +4759,235 @@ vertex 7.5 3.5 8.5
 vertex 7.5 3.5 9.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 7.5 2.5 9.5 
-vertex 7.5 2.5 8.5 
-vertex 7.5 3.5 9.5 
+vertex 7.5 4.5 4.5 
+vertex 7.5 4.5 3.5 
+vertex 6.5 4.5 3.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
 vertex 6.5 4.5 3.5 
 vertex 6.5 4.5 4.5 
-vertex 7.5 4.5 4.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 7.5 4.5 3.5 
-vertex 6.5 4.5 3.5 
 vertex 7.5 4.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 6.5 3.5 4.5 
+vertex 7.5 4.5 4.5 
 vertex 6.5 4.5 4.5 
-vertex 7.5 4.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 3.5 4.5 
 vertex 6.5 3.5 4.5 
-vertex 7.5 4.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 3.5 3.5 
-vertex 6.5 4.5 3.5 
-vertex 7.5 4.5 3.5 
+vertex 6.5 3.5 4.5 
+vertex 7.5 3.5 4.5 
+vertex 7.5 4.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 7.5 3.5 3.5 
 vertex 6.5 3.5 3.5 
-vertex 7.5 4.5 3.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 6.5 3.5 3.5 
 vertex 6.5 4.5 3.5 
-vertex 6.5 4.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 6.5 4.5 3.5 
+vertex 7.5 4.5 3.5 
+vertex 7.5 3.5 3.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 6.5 3.5 4.5 
-vertex 6.5 3.5 3.5 
 vertex 6.5 4.5 4.5 
+vertex 6.5 4.5 3.5 
+vertex 6.5 3.5 3.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 6.5 3.5 3.5 
+vertex 6.5 3.5 4.5 
+vertex 6.5 4.5 4.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 7.5 4.5 9.5 
+vertex 7.5 4.5 8.5 
+vertex 6.5 4.5 8.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
 vertex 6.5 4.5 8.5 
 vertex 6.5 4.5 9.5 
-vertex 7.5 4.5 9.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 7.5 4.5 8.5 
-vertex 6.5 4.5 8.5 
 vertex 7.5 4.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 6.5 3.5 9.5 
+vertex 7.5 4.5 9.5 
 vertex 6.5 4.5 9.5 
-vertex 7.5 4.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 3.5 9.5 
 vertex 6.5 3.5 9.5 
-vertex 7.5 4.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 3.5 8.5 
-vertex 6.5 4.5 8.5 
-vertex 7.5 4.5 8.5 
+vertex 6.5 3.5 9.5 
+vertex 7.5 3.5 9.5 
+vertex 7.5 4.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 7.5 3.5 8.5 
 vertex 6.5 3.5 8.5 
-vertex 7.5 4.5 8.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 6.5 3.5 8.5 
 vertex 6.5 4.5 8.5 
-vertex 6.5 4.5 9.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 6.5 4.5 8.5 
+vertex 7.5 4.5 8.5 
+vertex 7.5 3.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 6.5 3.5 9.5 
+vertex 6.5 4.5 9.5 
+vertex 6.5 4.5 8.5 
 vertex 6.5 3.5 8.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 6.5 3.5 8.5 
+vertex 6.5 3.5 9.5 
 vertex 6.5 4.5 9.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 6.5 7.5 3.5 
 vertex 6.5 7.5 4.5 
-vertex 7.5 7.5 4.5 
+vertex 6.5 7.5 3.5 
+vertex 7.5 7.5 3.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 7.5 7.5 3.5 
-vertex 6.5 7.5 3.5 
 vertex 7.5 7.5 4.5 
+vertex 6.5 7.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 6.5 7.5 4.5 
+vertex 7.5 8.5 4.5 
 vertex 6.5 8.5 4.5 
-vertex 7.5 8.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 7.5 4.5 
 vertex 6.5 7.5 4.5 
-vertex 7.5 8.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 7.5 3.5 
-vertex 6.5 8.5 3.5 
-vertex 7.5 8.5 3.5 
+vertex 6.5 7.5 4.5 
+vertex 7.5 7.5 4.5 
+vertex 7.5 8.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 7.5 7.5 3.5 
 vertex 6.5 7.5 3.5 
-vertex 7.5 8.5 3.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 6.5 7.5 3.5 
 vertex 6.5 8.5 3.5 
-vertex 6.5 8.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 6.5 8.5 3.5 
+vertex 7.5 8.5 3.5 
+vertex 7.5 7.5 3.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 6.5 7.5 4.5 
+vertex 6.5 8.5 4.5 
+vertex 6.5 8.5 3.5 
 vertex 6.5 7.5 3.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 6.5 7.5 3.5 
+vertex 6.5 7.5 4.5 
 vertex 6.5 8.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 6.5 7.5 8.5 
 vertex 6.5 7.5 9.5 
-vertex 7.5 7.5 9.5 
+vertex 6.5 7.5 8.5 
+vertex 7.5 7.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 7.5 7.5 8.5 
-vertex 6.5 7.5 8.5 
 vertex 7.5 7.5 9.5 
+vertex 6.5 7.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 6.5 7.5 9.5 
+vertex 7.5 8.5 9.5 
 vertex 6.5 8.5 9.5 
-vertex 7.5 8.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 7.5 9.5 
 vertex 6.5 7.5 9.5 
-vertex 7.5 8.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 6.5 7.5 8.5 
-vertex 6.5 8.5 8.5 
-vertex 7.5 8.5 8.5 
+vertex 6.5 7.5 9.5 
+vertex 7.5 7.5 9.5 
+vertex 7.5 8.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 7.5 7.5 8.5 
 vertex 6.5 7.5 8.5 
-vertex 7.5 8.5 8.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 6.5 7.5 8.5 
 vertex 6.5 8.5 8.5 
-vertex 6.5 8.5 9.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 6.5 8.5 8.5 
+vertex 7.5 8.5 8.5 
+vertex 7.5 7.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 6.5 7.5 9.5 
-vertex 6.5 7.5 8.5 
 vertex 6.5 8.5 9.5 
+vertex 6.5 8.5 8.5 
+vertex 6.5 7.5 8.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 6.5 7.5 8.5 
+vertex 6.5 7.5 9.5 
+vertex 6.5 8.5 9.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 7.5 9.5 4.5 
+vertex 7.5 9.5 3.5 
+vertex 6.5 9.5 3.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -4990,122 +4997,122 @@ vertex 6.5 9.5 4.5
 vertex 7.5 9.5 4.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 7.5 9.5 3.5 
-vertex 6.5 9.5 3.5 
-vertex 7.5 9.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 8.5 3.5 
-vertex 6.5 9.5 3.5 
-vertex 7.5 9.5 3.5 
-endloop
-endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 7.5 8.5 3.5 
 vertex 6.5 8.5 3.5 
-vertex 7.5 9.5 3.5 
+vertex 6.5 9.5 3.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 0.0 -1.0
 outer loop
+vertex 6.5 9.5 3.5 
+vertex 7.5 9.5 3.5 
 vertex 7.5 8.5 3.5 
-vertex 7.5 9.5 3.5 
-vertex 7.5 9.5 4.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
+vertex 7.5 9.5 4.5 
 vertex 7.5 8.5 4.5 
 vertex 7.5 8.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 8.5 3.5 
+vertex 7.5 9.5 3.5 
 vertex 7.5 9.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 6.5 8.5 4.5 
 vertex 6.5 8.5 5.5 
-vertex 7.5 8.5 5.5 
+vertex 6.5 8.5 4.5 
+vertex 7.5 8.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 7.5 8.5 4.5 
-vertex 6.5 8.5 4.5 
 vertex 7.5 8.5 5.5 
+vertex 6.5 8.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 6.5 8.5 5.5 
-vertex 6.5 9.5 5.5 
 vertex 7.5 9.5 5.5 
+vertex 6.5 9.5 5.5 
+vertex 6.5 8.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 7.5 8.5 5.5 
 vertex 6.5 8.5 5.5 
+vertex 7.5 8.5 5.5 
 vertex 7.5 9.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 6.5 8.5 4.5 
-vertex 6.5 9.5 4.5 
 vertex 6.5 9.5 5.5 
+vertex 6.5 9.5 4.5 
+vertex 6.5 8.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 6.5 8.5 5.5 
 vertex 6.5 8.5 4.5 
+vertex 6.5 8.5 5.5 
 vertex 6.5 9.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
+outer loop
+vertex 6.5 8.5 8.5 
+vertex 6.5 8.5 7.5 
+vertex 7.5 8.5 7.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 7.5 8.5 7.5 
+vertex 7.5 8.5 8.5 
+vertex 6.5 8.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 8.5 7.5 
+vertex 6.5 8.5 7.5 
+vertex 6.5 9.5 7.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 6.5 9.5 7.5 
+vertex 7.5 9.5 7.5 
+vertex 7.5 8.5 7.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 6.5 9.5 8.5 
+vertex 6.5 9.5 7.5 
+vertex 6.5 8.5 7.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
 outer loop
 vertex 6.5 8.5 7.5 
 vertex 6.5 8.5 8.5 
-vertex 7.5 8.5 8.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 7.5 8.5 7.5 
-vertex 6.5 8.5 7.5 
-vertex 7.5 8.5 8.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 8.5 7.5 
-vertex 6.5 9.5 7.5 
-vertex 7.5 9.5 7.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 8.5 7.5 
-vertex 6.5 8.5 7.5 
-vertex 7.5 9.5 7.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 6.5 8.5 7.5 
-vertex 6.5 9.5 7.5 
 vertex 6.5 9.5 8.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 6.5 8.5 8.5 
-vertex 6.5 8.5 7.5 
+vertex 7.5 9.5 9.5 
+vertex 7.5 9.5 8.5 
 vertex 6.5 9.5 8.5 
 endloop
 endfacet
@@ -5116,25 +5123,25 @@ vertex 6.5 9.5 9.5
 vertex 7.5 9.5 9.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 7.5 9.5 8.5 
-vertex 6.5 9.5 8.5 
-vertex 7.5 9.5 9.5 
-endloop
-endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 6.5 8.5 9.5 
+vertex 7.5 9.5 9.5 
 vertex 6.5 9.5 9.5 
-vertex 7.5 9.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 8.5 9.5 
 vertex 6.5 8.5 9.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 6.5 8.5 9.5 
+vertex 7.5 8.5 9.5 
 vertex 7.5 9.5 9.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 9.5 9.5 
+vertex 7.5 8.5 9.5 
+vertex 7.5 8.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -5144,11 +5151,11 @@ vertex 7.5 9.5 8.5
 vertex 7.5 9.5 9.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 7.5 8.5 9.5 
-vertex 7.5 8.5 8.5 
-vertex 7.5 9.5 9.5 
+vertex 7.5 10.5 5.5 
+vertex 7.5 10.5 4.5 
+vertex 6.5 10.5 4.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -5158,122 +5165,122 @@ vertex 6.5 10.5 5.5
 vertex 7.5 10.5 5.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 7.5 10.5 4.5 
-vertex 6.5 10.5 4.5 
-vertex 7.5 10.5 5.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 9.5 4.5 
-vertex 6.5 10.5 4.5 
-vertex 7.5 10.5 4.5 
-endloop
-endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 7.5 9.5 4.5 
 vertex 6.5 9.5 4.5 
-vertex 7.5 10.5 4.5 
+vertex 6.5 10.5 4.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 0.0 -1.0
 outer loop
+vertex 6.5 10.5 4.5 
+vertex 7.5 10.5 4.5 
 vertex 7.5 9.5 4.5 
-vertex 7.5 10.5 4.5 
-vertex 7.5 10.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
+vertex 7.5 10.5 5.5 
 vertex 7.5 9.5 5.5 
 vertex 7.5 9.5 4.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 9.5 4.5 
+vertex 7.5 10.5 4.5 
 vertex 7.5 10.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 6.5 9.5 5.5 
 vertex 6.5 9.5 6.5 
-vertex 7.5 9.5 6.5 
+vertex 6.5 9.5 5.5 
+vertex 7.5 9.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 7.5 9.5 5.5 
-vertex 6.5 9.5 5.5 
 vertex 7.5 9.5 6.5 
+vertex 6.5 9.5 6.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 10.5 6.5 
+vertex 7.5 9.5 6.5 
+vertex 7.5 9.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
 vertex 7.5 9.5 5.5 
 vertex 7.5 10.5 5.5 
-vertex 7.5 10.5 6.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 7.5 9.5 6.5 
-vertex 7.5 9.5 5.5 
 vertex 7.5 10.5 6.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 6.5 9.5 5.5 
+vertex 6.5 10.5 6.5 
 vertex 6.5 10.5 5.5 
-vertex 6.5 10.5 6.5 
+vertex 6.5 9.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 6.5 9.5 6.5 
 vertex 6.5 9.5 5.5 
+vertex 6.5 9.5 6.5 
 vertex 6.5 10.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
+outer loop
+vertex 6.5 9.5 7.5 
+vertex 6.5 9.5 6.5 
+vertex 7.5 9.5 6.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 7.5 9.5 6.5 
+vertex 7.5 9.5 7.5 
+vertex 6.5 9.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 10.5 7.5 
+vertex 7.5 9.5 7.5 
+vertex 7.5 9.5 6.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 9.5 6.5 
+vertex 7.5 10.5 6.5 
+vertex 7.5 10.5 7.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 6.5 10.5 7.5 
+vertex 6.5 10.5 6.5 
+vertex 6.5 9.5 6.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
 outer loop
 vertex 6.5 9.5 6.5 
 vertex 6.5 9.5 7.5 
-vertex 7.5 9.5 7.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 7.5 9.5 6.5 
-vertex 6.5 9.5 6.5 
-vertex 7.5 9.5 7.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 7.5 9.5 6.5 
-vertex 7.5 10.5 6.5 
-vertex 7.5 10.5 7.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 7.5 9.5 7.5 
-vertex 7.5 9.5 6.5 
-vertex 7.5 10.5 7.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 6.5 9.5 6.5 
-vertex 6.5 10.5 6.5 
 vertex 6.5 10.5 7.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 6.5 9.5 7.5 
-vertex 6.5 9.5 6.5 
+vertex 7.5 10.5 8.5 
+vertex 7.5 10.5 7.5 
 vertex 6.5 10.5 7.5 
 endloop
 endfacet
@@ -5284,25 +5291,25 @@ vertex 6.5 10.5 8.5
 vertex 7.5 10.5 8.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 7.5 10.5 7.5 
-vertex 6.5 10.5 7.5 
-vertex 7.5 10.5 8.5 
-endloop
-endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 6.5 9.5 8.5 
+vertex 7.5 10.5 8.5 
 vertex 6.5 10.5 8.5 
-vertex 7.5 10.5 8.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 9.5 8.5 
 vertex 6.5 9.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 6.5 9.5 8.5 
+vertex 7.5 9.5 8.5 
 vertex 7.5 10.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 10.5 8.5 
+vertex 7.5 9.5 8.5 
+vertex 7.5 9.5 7.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -5312,11 +5319,11 @@ vertex 7.5 10.5 7.5
 vertex 7.5 10.5 8.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 7.5 9.5 8.5 
-vertex 7.5 9.5 7.5 
-vertex 7.5 10.5 8.5 
+vertex 7.5 11.5 6.5 
+vertex 7.5 11.5 5.5 
+vertex 6.5 11.5 5.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -5326,67 +5333,67 @@ vertex 6.5 11.5 6.5
 vertex 7.5 11.5 6.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 7.5 11.5 5.5 
-vertex 6.5 11.5 5.5 
-vertex 7.5 11.5 6.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 6.5 10.5 5.5 
-vertex 6.5 11.5 5.5 
-vertex 7.5 11.5 5.5 
-endloop
-endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 7.5 10.5 5.5 
 vertex 6.5 10.5 5.5 
-vertex 7.5 11.5 5.5 
+vertex 6.5 11.5 5.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 0.0 -1.0
 outer loop
+vertex 6.5 11.5 5.5 
+vertex 7.5 11.5 5.5 
 vertex 7.5 10.5 5.5 
-vertex 7.5 11.5 5.5 
-vertex 7.5 11.5 6.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
+vertex 7.5 11.5 6.5 
 vertex 7.5 10.5 6.5 
 vertex 7.5 10.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 10.5 5.5 
+vertex 7.5 11.5 5.5 
 vertex 7.5 11.5 6.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 7.5 11.5 7.5 
+vertex 7.5 11.5 6.5 
+vertex 6.5 11.5 6.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
 vertex 6.5 11.5 6.5 
 vertex 6.5 11.5 7.5 
-vertex 7.5 11.5 7.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 7.5 11.5 6.5 
-vertex 6.5 11.5 6.5 
 vertex 7.5 11.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 6.5 10.5 7.5 
-vertex 6.5 11.5 7.5 
 vertex 7.5 11.5 7.5 
+vertex 6.5 11.5 7.5 
+vertex 6.5 10.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 7.5 10.5 7.5 
 vertex 6.5 10.5 7.5 
+vertex 7.5 10.5 7.5 
 vertex 7.5 11.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 7.5 11.5 7.5 
+vertex 7.5 10.5 7.5 
+vertex 7.5 10.5 6.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -5396,11 +5403,11 @@ vertex 7.5 11.5 6.5
 vertex 7.5 11.5 7.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 7.5 10.5 7.5 
-vertex 7.5 10.5 6.5 
-vertex 7.5 11.5 7.5 
+vertex 8.5 0.5 4.5 
+vertex 8.5 0.5 3.5 
+vertex 7.5 0.5 3.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -5410,53 +5417,53 @@ vertex 7.5 0.5 4.5
 vertex 8.5 0.5 4.5 
 endloop
 endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 7.5 -0.5 4.5 
+vertex 7.5 -0.5 3.5 
+vertex 8.5 -0.5 3.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 8.5 -0.5 3.5 
+vertex 8.5 -0.5 4.5 
+vertex 7.5 -0.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 8.5 -0.5 3.5 
+vertex 7.5 -0.5 3.5 
+vertex 7.5 0.5 3.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 0.5 3.5 
+vertex 8.5 0.5 3.5 
+vertex 8.5 -0.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 0.5 4.5 
+vertex 8.5 -0.5 4.5 
+vertex 8.5 -0.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 -0.5 3.5 
+vertex 8.5 0.5 3.5 
+vertex 8.5 0.5 4.5 
+endloop
+endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 8.5 0.5 3.5 
-vertex 7.5 0.5 3.5 
+vertex 8.5 0.5 5.5 
 vertex 8.5 0.5 4.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 7.5 -0.5 3.5 
-vertex 7.5 -0.5 4.5 
-vertex 8.5 -0.5 4.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 8.5 -0.5 3.5 
-vertex 7.5 -0.5 3.5 
-vertex 8.5 -0.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 -0.5 3.5 
-vertex 7.5 0.5 3.5 
-vertex 8.5 0.5 3.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 8.5 -0.5 3.5 
-vertex 7.5 -0.5 3.5 
-vertex 8.5 0.5 3.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 -0.5 3.5 
-vertex 8.5 0.5 3.5 
-vertex 8.5 0.5 4.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 -0.5 4.5 
-vertex 8.5 -0.5 3.5 
-vertex 8.5 0.5 4.5 
+vertex 7.5 0.5 4.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -5466,136 +5473,136 @@ vertex 7.5 0.5 5.5
 vertex 8.5 0.5 5.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 8.5 0.5 4.5 
-vertex 7.5 0.5 4.5 
-vertex 8.5 0.5 5.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 7.5 -0.5 4.5 
 vertex 7.5 -0.5 5.5 
-vertex 8.5 -0.5 5.5 
+vertex 7.5 -0.5 4.5 
+vertex 8.5 -0.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 8.5 -0.5 4.5 
-vertex 7.5 -0.5 4.5 
 vertex 8.5 -0.5 5.5 
+vertex 7.5 -0.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 -0.5 4.5 
+vertex 7.5 0.5 5.5 
 vertex 7.5 0.5 4.5 
-vertex 7.5 0.5 5.5 
+vertex 7.5 -0.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 -0.5 5.5 
 vertex 7.5 -0.5 4.5 
+vertex 7.5 -0.5 5.5 
 vertex 7.5 0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 7.5 -0.5 5.5 
 vertex 7.5 -0.5 6.5 
-vertex 8.5 -0.5 6.5 
+vertex 7.5 -0.5 5.5 
+vertex 8.5 -0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 8.5 -0.5 5.5 
-vertex 7.5 -0.5 5.5 
 vertex 8.5 -0.5 6.5 
+vertex 7.5 -0.5 6.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 -0.5 5.5 
+vertex 7.5 0.5 6.5 
 vertex 7.5 0.5 5.5 
-vertex 7.5 0.5 6.5 
+vertex 7.5 -0.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 -0.5 6.5 
 vertex 7.5 -0.5 5.5 
+vertex 7.5 -0.5 6.5 
 vertex 7.5 0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 7.5 -0.5 6.5 
 vertex 7.5 -0.5 7.5 
-vertex 8.5 -0.5 7.5 
+vertex 7.5 -0.5 6.5 
+vertex 8.5 -0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 8.5 -0.5 6.5 
-vertex 7.5 -0.5 6.5 
 vertex 8.5 -0.5 7.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 7.5 -0.5 6.5 
-vertex 7.5 0.5 6.5 
-vertex 7.5 0.5 7.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
 vertex 7.5 -0.5 7.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 7.5 0.5 7.5 
+vertex 7.5 0.5 6.5 
 vertex 7.5 -0.5 6.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 7.5 -0.5 6.5 
+vertex 7.5 -0.5 7.5 
 vertex 7.5 0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 7.5 0.5 7.5 
-vertex 7.5 0.5 8.5 
 vertex 8.5 0.5 8.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
 vertex 8.5 0.5 7.5 
 vertex 7.5 0.5 7.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 7.5 0.5 7.5 
+vertex 7.5 0.5 8.5 
 vertex 8.5 0.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 7.5 -0.5 7.5 
 vertex 7.5 -0.5 8.5 
-vertex 8.5 -0.5 8.5 
+vertex 7.5 -0.5 7.5 
+vertex 8.5 -0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 8.5 -0.5 7.5 
-vertex 7.5 -0.5 7.5 
 vertex 8.5 -0.5 8.5 
+vertex 7.5 -0.5 8.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 7.5 0.5 8.5 
+vertex 7.5 0.5 7.5 
+vertex 7.5 -0.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
 vertex 7.5 -0.5 7.5 
-vertex 7.5 0.5 7.5 
+vertex 7.5 -0.5 8.5 
 vertex 7.5 0.5 8.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 7.5 -0.5 8.5 
-vertex 7.5 -0.5 7.5 
+vertex 8.5 0.5 9.5 
+vertex 8.5 0.5 8.5 
 vertex 7.5 0.5 8.5 
 endloop
 endfacet
@@ -5606,67 +5613,67 @@ vertex 7.5 0.5 9.5
 vertex 8.5 0.5 9.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 8.5 0.5 8.5 
-vertex 7.5 0.5 8.5 
-vertex 8.5 0.5 9.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 7.5 -0.5 8.5 
 vertex 7.5 -0.5 9.5 
-vertex 8.5 -0.5 9.5 
+vertex 7.5 -0.5 8.5 
+vertex 8.5 -0.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 8.5 -0.5 8.5 
-vertex 7.5 -0.5 8.5 
 vertex 8.5 -0.5 9.5 
+vertex 7.5 -0.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 7.5 -0.5 9.5 
+vertex 8.5 0.5 9.5 
 vertex 7.5 0.5 9.5 
-vertex 8.5 0.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 8.5 -0.5 9.5 
 vertex 7.5 -0.5 9.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 -0.5 9.5 
+vertex 8.5 -0.5 9.5 
 vertex 8.5 0.5 9.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 8.5 -0.5 8.5 
-vertex 8.5 0.5 8.5 
 vertex 8.5 0.5 9.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 8.5 -0.5 9.5 
 vertex 8.5 -0.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 -0.5 8.5 
+vertex 8.5 0.5 8.5 
 vertex 8.5 0.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 7.5 0.5 5.5 
-vertex 7.5 1.5 5.5 
-vertex 8.5 1.5 5.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
 vertex 8.5 0.5 5.5 
 vertex 7.5 0.5 5.5 
+vertex 7.5 1.5 5.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 1.5 5.5 
 vertex 8.5 1.5 5.5 
+vertex 8.5 0.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 1.5 6.5 
+vertex 8.5 0.5 6.5 
+vertex 8.5 0.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -5676,25 +5683,25 @@ vertex 8.5 1.5 5.5
 vertex 8.5 1.5 6.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 0.5 6.5 
-vertex 8.5 0.5 5.5 
-vertex 8.5 1.5 6.5 
-endloop
-endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 7.5 0.5 7.5 
-vertex 7.5 1.5 7.5 
 vertex 8.5 1.5 7.5 
+vertex 7.5 1.5 7.5 
+vertex 7.5 0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 8.5 0.5 7.5 
 vertex 7.5 0.5 7.5 
+vertex 8.5 0.5 7.5 
 vertex 8.5 1.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 1.5 7.5 
+vertex 8.5 0.5 7.5 
+vertex 8.5 0.5 6.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -5702,27 +5709,27 @@ outer loop
 vertex 8.5 0.5 6.5 
 vertex 8.5 1.5 6.5 
 vertex 8.5 1.5 7.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 0.5 7.5 
-vertex 8.5 0.5 6.5 
-vertex 8.5 1.5 7.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 1.5 5.5 
-vertex 7.5 2.5 5.5 
-vertex 8.5 2.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 8.5 1.5 5.5 
 vertex 7.5 1.5 5.5 
+vertex 7.5 2.5 5.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 2.5 5.5 
 vertex 8.5 2.5 5.5 
+vertex 8.5 1.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 2.5 6.5 
+vertex 8.5 1.5 6.5 
+vertex 8.5 1.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -5732,25 +5739,25 @@ vertex 8.5 2.5 5.5
 vertex 8.5 2.5 6.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 0.0 1.0
 outer loop
-vertex 8.5 1.5 6.5 
-vertex 8.5 1.5 5.5 
-vertex 8.5 2.5 6.5 
+vertex 8.5 2.5 7.5 
+vertex 7.5 2.5 7.5 
+vertex 7.5 1.5 7.5 
 endloop
 endfacet
-facet normal 0.0 0.0 1.0
+facet normal 0.0 0.0 -1.0
 outer loop
 vertex 7.5 1.5 7.5 
-vertex 7.5 2.5 7.5 
+vertex 8.5 1.5 7.5 
 vertex 8.5 2.5 7.5 
 endloop
 endfacet
-facet normal 0.0 0.0 -1.0
+facet normal 1.0 0.0 0.0
 outer loop
-vertex 8.5 1.5 7.5 
-vertex 7.5 1.5 7.5 
 vertex 8.5 2.5 7.5 
+vertex 8.5 1.5 7.5 
+vertex 8.5 1.5 6.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -5760,53 +5767,53 @@ vertex 8.5 2.5 6.5
 vertex 8.5 2.5 7.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 1.5 7.5 
-vertex 8.5 1.5 6.5 
-vertex 8.5 2.5 7.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 7.5 2.5 4.5 
 vertex 7.5 2.5 5.5 
-vertex 8.5 2.5 5.5 
+vertex 7.5 2.5 4.5 
+vertex 8.5 2.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 8.5 2.5 4.5 
-vertex 7.5 2.5 4.5 
 vertex 8.5 2.5 5.5 
+vertex 7.5 2.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 8.5 2.5 4.5 
 vertex 7.5 2.5 4.5 
 vertex 7.5 3.5 4.5 
-vertex 8.5 3.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 8.5 2.5 4.5 
-vertex 7.5 2.5 4.5 
+vertex 7.5 3.5 4.5 
 vertex 8.5 3.5 4.5 
+vertex 8.5 2.5 4.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 8.5 2.5 4.5 
-vertex 8.5 3.5 4.5 
 vertex 8.5 3.5 5.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 8.5 2.5 5.5 
 vertex 8.5 2.5 4.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 2.5 4.5 
+vertex 8.5 3.5 4.5 
 vertex 8.5 3.5 5.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 8.5 3.5 6.5 
+vertex 8.5 3.5 5.5 
+vertex 7.5 3.5 5.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -5816,38 +5823,38 @@ vertex 7.5 3.5 6.5
 vertex 8.5 3.5 6.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 8.5 3.5 5.5 
-vertex 7.5 3.5 5.5 
-vertex 8.5 3.5 6.5 
-endloop
-endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 8.5 2.5 5.5 
-vertex 8.5 3.5 5.5 
 vertex 8.5 3.5 6.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 8.5 2.5 6.5 
 vertex 8.5 2.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 2.5 5.5 
+vertex 8.5 3.5 5.5 
 vertex 8.5 3.5 6.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 2.5 5.5 
-vertex 7.5 3.5 5.5 
 vertex 7.5 3.5 6.5 
+vertex 7.5 3.5 5.5 
+vertex 7.5 2.5 5.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 2.5 6.5 
 vertex 7.5 2.5 5.5 
+vertex 7.5 2.5 6.5 
+vertex 7.5 3.5 6.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 8.5 3.5 7.5 
+vertex 8.5 3.5 6.5 
 vertex 7.5 3.5 6.5 
 endloop
 endfacet
@@ -5858,67 +5865,67 @@ vertex 7.5 3.5 7.5
 vertex 8.5 3.5 7.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 8.5 3.5 6.5 
-vertex 7.5 3.5 6.5 
-vertex 8.5 3.5 7.5 
-endloop
-endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 8.5 2.5 6.5 
-vertex 8.5 3.5 6.5 
 vertex 8.5 3.5 7.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 8.5 2.5 7.5 
 vertex 8.5 2.5 6.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 2.5 6.5 
+vertex 8.5 3.5 6.5 
 vertex 8.5 3.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 2.5 6.5 
-vertex 7.5 3.5 6.5 
 vertex 7.5 3.5 7.5 
+vertex 7.5 3.5 6.5 
+vertex 7.5 2.5 6.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 2.5 7.5 
 vertex 7.5 2.5 6.5 
+vertex 7.5 2.5 7.5 
 vertex 7.5 3.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 7.5 2.5 7.5 
 vertex 7.5 2.5 8.5 
-vertex 8.5 2.5 8.5 
+vertex 7.5 2.5 7.5 
+vertex 8.5 2.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 8.5 2.5 7.5 
-vertex 7.5 2.5 7.5 
 vertex 8.5 2.5 8.5 
+vertex 7.5 2.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 7.5 2.5 8.5 
-vertex 7.5 3.5 8.5 
 vertex 8.5 3.5 8.5 
+vertex 7.5 3.5 8.5 
+vertex 7.5 2.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 8.5 2.5 8.5 
 vertex 7.5 2.5 8.5 
+vertex 8.5 2.5 8.5 
 vertex 8.5 3.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 3.5 8.5 
+vertex 8.5 2.5 8.5 
+vertex 8.5 2.5 7.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -5928,81 +5935,81 @@ vertex 8.5 3.5 7.5
 vertex 8.5 3.5 8.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 2.5 8.5 
-vertex 8.5 2.5 7.5 
-vertex 8.5 3.5 8.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 7.5 3.5 3.5 
 vertex 7.5 3.5 4.5 
-vertex 8.5 3.5 4.5 
+vertex 7.5 3.5 3.5 
+vertex 8.5 3.5 3.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 8.5 3.5 3.5 
-vertex 7.5 3.5 3.5 
 vertex 8.5 3.5 4.5 
+vertex 7.5 3.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 8.5 3.5 3.5 
 vertex 7.5 3.5 3.5 
 vertex 7.5 4.5 3.5 
-vertex 8.5 4.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 8.5 3.5 3.5 
-vertex 7.5 3.5 3.5 
+vertex 7.5 4.5 3.5 
 vertex 8.5 4.5 3.5 
+vertex 8.5 3.5 3.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 8.5 3.5 3.5 
-vertex 8.5 4.5 3.5 
 vertex 8.5 4.5 4.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 8.5 3.5 4.5 
 vertex 8.5 3.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 3.5 3.5 
+vertex 8.5 4.5 3.5 
 vertex 8.5 4.5 4.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 8.5 4.5 5.5 
+vertex 8.5 4.5 4.5 
+vertex 7.5 4.5 4.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
 vertex 7.5 4.5 4.5 
 vertex 7.5 4.5 5.5 
-vertex 8.5 4.5 5.5 
-endloop
-endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 8.5 4.5 4.5 
-vertex 7.5 4.5 4.5 
 vertex 8.5 4.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 7.5 3.5 5.5 
-vertex 7.5 4.5 5.5 
 vertex 8.5 4.5 5.5 
+vertex 7.5 4.5 5.5 
+vertex 7.5 3.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 8.5 3.5 5.5 
 vertex 7.5 3.5 5.5 
+vertex 8.5 3.5 5.5 
 vertex 8.5 4.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 4.5 5.5 
+vertex 8.5 3.5 5.5 
+vertex 8.5 3.5 4.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -6012,109 +6019,109 @@ vertex 8.5 4.5 4.5
 vertex 8.5 4.5 5.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 3.5 5.5 
-vertex 8.5 3.5 4.5 
-vertex 8.5 4.5 5.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 3.5 4.5 
+vertex 7.5 4.5 5.5 
 vertex 7.5 4.5 4.5 
-vertex 7.5 4.5 5.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 7.5 3.5 5.5 
 vertex 7.5 3.5 4.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 7.5 3.5 4.5 
+vertex 7.5 3.5 5.5 
 vertex 7.5 4.5 5.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 7.5 4.5 7.5 
-vertex 7.5 4.5 8.5 
 vertex 8.5 4.5 8.5 
+vertex 8.5 4.5 7.5 
+vertex 7.5 4.5 7.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 8.5 4.5 7.5 
-vertex 7.5 4.5 7.5 
-vertex 8.5 4.5 8.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 3.5 7.5 
-vertex 7.5 4.5 7.5 
-vertex 8.5 4.5 7.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 8.5 3.5 7.5 
-vertex 7.5 3.5 7.5 
-vertex 8.5 4.5 7.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 3.5 7.5 
-vertex 8.5 4.5 7.5 
-vertex 8.5 4.5 8.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 3.5 8.5 
-vertex 8.5 3.5 7.5 
-vertex 8.5 4.5 8.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 7.5 3.5 7.5 
 vertex 7.5 4.5 7.5 
 vertex 7.5 4.5 8.5 
+vertex 8.5 4.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 8.5 3.5 7.5 
+vertex 7.5 3.5 7.5 
+vertex 7.5 4.5 7.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 4.5 7.5 
+vertex 8.5 4.5 7.5 
+vertex 8.5 3.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 4.5 8.5 
+vertex 8.5 3.5 8.5 
+vertex 8.5 3.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 3.5 7.5 
+vertex 8.5 4.5 7.5 
+vertex 8.5 4.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 3.5 8.5 
+vertex 7.5 4.5 8.5 
+vertex 7.5 4.5 7.5 
 vertex 7.5 3.5 7.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 7.5 3.5 7.5 
+vertex 7.5 3.5 8.5 
 vertex 7.5 4.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 7.5 3.5 8.5 
 vertex 7.5 3.5 9.5 
-vertex 8.5 3.5 9.5 
+vertex 7.5 3.5 8.5 
+vertex 8.5 3.5 8.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 8.5 3.5 8.5 
-vertex 7.5 3.5 8.5 
 vertex 8.5 3.5 9.5 
+vertex 7.5 3.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 7.5 3.5 9.5 
+vertex 8.5 4.5 9.5 
 vertex 7.5 4.5 9.5 
-vertex 8.5 4.5 9.5 
+vertex 7.5 3.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 8.5 3.5 9.5 
 vertex 7.5 3.5 9.5 
+vertex 8.5 3.5 9.5 
 vertex 8.5 4.5 9.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 4.5 9.5 
+vertex 8.5 3.5 9.5 
+vertex 8.5 3.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -6124,95 +6131,95 @@ vertex 8.5 4.5 8.5
 vertex 8.5 4.5 9.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 3.5 9.5 
-vertex 8.5 3.5 8.5 
-vertex 8.5 4.5 9.5 
-endloop
-endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 7.5 4.5 4.5 
+vertex 8.5 5.5 4.5 
 vertex 7.5 5.5 4.5 
-vertex 8.5 5.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 8.5 4.5 4.5 
 vertex 7.5 4.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 4.5 4.5 
+vertex 8.5 4.5 4.5 
 vertex 8.5 5.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 8.5 4.5 3.5 
 vertex 7.5 4.5 3.5 
 vertex 7.5 5.5 3.5 
-vertex 8.5 5.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 8.5 4.5 3.5 
-vertex 7.5 4.5 3.5 
+vertex 7.5 5.5 3.5 
 vertex 8.5 5.5 3.5 
+vertex 8.5 4.5 3.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 8.5 4.5 3.5 
-vertex 8.5 5.5 3.5 
 vertex 8.5 5.5 4.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 8.5 4.5 4.5 
 vertex 8.5 4.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 4.5 3.5 
+vertex 8.5 5.5 3.5 
 vertex 8.5 5.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 4.5 3.5 
+vertex 7.5 5.5 4.5 
 vertex 7.5 5.5 3.5 
-vertex 7.5 5.5 4.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 7.5 4.5 4.5 
 vertex 7.5 4.5 3.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 7.5 4.5 3.5 
+vertex 7.5 4.5 4.5 
 vertex 7.5 5.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 7.5 4.5 9.5 
+vertex 8.5 5.5 9.5 
 vertex 7.5 5.5 9.5 
-vertex 8.5 5.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 8.5 4.5 9.5 
 vertex 7.5 4.5 9.5 
-vertex 8.5 5.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 7.5 4.5 8.5 
-vertex 7.5 5.5 8.5 
-vertex 8.5 5.5 8.5 
+vertex 7.5 4.5 9.5 
+vertex 8.5 4.5 9.5 
+vertex 8.5 5.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 8.5 4.5 8.5 
 vertex 7.5 4.5 8.5 
+vertex 7.5 5.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 5.5 8.5 
 vertex 8.5 5.5 8.5 
+vertex 8.5 4.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 5.5 9.5 
+vertex 8.5 4.5 9.5 
+vertex 8.5 4.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -6222,109 +6229,109 @@ vertex 8.5 5.5 8.5
 vertex 8.5 5.5 9.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 4.5 9.5 
-vertex 8.5 4.5 8.5 
-vertex 8.5 5.5 9.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 4.5 8.5 
-vertex 7.5 5.5 8.5 
 vertex 7.5 5.5 9.5 
+vertex 7.5 5.5 8.5 
+vertex 7.5 4.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 4.5 9.5 
 vertex 7.5 4.5 8.5 
+vertex 7.5 4.5 9.5 
 vertex 7.5 5.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 7.5 5.5 4.5 
+vertex 8.5 6.5 4.5 
 vertex 7.5 6.5 4.5 
-vertex 8.5 6.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 8.5 5.5 4.5 
 vertex 7.5 5.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 5.5 4.5 
+vertex 8.5 5.5 4.5 
 vertex 8.5 6.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 8.5 5.5 3.5 
 vertex 7.5 5.5 3.5 
 vertex 7.5 6.5 3.5 
-vertex 8.5 6.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 8.5 5.5 3.5 
-vertex 7.5 5.5 3.5 
+vertex 7.5 6.5 3.5 
 vertex 8.5 6.5 3.5 
+vertex 8.5 5.5 3.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 8.5 5.5 3.5 
-vertex 8.5 6.5 3.5 
 vertex 8.5 6.5 4.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 8.5 5.5 4.5 
 vertex 8.5 5.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 5.5 3.5 
+vertex 8.5 6.5 3.5 
 vertex 8.5 6.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 5.5 3.5 
+vertex 7.5 6.5 4.5 
 vertex 7.5 6.5 3.5 
-vertex 7.5 6.5 4.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 7.5 5.5 4.5 
 vertex 7.5 5.5 3.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 7.5 5.5 3.5 
+vertex 7.5 5.5 4.5 
 vertex 7.5 6.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 7.5 5.5 9.5 
+vertex 8.5 6.5 9.5 
 vertex 7.5 6.5 9.5 
-vertex 8.5 6.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 8.5 5.5 9.5 
 vertex 7.5 5.5 9.5 
-vertex 8.5 6.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 7.5 5.5 8.5 
-vertex 7.5 6.5 8.5 
-vertex 8.5 6.5 8.5 
+vertex 7.5 5.5 9.5 
+vertex 8.5 5.5 9.5 
+vertex 8.5 6.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 8.5 5.5 8.5 
 vertex 7.5 5.5 8.5 
+vertex 7.5 6.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 6.5 8.5 
 vertex 8.5 6.5 8.5 
+vertex 8.5 5.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 6.5 9.5 
+vertex 8.5 5.5 9.5 
+vertex 8.5 5.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -6334,109 +6341,109 @@ vertex 8.5 6.5 8.5
 vertex 8.5 6.5 9.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 5.5 9.5 
-vertex 8.5 5.5 8.5 
-vertex 8.5 6.5 9.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 5.5 8.5 
-vertex 7.5 6.5 8.5 
 vertex 7.5 6.5 9.5 
+vertex 7.5 6.5 8.5 
+vertex 7.5 5.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 5.5 9.5 
 vertex 7.5 5.5 8.5 
+vertex 7.5 5.5 9.5 
 vertex 7.5 6.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 7.5 6.5 4.5 
+vertex 8.5 7.5 4.5 
 vertex 7.5 7.5 4.5 
-vertex 8.5 7.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 8.5 6.5 4.5 
 vertex 7.5 6.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 6.5 4.5 
+vertex 8.5 6.5 4.5 
 vertex 8.5 7.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
+vertex 8.5 6.5 3.5 
 vertex 7.5 6.5 3.5 
 vertex 7.5 7.5 3.5 
-vertex 8.5 7.5 3.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 8.5 6.5 3.5 
-vertex 7.5 6.5 3.5 
+vertex 7.5 7.5 3.5 
 vertex 8.5 7.5 3.5 
+vertex 8.5 6.5 3.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 8.5 6.5 3.5 
-vertex 8.5 7.5 3.5 
 vertex 8.5 7.5 4.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 8.5 6.5 4.5 
 vertex 8.5 6.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 6.5 3.5 
+vertex 8.5 7.5 3.5 
 vertex 8.5 7.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 6.5 3.5 
-vertex 7.5 7.5 3.5 
 vertex 7.5 7.5 4.5 
+vertex 7.5 7.5 3.5 
+vertex 7.5 6.5 3.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 6.5 4.5 
 vertex 7.5 6.5 3.5 
+vertex 7.5 6.5 4.5 
 vertex 7.5 7.5 4.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 7.5 6.5 9.5 
+vertex 8.5 7.5 9.5 
 vertex 7.5 7.5 9.5 
-vertex 8.5 7.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 8.5 6.5 9.5 
 vertex 7.5 6.5 9.5 
-vertex 8.5 7.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 7.5 6.5 8.5 
-vertex 7.5 7.5 8.5 
-vertex 8.5 7.5 8.5 
+vertex 7.5 6.5 9.5 
+vertex 8.5 6.5 9.5 
+vertex 8.5 7.5 9.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 8.5 6.5 8.5 
 vertex 7.5 6.5 8.5 
+vertex 7.5 7.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 7.5 8.5 
 vertex 8.5 7.5 8.5 
+vertex 8.5 6.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 7.5 9.5 
+vertex 8.5 6.5 9.5 
+vertex 8.5 6.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -6446,25 +6453,25 @@ vertex 8.5 7.5 8.5
 vertex 8.5 7.5 9.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 6.5 9.5 
-vertex 8.5 6.5 8.5 
-vertex 8.5 7.5 9.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 6.5 8.5 
+vertex 7.5 7.5 9.5 
 vertex 7.5 7.5 8.5 
-vertex 7.5 7.5 9.5 
+vertex 7.5 6.5 8.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 6.5 9.5 
 vertex 7.5 6.5 8.5 
+vertex 7.5 6.5 9.5 
 vertex 7.5 7.5 9.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 8.5 8.5 4.5 
+vertex 8.5 8.5 3.5 
+vertex 7.5 8.5 3.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -6474,67 +6481,67 @@ vertex 7.5 8.5 4.5
 vertex 8.5 8.5 4.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 8.5 8.5 3.5 
-vertex 7.5 8.5 3.5 
-vertex 8.5 8.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 7.5 3.5 
-vertex 7.5 8.5 3.5 
-vertex 8.5 8.5 3.5 
-endloop
-endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 8.5 7.5 3.5 
 vertex 7.5 7.5 3.5 
-vertex 8.5 8.5 3.5 
+vertex 7.5 8.5 3.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 0.0 -1.0
 outer loop
+vertex 7.5 8.5 3.5 
+vertex 8.5 8.5 3.5 
 vertex 8.5 7.5 3.5 
-vertex 8.5 8.5 3.5 
-vertex 8.5 8.5 4.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
+vertex 8.5 8.5 4.5 
 vertex 8.5 7.5 4.5 
 vertex 8.5 7.5 3.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 7.5 3.5 
+vertex 8.5 8.5 3.5 
 vertex 8.5 8.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 7.5 7.5 4.5 
 vertex 7.5 7.5 5.5 
-vertex 8.5 7.5 5.5 
+vertex 7.5 7.5 4.5 
+vertex 8.5 7.5 4.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 8.5 7.5 4.5 
-vertex 7.5 7.5 4.5 
 vertex 8.5 7.5 5.5 
+vertex 7.5 7.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 7.5 7.5 5.5 
-vertex 7.5 8.5 5.5 
 vertex 8.5 8.5 5.5 
+vertex 7.5 8.5 5.5 
+vertex 7.5 7.5 5.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 8.5 7.5 5.5 
 vertex 7.5 7.5 5.5 
+vertex 8.5 7.5 5.5 
 vertex 8.5 8.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 8.5 5.5 
+vertex 8.5 7.5 5.5 
+vertex 8.5 7.5 4.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -6544,80 +6551,80 @@ vertex 8.5 8.5 4.5
 vertex 8.5 8.5 5.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 7.5 5.5 
-vertex 8.5 7.5 4.5 
-vertex 8.5 8.5 5.5 
-endloop
-endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 7.5 4.5 
-vertex 7.5 8.5 4.5 
 vertex 7.5 8.5 5.5 
+vertex 7.5 8.5 4.5 
+vertex 7.5 7.5 4.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 7.5 5.5 
 vertex 7.5 7.5 4.5 
+vertex 7.5 7.5 5.5 
 vertex 7.5 8.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
+outer loop
+vertex 7.5 7.5 8.5 
+vertex 7.5 7.5 7.5 
+vertex 8.5 7.5 7.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 8.5 7.5 7.5 
+vertex 8.5 7.5 8.5 
+vertex 7.5 7.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 8.5 7.5 7.5 
+vertex 7.5 7.5 7.5 
+vertex 7.5 8.5 7.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 8.5 7.5 
+vertex 8.5 8.5 7.5 
+vertex 8.5 7.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 8.5 8.5 
+vertex 8.5 7.5 8.5 
+vertex 8.5 7.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 7.5 7.5 
+vertex 8.5 8.5 7.5 
+vertex 8.5 8.5 8.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 7.5 8.5 8.5 
+vertex 7.5 8.5 7.5 
+vertex 7.5 7.5 7.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
 outer loop
 vertex 7.5 7.5 7.5 
 vertex 7.5 7.5 8.5 
-vertex 8.5 7.5 8.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 8.5 7.5 7.5 
-vertex 7.5 7.5 7.5 
-vertex 8.5 7.5 8.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 7.5 7.5 
-vertex 7.5 8.5 7.5 
-vertex 8.5 8.5 7.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 8.5 7.5 7.5 
-vertex 7.5 7.5 7.5 
-vertex 8.5 8.5 7.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 7.5 7.5 
-vertex 8.5 8.5 7.5 
-vertex 8.5 8.5 8.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 7.5 8.5 
-vertex 8.5 7.5 7.5 
-vertex 8.5 8.5 8.5 
-endloop
-endfacet
-facet normal -1.0 0.0 0.0
-outer loop
-vertex 7.5 7.5 7.5 
-vertex 7.5 8.5 7.5 
 vertex 7.5 8.5 8.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 7.5 7.5 8.5 
-vertex 7.5 7.5 7.5 
+vertex 8.5 8.5 9.5 
+vertex 8.5 8.5 8.5 
 vertex 7.5 8.5 8.5 
 endloop
 endfacet
@@ -6628,81 +6635,81 @@ vertex 7.5 8.5 9.5
 vertex 8.5 8.5 9.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 8.5 8.5 8.5 
-vertex 7.5 8.5 8.5 
-vertex 8.5 8.5 9.5 
-endloop
-endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 7.5 7.5 9.5 
+vertex 8.5 8.5 9.5 
 vertex 7.5 8.5 9.5 
-vertex 8.5 8.5 9.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 8.5 7.5 9.5 
 vertex 7.5 7.5 9.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 7.5 7.5 9.5 
+vertex 8.5 7.5 9.5 
 vertex 8.5 8.5 9.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 8.5 7.5 8.5 
-vertex 8.5 8.5 8.5 
 vertex 8.5 8.5 9.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 8.5 7.5 9.5 
 vertex 8.5 7.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 7.5 8.5 
+vertex 8.5 8.5 8.5 
 vertex 8.5 8.5 9.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
 outer loop
+vertex 8.5 9.5 5.5 
+vertex 8.5 9.5 4.5 
+vertex 7.5 9.5 4.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
 vertex 7.5 9.5 4.5 
 vertex 7.5 9.5 5.5 
 vertex 8.5 9.5 5.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 8.5 9.5 4.5 
-vertex 7.5 9.5 4.5 
-vertex 8.5 9.5 5.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 7.5 8.5 4.5 
-vertex 7.5 9.5 4.5 
-vertex 8.5 9.5 4.5 
-endloop
-endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
 vertex 8.5 8.5 4.5 
 vertex 7.5 8.5 4.5 
-vertex 8.5 9.5 4.5 
+vertex 7.5 9.5 4.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 0.0 -1.0
 outer loop
+vertex 7.5 9.5 4.5 
+vertex 8.5 9.5 4.5 
 vertex 8.5 8.5 4.5 
-vertex 8.5 9.5 4.5 
-vertex 8.5 9.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
+vertex 8.5 9.5 5.5 
 vertex 8.5 8.5 5.5 
 vertex 8.5 8.5 4.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 8.5 4.5 
+vertex 8.5 9.5 4.5 
 vertex 8.5 9.5 5.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 8.5 9.5 6.5 
+vertex 8.5 9.5 5.5 
+vertex 7.5 9.5 5.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -6712,52 +6719,52 @@ vertex 7.5 9.5 6.5
 vertex 8.5 9.5 6.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 8.5 9.5 5.5 
-vertex 7.5 9.5 5.5 
-vertex 8.5 9.5 6.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 7.5 8.5 5.5 
 vertex 7.5 8.5 6.5 
-vertex 8.5 8.5 6.5 
+vertex 7.5 8.5 5.5 
+vertex 8.5 8.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 8.5 8.5 5.5 
-vertex 7.5 8.5 5.5 
 vertex 8.5 8.5 6.5 
+vertex 7.5 8.5 6.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 9.5 6.5 
+vertex 8.5 8.5 6.5 
+vertex 8.5 8.5 5.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
 vertex 8.5 8.5 5.5 
 vertex 8.5 9.5 5.5 
-vertex 8.5 9.5 6.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 8.5 6.5 
-vertex 8.5 8.5 5.5 
 vertex 8.5 9.5 6.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 8.5 5.5 
+vertex 7.5 9.5 6.5 
 vertex 7.5 9.5 5.5 
+vertex 7.5 8.5 5.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 7.5 8.5 5.5 
+vertex 7.5 8.5 6.5 
 vertex 7.5 9.5 6.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 7.5 8.5 6.5 
-vertex 7.5 8.5 5.5 
+vertex 8.5 9.5 7.5 
+vertex 8.5 9.5 6.5 
 vertex 7.5 9.5 6.5 
 endloop
 endfacet
@@ -6768,52 +6775,52 @@ vertex 7.5 9.5 7.5
 vertex 8.5 9.5 7.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 8.5 9.5 6.5 
-vertex 7.5 9.5 6.5 
-vertex 8.5 9.5 7.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 7.5 8.5 6.5 
 vertex 7.5 8.5 7.5 
-vertex 8.5 8.5 7.5 
+vertex 7.5 8.5 6.5 
+vertex 8.5 8.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 8.5 8.5 6.5 
-vertex 7.5 8.5 6.5 
 vertex 8.5 8.5 7.5 
+vertex 7.5 8.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 9.5 7.5 
+vertex 8.5 8.5 7.5 
+vertex 8.5 8.5 6.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
 vertex 8.5 8.5 6.5 
 vertex 8.5 9.5 6.5 
-vertex 8.5 9.5 7.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 8.5 8.5 7.5 
-vertex 8.5 8.5 6.5 
 vertex 8.5 9.5 7.5 
 endloop
 endfacet
 facet normal -1.0 0.0 0.0
 outer loop
-vertex 7.5 8.5 6.5 
+vertex 7.5 9.5 7.5 
 vertex 7.5 9.5 6.5 
+vertex 7.5 8.5 6.5 
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 7.5 8.5 6.5 
+vertex 7.5 8.5 7.5 
 vertex 7.5 9.5 7.5 
 endloop
 endfacet
-facet normal -1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 7.5 8.5 7.5 
-vertex 7.5 8.5 6.5 
+vertex 8.5 9.5 8.5 
+vertex 8.5 9.5 7.5 
 vertex 7.5 9.5 7.5 
 endloop
 endfacet
@@ -6824,25 +6831,25 @@ vertex 7.5 9.5 8.5
 vertex 8.5 9.5 8.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 8.5 9.5 7.5 
-vertex 7.5 9.5 7.5 
-vertex 8.5 9.5 8.5 
-endloop
-endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 7.5 8.5 8.5 
+vertex 8.5 9.5 8.5 
 vertex 7.5 9.5 8.5 
-vertex 8.5 9.5 8.5 
+vertex 7.5 8.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 8.5 8.5 8.5 
 vertex 7.5 8.5 8.5 
+vertex 8.5 8.5 8.5 
 vertex 8.5 9.5 8.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 8.5 9.5 8.5 
+vertex 8.5 8.5 8.5 
+vertex 8.5 8.5 7.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
@@ -6852,11 +6859,11 @@ vertex 8.5 9.5 7.5
 vertex 8.5 9.5 8.5 
 endloop
 endfacet
-facet normal 1.0 0.0 0.0
+facet normal 0.0 1.0 0.0
 outer loop
-vertex 8.5 8.5 8.5 
-vertex 8.5 8.5 7.5 
-vertex 8.5 9.5 8.5 
+vertex 9.5 0.5 5.5 
+vertex 9.5 0.5 4.5 
+vertex 8.5 0.5 4.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -6866,53 +6873,53 @@ vertex 8.5 0.5 5.5
 vertex 9.5 0.5 5.5 
 endloop
 endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 8.5 -0.5 5.5 
+vertex 8.5 -0.5 4.5 
+vertex 9.5 -0.5 4.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 9.5 -0.5 4.5 
+vertex 9.5 -0.5 5.5 
+vertex 8.5 -0.5 5.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 9.5 -0.5 4.5 
+vertex 8.5 -0.5 4.5 
+vertex 8.5 0.5 4.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 8.5 0.5 4.5 
+vertex 9.5 0.5 4.5 
+vertex 9.5 -0.5 4.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 9.5 0.5 5.5 
+vertex 9.5 -0.5 5.5 
+vertex 9.5 -0.5 4.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 9.5 -0.5 4.5 
+vertex 9.5 0.5 4.5 
+vertex 9.5 0.5 5.5 
+endloop
+endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 9.5 0.5 4.5 
-vertex 8.5 0.5 4.5 
+vertex 9.5 0.5 6.5 
 vertex 9.5 0.5 5.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 8.5 -0.5 4.5 
-vertex 8.5 -0.5 5.5 
-vertex 9.5 -0.5 5.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 9.5 -0.5 4.5 
-vertex 8.5 -0.5 4.5 
-vertex 9.5 -0.5 5.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 8.5 -0.5 4.5 
-vertex 8.5 0.5 4.5 
-vertex 9.5 0.5 4.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 9.5 -0.5 4.5 
-vertex 8.5 -0.5 4.5 
-vertex 9.5 0.5 4.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 9.5 -0.5 4.5 
-vertex 9.5 0.5 4.5 
-vertex 9.5 0.5 5.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 9.5 -0.5 5.5 
-vertex 9.5 -0.5 4.5 
-vertex 9.5 0.5 5.5 
+vertex 8.5 0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -6922,25 +6929,25 @@ vertex 8.5 0.5 6.5
 vertex 9.5 0.5 6.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 9.5 0.5 5.5 
-vertex 8.5 0.5 5.5 
-vertex 9.5 0.5 6.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 8.5 -0.5 5.5 
 vertex 8.5 -0.5 6.5 
-vertex 9.5 -0.5 6.5 
+vertex 8.5 -0.5 5.5 
+vertex 9.5 -0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 9.5 -0.5 5.5 
-vertex 8.5 -0.5 5.5 
 vertex 9.5 -0.5 6.5 
+vertex 8.5 -0.5 6.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 9.5 0.5 7.5 
+vertex 9.5 0.5 6.5 
+vertex 8.5 0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -6950,25 +6957,25 @@ vertex 8.5 0.5 7.5
 vertex 9.5 0.5 7.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 9.5 0.5 6.5 
-vertex 8.5 0.5 6.5 
-vertex 9.5 0.5 7.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 8.5 -0.5 6.5 
 vertex 8.5 -0.5 7.5 
-vertex 9.5 -0.5 7.5 
+vertex 8.5 -0.5 6.5 
+vertex 9.5 -0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 9.5 -0.5 6.5 
-vertex 8.5 -0.5 6.5 
 vertex 9.5 -0.5 7.5 
+vertex 8.5 -0.5 7.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 9.5 0.5 8.5 
+vertex 9.5 0.5 7.5 
+vertex 8.5 0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -6978,53 +6985,53 @@ vertex 8.5 0.5 8.5
 vertex 9.5 0.5 8.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 9.5 0.5 7.5 
-vertex 8.5 0.5 7.5 
-vertex 9.5 0.5 8.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 8.5 -0.5 7.5 
 vertex 8.5 -0.5 8.5 
-vertex 9.5 -0.5 8.5 
+vertex 8.5 -0.5 7.5 
+vertex 9.5 -0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 9.5 -0.5 7.5 
-vertex 8.5 -0.5 7.5 
 vertex 9.5 -0.5 8.5 
+vertex 8.5 -0.5 8.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 8.5 -0.5 8.5 
+vertex 9.5 0.5 8.5 
 vertex 8.5 0.5 8.5 
-vertex 9.5 0.5 8.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 9.5 -0.5 8.5 
 vertex 8.5 -0.5 8.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 8.5 -0.5 8.5 
+vertex 9.5 -0.5 8.5 
 vertex 9.5 0.5 8.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
-vertex 9.5 -0.5 7.5 
-vertex 9.5 0.5 7.5 
 vertex 9.5 0.5 8.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
 vertex 9.5 -0.5 8.5 
 vertex 9.5 -0.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 9.5 -0.5 7.5 
+vertex 9.5 0.5 7.5 
 vertex 9.5 0.5 8.5 
+endloop
+endfacet
+facet normal 0.0 1.0 0.0
+outer loop
+vertex 10.5 0.5 6.5 
+vertex 10.5 0.5 5.5 
+vertex 9.5 0.5 5.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -7034,53 +7041,53 @@ vertex 9.5 0.5 6.5
 vertex 10.5 0.5 6.5 
 endloop
 endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 9.5 -0.5 6.5 
+vertex 9.5 -0.5 5.5 
+vertex 10.5 -0.5 5.5 
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 10.5 -0.5 5.5 
+vertex 10.5 -0.5 6.5 
+vertex 9.5 -0.5 6.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 10.5 -0.5 5.5 
+vertex 9.5 -0.5 5.5 
+vertex 9.5 0.5 5.5 
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 9.5 0.5 5.5 
+vertex 10.5 0.5 5.5 
+vertex 10.5 -0.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 10.5 0.5 6.5 
+vertex 10.5 -0.5 6.5 
+vertex 10.5 -0.5 5.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 10.5 -0.5 5.5 
+vertex 10.5 0.5 5.5 
+vertex 10.5 0.5 6.5 
+endloop
+endfacet
 facet normal 0.0 1.0 0.0
 outer loop
-vertex 10.5 0.5 5.5 
-vertex 9.5 0.5 5.5 
+vertex 10.5 0.5 7.5 
 vertex 10.5 0.5 6.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 9.5 -0.5 5.5 
-vertex 9.5 -0.5 6.5 
-vertex 10.5 -0.5 6.5 
-endloop
-endfacet
-facet normal 0.0 -1.0 0.0
-outer loop
-vertex 10.5 -0.5 5.5 
-vertex 9.5 -0.5 5.5 
-vertex 10.5 -0.5 6.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 9.5 -0.5 5.5 
-vertex 9.5 0.5 5.5 
-vertex 10.5 0.5 5.5 
-endloop
-endfacet
-facet normal 0.0 0.0 -1.0
-outer loop
-vertex 10.5 -0.5 5.5 
-vertex 9.5 -0.5 5.5 
-vertex 10.5 0.5 5.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 10.5 -0.5 5.5 
-vertex 10.5 0.5 5.5 
-vertex 10.5 0.5 6.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 10.5 -0.5 6.5 
-vertex 10.5 -0.5 5.5 
-vertex 10.5 0.5 6.5 
+vertex 9.5 0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 1.0 0.0
@@ -7090,52 +7097,45 @@ vertex 9.5 0.5 7.5
 vertex 10.5 0.5 7.5 
 endloop
 endfacet
-facet normal 0.0 1.0 0.0
-outer loop
-vertex 10.5 0.5 6.5 
-vertex 9.5 0.5 6.5 
-vertex 10.5 0.5 7.5 
-endloop
-endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
-vertex 9.5 -0.5 6.5 
 vertex 9.5 -0.5 7.5 
-vertex 10.5 -0.5 7.5 
+vertex 9.5 -0.5 6.5 
+vertex 10.5 -0.5 6.5 
 endloop
 endfacet
 facet normal 0.0 -1.0 0.0
 outer loop
 vertex 10.5 -0.5 6.5 
-vertex 9.5 -0.5 6.5 
 vertex 10.5 -0.5 7.5 
+vertex 9.5 -0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 1.0
 outer loop
-vertex 9.5 -0.5 7.5 
-vertex 9.5 0.5 7.5 
 vertex 10.5 0.5 7.5 
+vertex 9.5 0.5 7.5 
+vertex 9.5 -0.5 7.5 
 endloop
 endfacet
 facet normal 0.0 0.0 -1.0
 outer loop
-vertex 10.5 -0.5 7.5 
 vertex 9.5 -0.5 7.5 
+vertex 10.5 -0.5 7.5 
 vertex 10.5 0.5 7.5 
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 10.5 0.5 7.5 
+vertex 10.5 -0.5 7.5 
+vertex 10.5 -0.5 6.5 
 endloop
 endfacet
 facet normal 1.0 0.0 0.0
 outer loop
 vertex 10.5 -0.5 6.5 
 vertex 10.5 0.5 6.5 
-vertex 10.5 0.5 7.5 
-endloop
-endfacet
-facet normal 1.0 0.0 0.0
-outer loop
-vertex 10.5 -0.5 7.5 
-vertex 10.5 -0.5 6.5 
 vertex 10.5 0.5 7.5 
 endloop
 endfacet

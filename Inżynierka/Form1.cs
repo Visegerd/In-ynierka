@@ -1859,33 +1859,33 @@ namespace Inżynierka
                                         sw.WriteLine("facet normal 0.0 1.0 0.0");
                                         sw.WriteLine("outer loop");
                                         sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',','.'));
+                                        sw.Write((i + 0.5 + " ").Replace(',','.'));
                                         sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j+ 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k+ 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k- 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
-                                        sw.Write((i+ 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((i- 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k+ 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k- 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.WriteLine("endloop");
                                         sw.WriteLine("endfacet");
                                         sw.WriteLine("facet normal 0.0 1.0 0.0");
                                         sw.WriteLine("outer loop");
                                         sw.Write("vertex ");
-                                        sw.Write((i+ 0.5 + " ").Replace(',','.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',','.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',','.'));
+                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
                                         sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
                                         sw.Write((i + 0.5 + " ").Replace(',', '.'));
@@ -1901,33 +1901,33 @@ namespace Inżynierka
                                     sw.WriteLine("facet normal 0.0 1.0 0.0");
                                     sw.WriteLine("outer loop");
                                     sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.Write("vertex ");
                                     sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write(Environment.NewLine);
+                                    sw.Write("vertex ");
+                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.WriteLine("endloop");
                                     sw.WriteLine("endfacet");
                                     sw.WriteLine("facet normal 0.0 1.0 0.0");
                                     sw.WriteLine("outer loop");
                                     sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.Write("vertex ");
                                     sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.Write("vertex ");
                                     sw.Write((i + 0.5 + " ").Replace(',', '.'));
@@ -1939,6 +1939,11 @@ namespace Inżynierka
                                 }
                                 if (j > 0)
                                 {
+                                    /*GL.Normal3(0.0f, -1.0f, 0.0f);  // dolna ściana (w płaszczyźnie XZ)
+                                    GL.Vertex4(-0.5f, -0.5f, 0.5f, 1.0f);
+                                    GL.Vertex4(-0.5f, -0.5f, -0.5f, 1.0f);
+                                    GL.Vertex4(0.5f, -0.5f, -0.5f, 1.0f);
+                                    GL.Vertex4(0.5f, -0.5f, 0.5f, 1.0f);*/
                                     if (!cubeMatrix[i, j - 1, k]) //czy ma być dolna ściana
                                     {
                                         sw.WriteLine("facet normal 0.0 -1.0 0.0");
@@ -1946,17 +1951,17 @@ namespace Inżynierka
                                         sw.Write("vertex ");
                                         sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
                                         sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
                                         sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.WriteLine("endloop");
                                         sw.WriteLine("endfacet");
@@ -1968,12 +1973,12 @@ namespace Inżynierka
                                         sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j - 0.5 + " ").Replace(',', '.'));
                                         sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
@@ -1988,17 +1993,17 @@ namespace Inżynierka
                                     sw.Write("vertex ");
                                     sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.Write("vertex ");
                                     sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.Write("vertex ");
                                     sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.WriteLine("endloop");
                                     sw.WriteLine("endfacet");
@@ -2010,12 +2015,12 @@ namespace Inżynierka
                                     sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
@@ -2024,23 +2029,28 @@ namespace Inżynierka
                                 }
                                 if (k < boundaries_Z - 1)
                                 {
+                                    /*GL.Normal3(0.0f, 0.0f, 1.0f);   // przednia ściana (w płaszczyźnie XY)
+                                    GL.Vertex4(0.5f, 0.5f, 0.5f, 1.0f);
+                                    GL.Vertex4(-0.5f, 0.5f, 0.5f, 1.0f);
+                                    GL.Vertex4(-0.5f, -0.5f, 0.5f, 1.0f);
+                                    GL.Vertex4(0.5f, -0.5f, 0.5f, 1.0f);*/
                                     if (!cubeMatrix[i, j, k+1]) //czy ma być przednia ściana
                                     {
                                         sw.WriteLine("facet normal 0.0 0.0 1.0");
                                         sw.WriteLine("outer loop");
                                         sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
                                         sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write(Environment.NewLine);
+                                        sw.Write("vertex ");
+                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write(Environment.NewLine);
+                                        sw.Write("vertex ");
+                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
                                         sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.WriteLine("endloop");
@@ -2048,12 +2058,12 @@ namespace Inżynierka
                                         sw.WriteLine("facet normal 0.0 0.0 -1.0");
                                         sw.WriteLine("outer loop");
                                         sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j - 0.5 + " ").Replace(',', '.'));
                                         sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j - 0.5 + " ").Replace(',', '.'));
                                         sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
@@ -2071,18 +2081,18 @@ namespace Inżynierka
                                     sw.WriteLine("facet normal 0.0 0.0 1.0");
                                     sw.WriteLine("outer loop");
                                     sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
                                     sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write(Environment.NewLine);
+                                    sw.Write("vertex ");
+                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write(Environment.NewLine);
+                                    sw.Write("vertex ");
+                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.WriteLine("endloop");
@@ -2090,12 +2100,12 @@ namespace Inżynierka
                                     sw.WriteLine("facet normal 0.0 0.0 -1.0");
                                     sw.WriteLine("outer loop");
                                     sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
@@ -2109,10 +2119,20 @@ namespace Inżynierka
                                 }
                                 if (k > 0)
                                 {
+                                    /*GL.Normal3(0.0f, 0.0f, -1.0f);  // tylna ściana (w płaszczyźnie XY)
+                                    GL.Vertex4(0.5f, -0.5f, -0.5f, 1.0f);
+                                    GL.Vertex4(-0.5f, -0.5f, -0.5f, 1.0f);
+                                    GL.Vertex4(-0.5f, 0.5f, -0.5f, 1.0f);
+                                    GL.Vertex4(0.5f, 0.5f, -0.5f, 1.0f);*/
                                     if (!cubeMatrix[i, j, k-1]) //czy ma być tylna ściana
                                     {
                                         sw.WriteLine("facet normal 0.0 0.0 -1.0");
                                         sw.WriteLine("outer loop");
+                                        sw.Write("vertex ");
+                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
                                         sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j - 0.5 + " ").Replace(',', '.'));
@@ -2120,11 +2140,6 @@ namespace Inżynierka
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
                                         sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j + 0.5 + " ").Replace(',', '.'));
                                         sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
@@ -2133,18 +2148,18 @@ namespace Inżynierka
                                         sw.WriteLine("facet normal 0.0 0.0 -1.0");
                                         sw.WriteLine("outer loop");
                                         sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
                                         sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
                                         sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
                                         sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write(Environment.NewLine);
+                                        sw.Write("vertex ");
+                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
                                         sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.WriteLine("endloop");
@@ -2156,17 +2171,17 @@ namespace Inżynierka
                                     sw.WriteLine("facet normal 0.0 0.0 -1.0");
                                     sw.WriteLine("outer loop");
                                     sw.Write("vertex ");
+                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write(Environment.NewLine);
+                                    sw.Write("vertex ");
                                     sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.Write("vertex ");
                                     sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
@@ -2175,18 +2190,18 @@ namespace Inżynierka
                                     sw.WriteLine("facet normal 0.0 0.0 -1.0");
                                     sw.WriteLine("outer loop");
                                     sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
                                     sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.Write("vertex ");
                                     sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write(Environment.NewLine);
+                                    sw.Write("vertex ");
+                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.WriteLine("endloop");
@@ -2194,24 +2209,29 @@ namespace Inżynierka
                                 }
                                 if (i < boundaries_X - 1)
                                 {
+                                    /*GL.Normal3(1.0f, 0.0f, 0.0f);   // prawa ściana (w płaszczyźnie YZ)
+                                    GL.Vertex4(0.5f, 0.5f, 0.5f, 1.0f);
+                                    GL.Vertex4(0.5f, -0.5f, 0.5f, 1.0f);
+                                    GL.Vertex4(0.5f, -0.5f, -0.5f, 1.0f);
+                                    GL.Vertex4(0.5f, 0.5f, -0.5f, 1.0f);*/
                                     if (!cubeMatrix[i+1, j, k]) //czy ma być prawa ściana
                                     {
                                         sw.WriteLine("facet normal 1.0 0.0 0.0");
                                         sw.WriteLine("outer loop");
                                         sw.Write("vertex ");
                                         sw.Write((i+0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
                                         sw.Write((i+ 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
                                         sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j  + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k  + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((j  - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k  - 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.WriteLine("endloop");
                                         sw.WriteLine("endfacet");
@@ -2220,11 +2240,11 @@ namespace Inżynierka
                                         sw.Write("vertex ");
                                         sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
                                         sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
                                         sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
@@ -2242,18 +2262,18 @@ namespace Inżynierka
                                     sw.WriteLine("outer loop");
                                     sw.Write("vertex ");
                                     sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write(Environment.NewLine);
+                                    sw.Write("vertex ");
+                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write(Environment.NewLine);
+                                    sw.Write("vertex ");
+                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.WriteLine("endloop");
                                     sw.WriteLine("endfacet");
@@ -2262,11 +2282,11 @@ namespace Inżynierka
                                     sw.Write("vertex ");
                                     sw.Write((i + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.Write("vertex ");
                                     sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.Write("vertex ");
@@ -2279,24 +2299,29 @@ namespace Inżynierka
                                 }
                                 if (i > 0)
                                 {
+                                    /*GL.Normal3(-1.0f, 0.0f, 0.0f);  // lewa ściana (w płaszczyźnie YZ)
+                                    GL.Vertex4(-0.5f, 0.5f, 0.5f, 1.0f);
+                                    GL.Vertex4(-0.5f, 0.5f, -0.5f, 1.0f);
+                                    GL.Vertex4(-0.5f, -0.5f, -0.5f, 1.0f);
+                                    GL.Vertex4(-0.5f, -0.5f, 0.5f, 1.0f);*/
                                     if (!cubeMatrix[i - 1, j, k]) //czy ma być prawa ściana
                                     {
                                         sw.WriteLine("facet normal -1.0 0.0 0.0");
                                         sw.WriteLine("outer loop");
                                         sw.Write("vertex ");
                                         sw.Write((i -0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j + 0.5 + " ").Replace(',', '.'));
                                         sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write(Environment.NewLine);
+                                        sw.Write("vertex ");
+                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write(Environment.NewLine);
+                                        sw.Write("vertex ");
+                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.WriteLine("endloop");
                                         sw.WriteLine("endfacet");
@@ -2305,12 +2330,12 @@ namespace Inżynierka
                                         sw.Write("vertex ");
                                         sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
                                         sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                         sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                         sw.Write(Environment.NewLine);
                                         sw.Write("vertex ");
                                         sw.Write((i - 0.5 + " ").Replace(',', '.'));
@@ -2327,18 +2352,18 @@ namespace Inżynierka
                                     sw.WriteLine("outer loop");
                                     sw.Write("vertex ");
                                     sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j + 0.5 + " ").Replace(',', '.'));
                                     sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write(Environment.NewLine);
+                                    sw.Write("vertex ");
+                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write(Environment.NewLine);
+                                    sw.Write("vertex ");
+                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.WriteLine("endloop");
                                     sw.WriteLine("endfacet");
@@ -2347,12 +2372,12 @@ namespace Inżynierka
                                     sw.Write("vertex ");
                                     sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.Write("vertex ");
                                     sw.Write((i - 0.5 + " ").Replace(',', '.'));
                                     sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
                                     sw.Write(Environment.NewLine);
                                     sw.Write("vertex ");
                                     sw.Write((i - 0.5 + " ").Replace(',', '.'));
