@@ -60,6 +60,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.WartoscWielkosciSceny)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ZasiegOgraniczenia)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -77,7 +78,7 @@
             this.glControl1.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.glControl1.MinimumSize = new System.Drawing.Size(320, 200);
             this.glControl1.Name = "glControl1";
-            this.glControl1.Size = new System.Drawing.Size(631, 509);
+            this.glControl1.Size = new System.Drawing.Size(631, 526);
             this.glControl1.TabIndex = 1;
             this.glControl1.VSync = false;
             this.glControl1.Load += new System.EventHandler(this.glControl1_Load);
@@ -180,7 +181,7 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(651, 481);
+            this.label3.Location = new System.Drawing.Point(654, 462);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 9;
@@ -190,7 +191,7 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(787, 481);
+            this.label4.Location = new System.Drawing.Point(787, 462);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 10;
@@ -199,7 +200,7 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(651, 498);
+            this.button2.Location = new System.Drawing.Point(651, 481);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(133, 23);
             this.button2.TabIndex = 11;
@@ -210,7 +211,7 @@
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(787, 498);
+            this.button3.Location = new System.Drawing.Point(787, 481);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(123, 23);
             this.button3.TabIndex = 12;
@@ -331,7 +332,7 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(651, 347);
+            this.label1.Location = new System.Drawing.Point(648, 327);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 13);
             this.label1.TabIndex = 22;
@@ -379,7 +380,7 @@
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(651, 453);
+            this.label6.Location = new System.Drawing.Point(650, 433);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 13);
             this.label6.TabIndex = 26;
@@ -418,7 +419,7 @@
             this.groupBox2.Controls.Add(this.radioButton4);
             this.groupBox2.Controls.Add(this.radioButton5);
             this.groupBox2.Controls.Add(this.radioButton6);
-            this.groupBox2.Location = new System.Drawing.Point(654, 363);
+            this.groupBox2.Location = new System.Drawing.Point(654, 343);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(200, 87);
             this.groupBox2.TabIndex = 28;
@@ -443,7 +444,7 @@
             // button5
             // 
             this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.Location = new System.Drawing.Point(787, 453);
+            this.button5.Location = new System.Drawing.Point(787, 436);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(123, 23);
             this.button5.TabIndex = 30;
@@ -451,9 +452,21 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.Location = new System.Drawing.Point(650, 510);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(260, 23);
+            this.button6.TabIndex = 31;
+            this.button6.Text = "Eksportuj do pliku STL";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(921, 534);
+            this.ClientSize = new System.Drawing.Size(921, 551);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
@@ -526,6 +539,7 @@
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.Button button6;
     }
 }
 
