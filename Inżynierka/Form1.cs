@@ -1849,6 +1849,11 @@ namespace Inżynierka
                             {
                                 if(j<boundaries_Y-1)
                                 {
+                                    /*GL.Normal3(0.0f, 1.0f, 0.0f);   // górna ściana (w płaszczyźnie XZ)
+                                    GL.Vertex4(0.5f, 0.5f, 0.5f,1.0f);
+                                    GL.Vertex4(0.5f, 0.5f, -0.5f, 1.0f);
+                                    GL.Vertex4(-0.5f, 0.5f, -0.5f, 1.0f);
+                                    GL.Vertex4(-0.5f, 0.5f, 0.5f, 1.0f);*/
                                     if(!cubeMatrix[i,j+1,k]) //czy ma być górna ściana
                                     {
                                         sw.WriteLine("facet normal 0.0 1.0 0.0");
@@ -2366,8 +2371,8 @@ namespace Inżynierka
                                     endloop
                                 endfacet
                                 */
+                                }
                             }
-                        }
                     }
                 }
                 sw.WriteLine("endsolid save1");
