@@ -1834,610 +1834,647 @@ namespace Inżynierka
 
         private void CreateStlFile() //zapis sceny jako plik ASCII STL
         {
-            string path = Environment.CurrentDirectory + "/" + save1stl;
-            //File.CreateText(path);
-            using (StreamWriter sw = new StreamWriter(path))
+            Stream myStream;
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+
+            saveFileDialog1.Filter = "stl files (*.stl)|*.stl";
+            saveFileDialog1.FilterIndex = 2;
+            saveFileDialog1.RestoreDirectory = true;
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                sw.WriteLine("solid save1");
-                for (int i = 0; i < boundaries_X; i++)
+                if ((myStream = saveFileDialog1.OpenFile()) != null)
                 {
-                    for (int j = 0; j < boundaries_Y; j++)
+                    myStream.Close();
+                    try
                     {
-                        for (int k = 0; k < boundaries_Z; k++)
+                        using (StreamWriter sw = new StreamWriter(saveFileDialog1.FileName))
                         {
-                            if (cubeMatrix[i, j, k])
+                            sw.WriteLine("solid save1");
+                            for (int i = 0; i < boundaries_X; i++)
                             {
-                                if(j<boundaries_Y-1)
+                                for (int j = 0; j < boundaries_Y; j++)
                                 {
-                                    /*GL.Normal3(0.0f, 1.0f, 0.0f);   // górna ściana (w płaszczyźnie XZ)
-                                    GL.Vertex4(0.5f, 0.5f, 0.5f,1.0f);
-                                    GL.Vertex4(0.5f, 0.5f, -0.5f, 1.0f);
-                                    GL.Vertex4(-0.5f, 0.5f, -0.5f, 1.0f);
-                                    GL.Vertex4(-0.5f, 0.5f, 0.5f, 1.0f);*/
-                                    if(!cubeMatrix[i,j+1,k]) //czy ma być górna ściana
+                                    for (int k = 0; k < boundaries_Z; k++)
                                     {
-                                        sw.WriteLine("facet normal 0.0 1.0 0.0");
-                                        sw.WriteLine("outer loop");
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',','.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j+ 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k- 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i- 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k- 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.WriteLine("endloop");
-                                        sw.WriteLine("endfacet");
-                                        sw.WriteLine("facet normal 0.0 1.0 0.0");
-                                        sw.WriteLine("outer loop");
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.WriteLine("endloop");
-                                        sw.WriteLine("endfacet");
+                                        if (cubeMatrix[i, j, k])
+                                        {
+                                            if (j < boundaries_Y - 1)
+                                            {
+                                                /*GL.Normal3(0.0f, 1.0f, 0.0f);   // górna ściana (w płaszczyźnie XZ)
+                                                GL.Vertex4(0.5f, 0.5f, 0.5f,1.0f);
+                                                GL.Vertex4(0.5f, 0.5f, -0.5f, 1.0f);
+                                                GL.Vertex4(-0.5f, 0.5f, -0.5f, 1.0f);
+                                                GL.Vertex4(-0.5f, 0.5f, 0.5f, 1.0f);*/
+                                                if (!cubeMatrix[i, j + 1, k]) //czy ma być górna ściana
+                                                {
+                                                    sw.WriteLine("facet normal 0.0 1.0 0.0");
+                                                    sw.WriteLine("outer loop");
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.WriteLine("endloop");
+                                                    sw.WriteLine("endfacet");
+                                                    sw.WriteLine("facet normal 0.0 1.0 0.0");
+                                                    sw.WriteLine("outer loop");
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.WriteLine("endloop");
+                                                    sw.WriteLine("endfacet");
+                                                }
+                                            }
+                                            else
+                                            {
+                                                sw.WriteLine("facet normal 0.0 1.0 0.0");
+                                                sw.WriteLine("outer loop");
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.WriteLine("endloop");
+                                                sw.WriteLine("endfacet");
+                                                sw.WriteLine("facet normal 0.0 1.0 0.0");
+                                                sw.WriteLine("outer loop");
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.WriteLine("endloop");
+                                                sw.WriteLine("endfacet");
+                                            }
+                                            if (j > 0)
+                                            {
+                                                /*GL.Normal3(0.0f, -1.0f, 0.0f);  // dolna ściana (w płaszczyźnie XZ)
+                                                GL.Vertex4(-0.5f, -0.5f, 0.5f, 1.0f);
+                                                GL.Vertex4(-0.5f, -0.5f, -0.5f, 1.0f);
+                                                GL.Vertex4(0.5f, -0.5f, -0.5f, 1.0f);
+                                                GL.Vertex4(0.5f, -0.5f, 0.5f, 1.0f);*/
+                                                if (!cubeMatrix[i, j - 1, k]) //czy ma być dolna ściana
+                                                {
+                                                    sw.WriteLine("facet normal 0.0 -1.0 0.0");
+                                                    sw.WriteLine("outer loop");
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.WriteLine("endloop");
+                                                    sw.WriteLine("endfacet");
+                                                    sw.WriteLine("facet normal 0.0 -1.0 0.0");
+                                                    sw.WriteLine("outer loop");
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.WriteLine("endloop");
+                                                    sw.WriteLine("endfacet");
+                                                }
+                                            }
+                                            else
+                                            {
+                                                sw.WriteLine("facet normal 0.0 -1.0 0.0");
+                                                sw.WriteLine("outer loop");
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.WriteLine("endloop");
+                                                sw.WriteLine("endfacet");
+                                                sw.WriteLine("facet normal 0.0 -1.0 0.0");
+                                                sw.WriteLine("outer loop");
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.WriteLine("endloop");
+                                                sw.WriteLine("endfacet");
+                                            }
+                                            if (k < boundaries_Z - 1)
+                                            {
+                                                /*GL.Normal3(0.0f, 0.0f, 1.0f);   // przednia ściana (w płaszczyźnie XY)
+                                                GL.Vertex4(0.5f, 0.5f, 0.5f, 1.0f);
+                                                GL.Vertex4(-0.5f, 0.5f, 0.5f, 1.0f);
+                                                GL.Vertex4(-0.5f, -0.5f, 0.5f, 1.0f);
+                                                GL.Vertex4(0.5f, -0.5f, 0.5f, 1.0f);*/
+                                                if (!cubeMatrix[i, j, k + 1]) //czy ma być przednia ściana
+                                                {
+                                                    sw.WriteLine("facet normal 0.0 0.0 1.0");
+                                                    sw.WriteLine("outer loop");
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.WriteLine("endloop");
+                                                    sw.WriteLine("endfacet");
+                                                    sw.WriteLine("facet normal 0.0 0.0 -1.0");
+                                                    sw.WriteLine("outer loop");
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.WriteLine("endloop");
+                                                    sw.WriteLine("endfacet");
+                                                }
+                                            }
+                                            else
+                                            {
+                                                sw.WriteLine("facet normal 0.0 0.0 1.0");
+                                                sw.WriteLine("outer loop");
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.WriteLine("endloop");
+                                                sw.WriteLine("endfacet");
+                                                sw.WriteLine("facet normal 0.0 0.0 -1.0");
+                                                sw.WriteLine("outer loop");
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.WriteLine("endloop");
+                                                sw.WriteLine("endfacet");
+                                            }
+                                            if (k > 0)
+                                            {
+                                                /*GL.Normal3(0.0f, 0.0f, -1.0f);  // tylna ściana (w płaszczyźnie XY)
+                                                GL.Vertex4(0.5f, -0.5f, -0.5f, 1.0f);
+                                                GL.Vertex4(-0.5f, -0.5f, -0.5f, 1.0f);
+                                                GL.Vertex4(-0.5f, 0.5f, -0.5f, 1.0f);
+                                                GL.Vertex4(0.5f, 0.5f, -0.5f, 1.0f);*/
+                                                if (!cubeMatrix[i, j, k - 1]) //czy ma być tylna ściana
+                                                {
+                                                    sw.WriteLine("facet normal 0.0 0.0 -1.0");
+                                                    sw.WriteLine("outer loop");
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.WriteLine("endloop");
+                                                    sw.WriteLine("endfacet");
+                                                    sw.WriteLine("facet normal 0.0 0.0 -1.0");
+                                                    sw.WriteLine("outer loop");
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.WriteLine("endloop");
+                                                    sw.WriteLine("endfacet");
+                                                }
+                                            }
+                                            else
+                                            {
+                                                sw.WriteLine("facet normal 0.0 0.0 -1.0");
+                                                sw.WriteLine("outer loop");
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.WriteLine("endloop");
+                                                sw.WriteLine("endfacet");
+                                                sw.WriteLine("facet normal 0.0 0.0 -1.0");
+                                                sw.WriteLine("outer loop");
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.WriteLine("endloop");
+                                                sw.WriteLine("endfacet");
+                                            }
+                                            if (i < boundaries_X - 1)
+                                            {
+                                                /*GL.Normal3(1.0f, 0.0f, 0.0f);   // prawa ściana (w płaszczyźnie YZ)
+                                                GL.Vertex4(0.5f, 0.5f, 0.5f, 1.0f);
+                                                GL.Vertex4(0.5f, -0.5f, 0.5f, 1.0f);
+                                                GL.Vertex4(0.5f, -0.5f, -0.5f, 1.0f);
+                                                GL.Vertex4(0.5f, 0.5f, -0.5f, 1.0f);*/
+                                                if (!cubeMatrix[i + 1, j, k]) //czy ma być prawa ściana
+                                                {
+                                                    sw.WriteLine("facet normal 1.0 0.0 0.0");
+                                                    sw.WriteLine("outer loop");
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.WriteLine("endloop");
+                                                    sw.WriteLine("endfacet");
+                                                    sw.WriteLine("facet normal 1.0 0.0 0.0");
+                                                    sw.WriteLine("outer loop");
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.WriteLine("endloop");
+                                                    sw.WriteLine("endfacet");
+                                                }
+                                            }
+                                            else
+                                            {
+                                                sw.WriteLine("facet normal 1.0 0.0 0.0");
+                                                sw.WriteLine("outer loop");
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.WriteLine("endloop");
+                                                sw.WriteLine("endfacet");
+                                                sw.WriteLine("facet normal 1.0 0.0 0.0");
+                                                sw.WriteLine("outer loop");
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.WriteLine("endloop");
+                                                sw.WriteLine("endfacet");
+                                            }
+                                            if (i > 0)
+                                            {
+                                                /*GL.Normal3(-1.0f, 0.0f, 0.0f);  // lewa ściana (w płaszczyźnie YZ)
+                                                GL.Vertex4(-0.5f, 0.5f, 0.5f, 1.0f);
+                                                GL.Vertex4(-0.5f, 0.5f, -0.5f, 1.0f);
+                                                GL.Vertex4(-0.5f, -0.5f, -0.5f, 1.0f);
+                                                GL.Vertex4(-0.5f, -0.5f, 0.5f, 1.0f);*/
+                                                if (!cubeMatrix[i - 1, j, k]) //czy ma być prawa ściana
+                                                {
+                                                    sw.WriteLine("facet normal -1.0 0.0 0.0");
+                                                    sw.WriteLine("outer loop");
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.WriteLine("endloop");
+                                                    sw.WriteLine("endfacet");
+                                                    sw.WriteLine("facet normal -1.0 0.0 0.0");
+                                                    sw.WriteLine("outer loop");
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.Write("vertex ");
+                                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                    sw.Write(Environment.NewLine);
+                                                    sw.WriteLine("endloop");
+                                                    sw.WriteLine("endfacet");
+                                                }
+                                            }
+                                            else
+                                            {
+                                                sw.WriteLine("facet normal -1.0 0.0 0.0");
+                                                sw.WriteLine("outer loop");
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.WriteLine("endloop");
+                                                sw.WriteLine("endfacet");
+                                                sw.WriteLine("facet normal -1.0 0.0 0.0");
+                                                sw.WriteLine("outer loop");
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.Write("vertex ");
+                                                sw.Write((i - 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((j + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write((k + 0.5 + " ").Replace(',', '.'));
+                                                sw.Write(Environment.NewLine);
+                                                sw.WriteLine("endloop");
+                                                sw.WriteLine("endfacet");
+                                            }
+                                            //ogarnięcie wpisu trisów boxa
+                                            /*facet normal ni nj nk
+                                                outer loop
+                                                    vertex v1x v1y v1z
+                                                    vertex v2x v2y v2z
+                                                    vertex v3x v3y v3z
+                                                endloop
+                                            endfacet
+                                            */
+                                        }
                                     }
-                                }
-                                else
-                                {
-                                    sw.WriteLine("facet normal 0.0 1.0 0.0");
-                                    sw.WriteLine("outer loop");
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.WriteLine("endloop");
-                                    sw.WriteLine("endfacet");
-                                    sw.WriteLine("facet normal 0.0 1.0 0.0");
-                                    sw.WriteLine("outer loop");
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.WriteLine("endloop");
-                                    sw.WriteLine("endfacet");
-                                }
-                                if (j > 0)
-                                {
-                                    /*GL.Normal3(0.0f, -1.0f, 0.0f);  // dolna ściana (w płaszczyźnie XZ)
-                                    GL.Vertex4(-0.5f, -0.5f, 0.5f, 1.0f);
-                                    GL.Vertex4(-0.5f, -0.5f, -0.5f, 1.0f);
-                                    GL.Vertex4(0.5f, -0.5f, -0.5f, 1.0f);
-                                    GL.Vertex4(0.5f, -0.5f, 0.5f, 1.0f);*/
-                                    if (!cubeMatrix[i, j - 1, k]) //czy ma być dolna ściana
-                                    {
-                                        sw.WriteLine("facet normal 0.0 -1.0 0.0");
-                                        sw.WriteLine("outer loop");
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.WriteLine("endloop");
-                                        sw.WriteLine("endfacet");
-                                        sw.WriteLine("facet normal 0.0 -1.0 0.0");
-                                        sw.WriteLine("outer loop");
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.WriteLine("endloop");
-                                        sw.WriteLine("endfacet");
-                                    }
-                                }
-                                else
-                                {
-                                    sw.WriteLine("facet normal 0.0 -1.0 0.0");
-                                    sw.WriteLine("outer loop");
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.WriteLine("endloop");
-                                    sw.WriteLine("endfacet");
-                                    sw.WriteLine("facet normal 0.0 -1.0 0.0");
-                                    sw.WriteLine("outer loop");
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.WriteLine("endloop");
-                                    sw.WriteLine("endfacet");
-                                }
-                                if (k < boundaries_Z - 1)
-                                {
-                                    /*GL.Normal3(0.0f, 0.0f, 1.0f);   // przednia ściana (w płaszczyźnie XY)
-                                    GL.Vertex4(0.5f, 0.5f, 0.5f, 1.0f);
-                                    GL.Vertex4(-0.5f, 0.5f, 0.5f, 1.0f);
-                                    GL.Vertex4(-0.5f, -0.5f, 0.5f, 1.0f);
-                                    GL.Vertex4(0.5f, -0.5f, 0.5f, 1.0f);*/
-                                    if (!cubeMatrix[i, j, k+1]) //czy ma być przednia ściana
-                                    {
-                                        sw.WriteLine("facet normal 0.0 0.0 1.0");
-                                        sw.WriteLine("outer loop");
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.WriteLine("endloop");
-                                        sw.WriteLine("endfacet");
-                                        sw.WriteLine("facet normal 0.0 0.0 -1.0");
-                                        sw.WriteLine("outer loop");
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.WriteLine("endloop");
-                                        sw.WriteLine("endfacet");
-                                    }
-                                }
-                                else
-                                {
-                                    sw.WriteLine("facet normal 0.0 0.0 1.0");
-                                    sw.WriteLine("outer loop");
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.WriteLine("endloop");
-                                    sw.WriteLine("endfacet");
-                                    sw.WriteLine("facet normal 0.0 0.0 -1.0");
-                                    sw.WriteLine("outer loop");
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.WriteLine("endloop");
-                                    sw.WriteLine("endfacet");
-                                }
-                                if (k > 0)
-                                {
-                                    /*GL.Normal3(0.0f, 0.0f, -1.0f);  // tylna ściana (w płaszczyźnie XY)
-                                    GL.Vertex4(0.5f, -0.5f, -0.5f, 1.0f);
-                                    GL.Vertex4(-0.5f, -0.5f, -0.5f, 1.0f);
-                                    GL.Vertex4(-0.5f, 0.5f, -0.5f, 1.0f);
-                                    GL.Vertex4(0.5f, 0.5f, -0.5f, 1.0f);*/
-                                    if (!cubeMatrix[i, j, k-1]) //czy ma być tylna ściana
-                                    {
-                                        sw.WriteLine("facet normal 0.0 0.0 -1.0");
-                                        sw.WriteLine("outer loop");
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.WriteLine("endloop");
-                                        sw.WriteLine("endfacet");
-                                        sw.WriteLine("facet normal 0.0 0.0 -1.0");
-                                        sw.WriteLine("outer loop");
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.WriteLine("endloop");
-                                        sw.WriteLine("endfacet");
-                                    }
-                                }
-                                else
-                                {
-                                    sw.WriteLine("facet normal 0.0 0.0 -1.0");
-                                    sw.WriteLine("outer loop");
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.WriteLine("endloop");
-                                    sw.WriteLine("endfacet");
-                                    sw.WriteLine("facet normal 0.0 0.0 -1.0");
-                                    sw.WriteLine("outer loop");
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.WriteLine("endloop");
-                                    sw.WriteLine("endfacet");
-                                }
-                                if (i < boundaries_X - 1)
-                                {
-                                    /*GL.Normal3(1.0f, 0.0f, 0.0f);   // prawa ściana (w płaszczyźnie YZ)
-                                    GL.Vertex4(0.5f, 0.5f, 0.5f, 1.0f);
-                                    GL.Vertex4(0.5f, -0.5f, 0.5f, 1.0f);
-                                    GL.Vertex4(0.5f, -0.5f, -0.5f, 1.0f);
-                                    GL.Vertex4(0.5f, 0.5f, -0.5f, 1.0f);*/
-                                    if (!cubeMatrix[i+1, j, k]) //czy ma być prawa ściana
-                                    {
-                                        sw.WriteLine("facet normal 1.0 0.0 0.0");
-                                        sw.WriteLine("outer loop");
-                                        sw.Write("vertex ");
-                                        sw.Write((i+0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i+ 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j  - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k  - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.WriteLine("endloop");
-                                        sw.WriteLine("endfacet");
-                                        sw.WriteLine("facet normal 1.0 0.0 0.0");
-                                        sw.WriteLine("outer loop");
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.WriteLine("endloop");
-                                        sw.WriteLine("endfacet");
-                                    }
-                                }
-                                else
-                                {
-                                    sw.WriteLine("facet normal 1.0 0.0 0.0");
-                                    sw.WriteLine("outer loop");
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.WriteLine("endloop");
-                                    sw.WriteLine("endfacet");
-                                    sw.WriteLine("facet normal 1.0 0.0 0.0");
-                                    sw.WriteLine("outer loop");
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.WriteLine("endloop");
-                                    sw.WriteLine("endfacet");
-                                }
-                                if (i > 0)
-                                {
-                                    /*GL.Normal3(-1.0f, 0.0f, 0.0f);  // lewa ściana (w płaszczyźnie YZ)
-                                    GL.Vertex4(-0.5f, 0.5f, 0.5f, 1.0f);
-                                    GL.Vertex4(-0.5f, 0.5f, -0.5f, 1.0f);
-                                    GL.Vertex4(-0.5f, -0.5f, -0.5f, 1.0f);
-                                    GL.Vertex4(-0.5f, -0.5f, 0.5f, 1.0f);*/
-                                    if (!cubeMatrix[i - 1, j, k]) //czy ma być prawa ściana
-                                    {
-                                        sw.WriteLine("facet normal -1.0 0.0 0.0");
-                                        sw.WriteLine("outer loop");
-                                        sw.Write("vertex ");
-                                        sw.Write((i -0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.WriteLine("endloop");
-                                        sw.WriteLine("endfacet");
-                                        sw.WriteLine("facet normal -1.0 0.0 0.0");
-                                        sw.WriteLine("outer loop");
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.Write("vertex ");
-                                        sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                        sw.Write(Environment.NewLine);
-                                        sw.WriteLine("endloop");
-                                        sw.WriteLine("endfacet");
-                                    }
-                                }
-                                else
-                                {
-                                    sw.WriteLine("facet normal -1.0 0.0 0.0");
-                                    sw.WriteLine("outer loop");
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.WriteLine("endloop");
-                                    sw.WriteLine("endfacet");
-                                    sw.WriteLine("facet normal -1.0 0.0 0.0");
-                                    sw.WriteLine("outer loop");
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.Write("vertex ");
-                                    sw.Write((i - 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((j + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write((k + 0.5 + " ").Replace(',', '.'));
-                                    sw.Write(Environment.NewLine);
-                                    sw.WriteLine("endloop");
-                                    sw.WriteLine("endfacet");
-                                }
-                                //ogarnięcie wpisu trisów boxa
-                                /*facet normal ni nj nk
-                                    outer loop
-                                        vertex v1x v1y v1z
-                                        vertex v2x v2y v2z
-                                        vertex v3x v3y v3z
-                                    endloop
-                                endfacet
-                                */
                                 }
                             }
+                            sw.WriteLine("endsolid save1");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
                     }
                 }
-                sw.WriteLine("endsolid save1");
             }
         }
 
         private void button3_Click(object sender, EventArgs e) //zapisz scenę
         {
-            string path = Environment.CurrentDirectory + "/" + save1;
-            //File.CreateText(path);
-            using (StreamWriter sw = new StreamWriter(path))
+            Stream myStream;
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+
+            saveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            saveFileDialog1.FilterIndex = 2;
+            saveFileDialog1.RestoreDirectory = true;
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                //sw.WriteLine("solid save1");
-                sw.WriteLine(Convert.ToString(boundaries_X));
-                for (int i = 0; i < boundaries_X; i++)
+                if ((myStream = saveFileDialog1.OpenFile()) != null)
                 {
-                    for (int j = 0; j < boundaries_Y; j++)
+                    myStream.Close();
+                    try
                     {
-                        for (int k = 0; k < boundaries_Z; k++)
+                        using (StreamWriter sw = new StreamWriter(saveFileDialog1.FileName))
                         {
-                            if (cubeMatrix[i, j, k]) sw.Write("1 ");
-                            else sw.Write("0 ");
+                            sw.WriteLine(Convert.ToString(boundaries_X));
+                            for (int i = 0; i < boundaries_X; i++)
+                            {
+                                for (int j = 0; j < boundaries_Y; j++)
+                                {
+                                    for (int k = 0; k < boundaries_Z; k++)
+                                    {
+                                        if (cubeMatrix[i, j, k]) sw.Write("1 ");
+                                        else sw.Write("0 ");
+                                    }
+                                    sw.Write(Environment.NewLine);
+                                }
+                            }
+                            for (int i = 0; i < boundaries_X; i++)
+                            {
+                                for (int j = 0; j < boundaries_Y; j++)
+                                {
+                                    for (int k = 0; k < boundaries_Z; k++)
+                                    {
+                                        sw.Write(Convert.ToString((int)chosenColor[i, j, k].R));
+                                        sw.Write(" ");
+                                        sw.Write(Convert.ToString((int)chosenColor[i, j, k].G));
+                                        sw.Write(" ");
+                                        sw.Write(Convert.ToString((int)chosenColor[i, j, k].B));
+                                        sw.Write(" ");
+                                    }
+                                    sw.Write(Environment.NewLine);
+                                }
+                            }
                         }
-                        sw.Write(Environment.NewLine);
                     }
-                }
-                for (int i = 0; i < boundaries_X; i++)
-                {
-                    for (int j = 0; j < boundaries_Y; j++)
+                    catch (Exception ex)
                     {
-                        for (int k = 0; k < boundaries_Z; k++)
-                        {
-                            sw.Write(Convert.ToString((int)chosenColor[i, j, k].R));
-                            sw.Write(" ");
-                            sw.Write(Convert.ToString((int)chosenColor[i, j, k].G));
-                            sw.Write(" ");
-                            sw.Write(Convert.ToString((int)chosenColor[i, j, k].B));
-                            sw.Write(" ");
-                        }
-                        sw.Write(Environment.NewLine);
+                        MessageBox.Show(ex.Message);
                     }
                 }
             }
@@ -2445,38 +2482,51 @@ namespace Inżynierka
 
         private void button2_Click(object sender, EventArgs e) //wczytaj scenę
         {
-            string path = Environment.CurrentDirectory + "/" + save1;
-            using (StreamReader sr = new StreamReader(path))
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                boundaries_X = Convert.ToSingle(sr.ReadLine());
-                boundaries_Y = boundaries_X;
-                boundaries_Z = boundaries_X;
-                for (int i = 0; i < boundaries_X; i++)
+                try
                 {
-                    for (int j = 0; j < boundaries_Y; j++)
+                    using (StreamReader sr = new StreamReader(openFileDialog1.FileName))
                     {
-                        string line = sr.ReadLine();
-                        string[] splited = line.Split(' ');
-                        for (int k = 0; k < boundaries_Z; k++)
+                        boundaries_X = Convert.ToSingle(sr.ReadLine());
+                        boundaries_Y = boundaries_X;
+                        boundaries_Z = boundaries_X;
+                        for (int i = 0; i < boundaries_X; i++)
                         {
-                            if (splited[k] == "1") cubeMatrix[i, j, k] = true;
-                            else cubeMatrix[i, j, k] = false;
+                            for (int j = 0; j < boundaries_Y; j++)
+                            {
+                                string line = sr.ReadLine();
+                                string[] splited = line.Split(' ');
+                                for (int k = 0; k < boundaries_Z; k++)
+                                {
+                                    if (splited[k] == "1") cubeMatrix[i, j, k] = true;
+                                    else cubeMatrix[i, j, k] = false;
+                                }
+                            }
                         }
+                        for (int i = 0; i < boundaries_X; i++)
+                        {
+                            for (int j = 0; j < boundaries_Y; j++)
+                            {
+                                string line = sr.ReadLine();
+                                string[] splited = line.Split(' ');
+                                for (int k = 0; k < boundaries_Z; k++)
+                                {
+                                    chosenColor[i, j, k] = Color.FromArgb(Convert.ToByte(splited[3 * k]), Convert.ToByte(splited[3 * k + 1]), Convert.ToByte(splited[3 * k + 2]));
+                                }
+                            }
+                        }
+                        selector = new Vector3(0.5f, 0.5f, 0.5f);
                     }
                 }
-                for (int i = 0; i < boundaries_X; i++)
+                catch (Exception ex)
                 {
-                    for (int j = 0; j < boundaries_Y; j++)
-                    {
-                        string line = sr.ReadLine();
-                        string[] splited = line.Split(' ');
-                        for (int k = 0; k < boundaries_Z; k++)
-                        {
-                            chosenColor[i,j,k] = Color.FromArgb(Convert.ToByte(splited[3 * k]), Convert.ToByte(splited[3 * k + 1]), Convert.ToByte(splited[3 * k + 2]));
-                        }
-                    }
+                    MessageBox.Show(ex.Message);
                 }
             }
+
+            glControl1.Invalidate();
         }
 
         private void button6_Click_1(object sender, EventArgs e)
