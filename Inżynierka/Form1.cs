@@ -22,6 +22,11 @@ namespace Inżynierka
         float boundaries_X = 15.0f;
         float boundaries_Y = 15.0f;
         float boundaries_Z = 15.0f;
+        float light_X = 25.0f;
+        float light_Y = 100.0f;
+        float light_Z = 25.0f;
+        float light_Radius = 0.0f;
+        Color light_Color = Color.White;
         float cameraDistance = -10.0f;
         Vector3 selector = new Vector3(0.5f, 0.5f, 0.5f);
         bool[,,] cubeMatrix;
@@ -67,10 +72,15 @@ namespace Inżynierka
             //GL.End();
             glControl1.SwapBuffers();
         }
+
         private void glControl1_Paint(object sender, PaintEventArgs e)
         {
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
             GL.MatrixMode(MatrixMode.Modelview);
+            GL.Enable(EnableCap.Lighting);
+            GL.Enable(EnableCap.Light0);
+            GL.Enable(EnableCap.ColorMaterial);
+            GL.Enable(EnableCap.DepthTest);
             //GL.UniformMatrix4(0, false, ref projection);
             //GL.LoadMatrix(ref projection);
             GL.LoadIdentity();
@@ -102,6 +112,11 @@ namespace Inżynierka
             GL.LineWidth(1.0f);
             //DrawBox(.2f,Color.Green);
             //DrawSelector(selector.X, selector.Y, selector.Z);
+            GL.Light(LightName.Light0, LightParameter.Position, new float[] { light_X, light_Y, light_Z, 0.0f });
+            GL.Light(LightName.Light0, LightParameter.Diffuse, light_Color);
+            GL.Light(LightName.Light0, LightParameter.Ambient, new float[] { 0.15f, 0.15f, 0.15f, 0.05f});
+            //GL.Light(LightName.Light0, LightParameter.Specular, Color.Black);
+            drawLightSource(new Vector3(light_X, light_Y, light_Z));
             if(activePoint1 && activePoint2)
             {
                 DrawAreaSelector(point1, point2, Color.DarkKhaki);
@@ -411,8 +426,12 @@ namespace Inżynierka
             int calcX = (int)Math.Floor(position.X), calcY = (int)Math.Floor(position.Y), calcZ = (int)Math.Floor(position.Z);
             GL.PushMatrix();
             GL.Translate(position.X, position.Y, position.Z);
+            GL.ColorMaterial(MaterialFace.Front, ColorMaterialParameter.AmbientAndDiffuse);
+            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.Diffuse,chosenColor[calcX,calcY,calcZ]);
             GL.Color3(chosenColor[calcX, calcY, calcZ]);
+            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.AmbientAndDiffuse, new Vector4(1.0f,chosenColor[calcX, calcY, calcZ].R,chosenColor[calcX,calcY,calcZ].G, chosenColor[calcX, calcY, calcZ].B));
             //GL.Color4((byte)chosenColor[calcX, calcY, calcZ].R, (byte)chosenColor[calcX, calcY, calcZ].G, (byte)chosenColor[calcX, calcY, calcZ].B, (byte)64);
+
             GL.LineWidth(1.0f);
             if (showXZ)
             {
@@ -620,7 +639,9 @@ namespace Inżynierka
             int calcX = (int)Math.Floor(position.X), calcY = (int)Math.Floor(position.Y), calcZ = (int)Math.Floor(position.Z);
             GL.PushMatrix();
             GL.Translate(position.X, position.Y, position.Z);
+            GL.ColorMaterial(MaterialFace.Front, ColorMaterialParameter.AmbientAndDiffuse);
             GL.Color3(Color.Black);
+            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.AmbientAndDiffuse, Color.Black);
             GL.LineWidth(1.5f);
             if (calcZ > 0 && calcY < boundaries_Y - 1)
             {
@@ -871,7 +892,9 @@ namespace Inżynierka
         {
             //GL.PushMatrix();
             //GL.Translate(position.X, position.Y, position.Z);
-            GL.Color3(color);
+            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.AmbientAndDiffuse, color);
+            GL.ColorMaterial(MaterialFace.Front, ColorMaterialParameter.AmbientAndDiffuse);
+            GL.Color3(Color.Black);
             float[,] n = new float[,]{
             {-1.0f, 0.0f, 0.0f},
             {0.0f, 1.0f, 0.0f},
@@ -914,6 +937,7 @@ namespace Inżynierka
         void DrawBoundaries()
         {
             GL.PushMatrix();
+            GL.ColorMaterial(MaterialFace.Front, ColorMaterialParameter.AmbientAndDiffuse);
             GL.Color3(Color.Crimson);
             GL.Begin(PrimitiveType.Lines);
             GL.Vertex3(0.0f, 0.0f, 0.0f);
@@ -968,7 +992,9 @@ namespace Inżynierka
         {
             GL.PushMatrix();
             GL.Translate(x, y, z);
+            GL.ColorMaterial(MaterialFace.Front, ColorMaterialParameter.AmbientAndDiffuse);
             GL.Color3(color);
+            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.AmbientAndDiffuse, color);
             GL.Begin(PrimitiveType.Lines);
             //GL.Vertex3(0.0f, 0.0f, 0.0f);
             //GL.Vertex3(- 0.5f, - 0.5f, - 0.5f);
@@ -1025,6 +1051,7 @@ namespace Inżynierka
         void DrawAreaSelector(Vector3 p1,Vector3 p2, Color color)
         {
             GL.PushMatrix();
+            GL.LineWidth(3.0f);
             float lowX, hiX, lowY, hiY, lowZ, hiZ, distX, distY, distZ;
             if (p1.X>p2.X)
             {
@@ -1060,7 +1087,9 @@ namespace Inżynierka
             distY = Math.Abs(p1.Y - p2.Y) + 1.0f;
             distZ = Math.Abs(p1.Z - p2.Z) + 1.0f;
             GL.Translate((p1.X+p2.X)/2.0f, (p1.Y + p2.Y) / 2.0f, (p1.Z + p2.Z) / 2.0f);
+            GL.ColorMaterial(MaterialFace.Front, ColorMaterialParameter.AmbientAndDiffuse);
             GL.Color3(color);
+            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.AmbientAndDiffuse, color);
             GL.Begin(PrimitiveType.Lines);
             //GL.Vertex3(0.0f, 0.0f, 0.0f);
             //GL.Vertex3(- 0.5f, - 0.5f, - 0.5f);
@@ -1111,13 +1140,15 @@ namespace Inżynierka
             GL.Vertex3(+distX / 2.0f, +distY / 2.0f, +distZ / 2.0f);
             GL.Vertex3(+distX / 2.0f, +distY / 2.0f, -distZ / 2.0f);
             GL.End();
+            GL.LineWidth(1.0f);
             GL.PopMatrix();
         }
 
         void drawCircle(float radius)
         {
-
+            GL.ColorMaterial(MaterialFace.Front, ColorMaterialParameter.AmbientAndDiffuse);
             GL.Color3(Color.White);
+            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.AmbientAndDiffuse, Color.White);
             GL.Begin(PrimitiveType.TriangleFan);
 
             for (int i = 0; i < 360; i++)
@@ -1128,12 +1159,74 @@ namespace Inżynierka
             GL.End();
         }
 
+        void drawLightSource(Vector3 position)
+        {
+            GL.PushMatrix();
+            GL.Translate(position.X, position.Y, position.Z);
+            GL.ColorMaterial(MaterialFace.Front, ColorMaterialParameter.AmbientAndDiffuse);
+            GL.Color3(Color.White);
+            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.AmbientAndDiffuse, Color.Yellow);
+            GL.Begin(PrimitiveType.Quads);
+            GL.Normal3(0.0f, 1.0f, 0.0f);   // górna ściana (w płaszczyźnie XZ)
+            GL.Vertex4(0.5f, 0.5f, 0.5f, 1.0f);
+            GL.Vertex4(0.5f, 0.5f, -0.5f, 1.0f);
+            GL.Vertex4(-0.5f, 0.5f, -0.5f, 1.0f);
+            GL.Vertex4(-0.5f, 0.5f, 0.5f, 1.0f);
+            GL.End();
+            GL.Begin(PrimitiveType.Quads);
+            GL.Normal3(0.0f, 0.0f, 1.0f);   // przednia ściana (w płaszczyźnie XY)
+            GL.Vertex4(0.5f, 0.5f, 0.5f, 1.0f);
+            GL.Vertex4(-0.5f, 0.5f, 0.5f, 1.0f);
+            GL.Vertex4(-0.5f, -0.5f, 0.5f, 1.0f);
+            GL.Vertex4(0.5f, -0.5f, 0.5f, 1.0f);
+            GL.End();
+            GL.Begin(PrimitiveType.Quads);
+            GL.Normal3(1.0f, 0.0f, 0.0f);   // prawa ściana (w płaszczyźnie YZ)
+            GL.Vertex4(0.5f, 0.5f, 0.5f, 1.0f);
+            GL.Vertex4(0.5f, -0.5f, 0.5f, 1.0f);
+            GL.Vertex4(0.5f, -0.5f, -0.5f, 1.0f);
+            GL.Vertex4(0.5f, 0.5f, -0.5f, 1.0f);
+            GL.End();
+            GL.Begin(PrimitiveType.Quads);
+            GL.Normal3(-1.0f, 0.0f, 0.0f);  // lewa ściana (w płaszczyźnie YZ)
+            GL.Vertex4(-0.5f, 0.5f, 0.5f, 1.0f);
+            GL.Vertex4(-0.5f, 0.5f, -0.5f, 1.0f);
+            GL.Vertex4(-0.5f, -0.5f, -0.5f, 1.0f);
+            GL.Vertex4(-0.5f, -0.5f, 0.5f, 1.0f);
+            GL.End();
+            GL.Begin(PrimitiveType.Quads);
+            GL.Normal3(0.0f, -1.0f, 0.0f);  // dolna ściana (w płaszczyźnie XZ)
+            GL.Vertex4(-0.5f, -0.5f, 0.5f, 1.0f);
+            GL.Vertex4(-0.5f, -0.5f, -0.5f, 1.0f);
+            GL.Vertex4(0.5f, -0.5f, -0.5f, 1.0f);
+            GL.Vertex4(0.5f, -0.5f, 0.5f, 1.0f);
+            GL.End();
+            GL.Begin(PrimitiveType.Quads);
+            GL.Normal3(0.0f, 0.0f, -1.0f);  // tylna ściana (w płaszczyźnie XY)
+            GL.Vertex4(0.5f, -0.5f, -0.5f, 1.0f);
+            GL.Vertex4(-0.5f, -0.5f, -0.5f, 1.0f);
+            GL.Vertex4(-0.5f, 0.5f, -0.5f, 1.0f);
+            GL.Vertex4(0.5f, 0.5f, -0.5f, 1.0f);
+            GL.End();
+            GL.PopMatrix();
+        }
+
         private void glControl1_Load(object sender, EventArgs e)
         {
             GL.ClearColor(Color.SkyBlue);
-            GL.Enable(EnableCap.DepthTest);
+            //GL.Enable(EnableCap.Lighting);
+            //GL.Enable(EnableCap.Light0);
+            //GL.Enable(EnableCap.ColorMaterial);
+            //GL.Enable(EnableCap.DepthTest);
+
             cubeMatrix = new bool[(int)boundaries_X, (int)boundaries_Y, (int)boundaries_Z];
             chosenColor = new Color[(int)boundaries_X, (int)boundaries_Y, (int)boundaries_Z];
+            numericUpDown1.Minimum = -100;
+            numericUpDown1.Maximum = (int)boundaries_X * 2;
+            numericUpDown2.Minimum = -100;
+            numericUpDown2.Maximum = (int)boundaries_Y * 2;
+            numericUpDown3.Minimum = -100;
+            numericUpDown3.Maximum = (int)boundaries_Z * 2;
         }
 
         private void glControl1_KeyDown(object sender, KeyEventArgs e)
@@ -1829,6 +1922,7 @@ namespace Inżynierka
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 currentColor = colorDialog1.Color;
+                textBox2.BackColor = currentColor;
             }
         }
 
@@ -2533,6 +2627,33 @@ namespace Inżynierka
         {
             CreateStlFile();
         } //guzik od zapisu do stl
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e) //pozycja światła X
+        {
+            light_X = (float)numericUpDown1.Value;
+            glControl1.Invalidate();
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e) //pozycja światła Y
+        {
+            light_Y = (float)numericUpDown2.Value;
+            glControl1.Invalidate();
+        }
+
+        private void numericUpDown3_ValueChanged(object sender, EventArgs e) //pozycja światła Z
+        {
+            light_Z = (float)numericUpDown3.Value;
+            glControl1.Invalidate();
+        }
+
+        private void button9_Click(object sender, EventArgs e) //kolor światła
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                light_Color = colorDialog1.Color;
+                textBox1.BackColor = light_Color;
+            }
+        }
     }
 }
  

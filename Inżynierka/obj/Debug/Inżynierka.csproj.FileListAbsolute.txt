@@ -71,3 +71,19 @@ C:\z SSDka\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csproj.CoreCompileInput
 C:\z SSDka\Inżynierka\Inżynierka\obj\Debug\Inżynierka.csproj.CopyComplete
 C:\z SSDka\Inżynierka\Inżynierka\obj\Debug\Inżynierka.exe
 C:\z SSDka\Inżynierka\Inżynierka\obj\Debug\Inżynierka.pdb
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\bin\Debug\Inżynierka.exe.config
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\bin\Debug\Inżynierka.exe
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\bin\Debug\Inżynierka.pdb
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\bin\Debug\OpenTK.dll
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\bin\Debug\OpenTK.GLControl.dll
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\bin\Debug\OpenTK.pdb
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\bin\Debug\OpenTK.xml
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\bin\Debug\OpenTK.Compatibility.dll.config
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\bin\Debug\OpenTK.GLControl.pdb
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\obj\Debug\Inżynierka.csprojResolveAssemblyReference.cache
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\obj\Debug\Inżynierka.Form1.resources
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\obj\Debug\Inżynierka.Properties.Resources.resources
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\obj\Debug\Inżynierka.csproj.GenerateResource.Cache
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\obj\Debug\Inżynierka.exe
+C:\Users\Ryszard\Documents\GitHub\In-ynierka\Inżynierka\obj\Debug\Inżynierka.pdb
