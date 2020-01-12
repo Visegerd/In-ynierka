@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using OpenTK;
-//using OpenTK.Graphics;
 using OpenTK.Graphics.OpenGL;
 using OpenTK.Input;
 
@@ -81,41 +80,17 @@ namespace Inżynierka
             GL.Enable(EnableCap.Light0);
             GL.Enable(EnableCap.ColorMaterial);
             GL.Enable(EnableCap.DepthTest);
-            //GL.UniformMatrix4(0, false, ref projection);
-            //GL.LoadMatrix(ref projection);
-            GL.LoadIdentity();
-            //camX = selector.X + (cameraDistance * -Math.Sin(rotation_X * (Math.PI / 180)) * Math.Cos((rotation_Y) * (Math.PI / 180)));
-            //camY = selector.Y + (cameraDistance * -Math.Sin(rotation_Y * (Math.PI / 180)));
-            //camZ = selector.Z + (-cameraDistance * Math.Cos((rotation_X) * (Math.PI / 180)) * Math.Cos((rotation_Y) * (Math.PI / 180)));
-            //camX = -cameraDistance * Math.Sin(rotation_X * (Math.PI / 180));
-            //camX = -cameraDistance * Math.Cos(rotation_Y * (Math.PI / 180));
-            //GL.Translate(-selector.X, -selector.Y, -selector.Z);
-            //Matrix4.LookAt(new Vector3(selector.X, selector.Y, selector.Z + cameraDistance), selector, Vector3.UnitY);
-            //GL.Translate(0.0f, 0.0f, cameraDistance);
-            //GL.Translate(selector.X, selector.Y, selector.Z + cameraDistance);
-
-            //OpenTK.Graphics.Glu.LookAt(0, 0, cameraDistance,0, 0, 0, 0, 1, 0);
-            //GL.Rotate(rotation_X, Vector3.UnitX);
-            //GL.Rotate(rotation_Y, Vector3.UnitY);
-            //GL.Translate(selector.X, selector.Y, selector.Z);
-            
+            GL.LoadIdentity();     
             GL.Translate(-selector.X, -selector.Y, -selector.Z + cameraDistance);
-            
             GL.PushMatrix();
-
-            //DrawBox(.2f,Color.Blue);
-            //GL.PushMatrix();
             GL.Translate(selector.X, selector.Y, selector.Z);
             GL.Rotate(rotation_X, 1,0,0);
             GL.Rotate(rotation_Y, 0,1,0);
             GL.Translate(-selector.X, -selector.Y, -selector.Z);
             GL.LineWidth(1.0f);
-            //DrawBox(.2f,Color.Green);
-            //DrawSelector(selector.X, selector.Y, selector.Z);
-            GL.Light(LightName.Light0, LightParameter.Position, new float[] { light_X, light_Y, light_Z, 0.0f });
+            GL.Light(LightName.Light0, LightParameter.Position, new float[] { light_X, light_Y, light_Z, 1.0f });
             GL.Light(LightName.Light0, LightParameter.Diffuse, light_Color);
             GL.Light(LightName.Light0, LightParameter.Ambient, new float[] { 0.15f, 0.15f, 0.15f, 0.05f});
-            //GL.Light(LightName.Light0, LightParameter.Specular, Color.Black);
             drawLightSource(new Vector3(light_X, light_Y, light_Z));
             if(activePoint1 && activePoint2)
             {
@@ -266,157 +241,8 @@ namespace Inżynierka
                     }
                 }
             }
-            /*GL.Enable(EnableCap.Blend);
-            GL.BlendFunc(BlendingFactor.SrcAlpha,BlendingFactor.OneMinusSrcAlpha);
-            if (showXY)
-            {
-                if (activateRangeView)
-                {
-                    for (int i = 0; i < boundaries_X; i++)
-                    {
-                        for (int j = 0; j < boundaries_Y; j++)
-                        {
-                            for (int k = (int)(selector.Z - 0.5f); k < selector.Z; k++)
-                            {
-                                if (cubeMatrix[i, j, k] && Vector3.Distance(new Vector3(i, j, k), new Vector3(selector.X - 0.5f, selector.Y - 0.5f, selector.Z - 0.5f)) < viewRange)
-                                    DrawFrame(new Vector3(i + .5f, j + .5f, k + .5f));
-                            }
-                        }
-                    }
-                }
-                else
-                {
-                    for (int i = 0; i < boundaries_X; i++)
-                    {
-                        for (int j = 0; j < boundaries_Y; j++)
-                        {
-                            for (int k = (int)(selector.Z - 0.5f); k < selector.Z; k++)
-                            {
-                                if (cubeMatrix[i, j, k])
-                                    DrawFrame(new Vector3(i + .5f, j + .5f, k + .5f));
-                            }
-                        }
-                    }
-                }
-            }
-            else if (showXZ)
-            {
-                if (activateRangeView)
-                {
-                    for (int i = 0; i < boundaries_X; i++)
-                    {
-                        for (int j = (int)(selector.Y - 0.5f); j < selector.Y; j++)
-                        {
-                            for (int k = 0; k < boundaries_Z; k++)
-                            {
-                                if (cubeMatrix[i, j, k] && Vector3.Distance(new Vector3(i, j, k), new Vector3(selector.X - 0.5f, selector.Y - 0.5f, selector.Z - 0.5f)) < viewRange)
-                                    DrawFrame(new Vector3(i + .5f, j + .5f, k + .5f));
-                            }
-                        }
-                    }
-                }
-                else
-                {
-                    for (int i = 0; i < boundaries_X; i++)
-                    {
-                        for (int j = (int)(selector.Y - 0.5f); j < selector.Y; j++)
-                        {
-                            for (int k = 0; k < boundaries_Z; k++)
-                            {
-                                if (cubeMatrix[i, j, k])
-                                    DrawFrame(new Vector3(i + .5f, j + .5f, k + .5f));
-                            }
-                        }
-                    }
-                }
-            }
-            else if (showYZ)
-            {
-                if (activateRangeView)
-                {
-                    for (int i = (int)(selector.X - 0.5f); i < selector.X; i++)
-                    {
-                        for (int j = 0; j < boundaries_Y; j++)
-                        {
-                            for (int k = 0; k < boundaries_Z; k++)
-                            {
-                                if (cubeMatrix[i, j, k] && Vector3.Distance(new Vector3(i, j, k), new Vector3(selector.X - 0.5f, selector.Y - 0.5f, selector.Z - 0.5f)) < viewRange)
-                                    DrawFrame(new Vector3(i + .5f, j + .5f, k + .5f));
-                            }
-                        }
-                    }
-                }
-                else
-                {
-                    for (int i = (int)(selector.X - 0.5f); i < selector.X; i++)
-                    {
-                        for (int j = 0; j < boundaries_Y; j++)
-                        {
-                            for (int k = 0; k < boundaries_Z; k++)
-                            {
-                                if (cubeMatrix[i, j, k])
-                                    DrawFrame(new Vector3(i + .5f, j + .5f, k + .5f));
-                            }
-                        }
-                    }
-                }
-            }
-            else
-            {
-                if (activateRangeView)
-                {
-                    for (int i = 0; i < boundaries_X; i++)
-                    {
-                        for (int j = 0; j < boundaries_Y; j++)
-                        {
-                            for (int k = 0; k < boundaries_Z; k++)
-                            {
-                                if (cubeMatrix[i, j, k] && Vector3.Distance(new Vector3(i, j, k), new Vector3(selector.X - 0.5f, selector.Y - 0.5f, selector.Z - 0.5f)) < viewRange)
-                                {
-                                    DrawFrame(new Vector3(i + .5f, j + .5f, k + .5f));
-                                }
-                            }
-                        }
-                    }
-                }
-                else
-                {
-                    for (int i = 0; i < boundaries_X; i++)
-                    {
-                        for (int j = 0; j < boundaries_Y; j++)
-                        {
-                            for (int k = 0; k < boundaries_Z; k++)
-                            {
-                                if (cubeMatrix[i, j, k])
-                                {
-                                    //DrawFrame(new Vector3(i + .5f, j + .5f, k + .5f));
-                                    DrawFrame(new Vector3(i + .5f, j + .5f, k + .5f));
-                                }
-                            }
-                        }
-                    }
-                }
-            }*/
             GL.Disable(EnableCap.Blend);
-
             GL.PopMatrix();
-            //DrawBox(.2f,Color.Red);
-
-            //GL.PushMatrix();
-            //GL.Translate(-selector.X, -selector.Y, -selector.Z);
-
-
-
-            //GL.Translate(selector.X, selector.Y, selector.Z);// +cameraDistance);
-            //GL.PopMatrix();
-
-            //GL.Translate(-0.5f, -0.5f, -0.5f + cameraDistance);
-            //DrawBoundaries();
-            //GL.Translate(0.5f, 0.5f, 0.5f);
-            //DrawBox(1.0f, new Vector3(0.0f, 0.0f, 0.0f));
-            //DrawBoundaries();
-            //GL.Rotate(0, new Vector3(0.0f, 0.0f, 1.0f));
-            //DrawBox(0.5f,selector);
             GL.Flush();
             glControl1.SwapBuffers();
         }
@@ -427,11 +253,7 @@ namespace Inżynierka
             GL.PushMatrix();
             GL.Translate(position.X, position.Y, position.Z);
             GL.ColorMaterial(MaterialFace.Front, ColorMaterialParameter.AmbientAndDiffuse);
-            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.Diffuse,chosenColor[calcX,calcY,calcZ]);
             GL.Color3(chosenColor[calcX, calcY, calcZ]);
-            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.AmbientAndDiffuse, new Vector4(1.0f,chosenColor[calcX, calcY, calcZ].R,chosenColor[calcX,calcY,calcZ].G, chosenColor[calcX, calcY, calcZ].B));
-            //GL.Color4((byte)chosenColor[calcX, calcY, calcZ].R, (byte)chosenColor[calcX, calcY, calcZ].G, (byte)chosenColor[calcX, calcY, calcZ].B, (byte)64);
-
             GL.LineWidth(1.0f);
             if (showXZ)
             {
@@ -641,7 +463,6 @@ namespace Inżynierka
             GL.Translate(position.X, position.Y, position.Z);
             GL.ColorMaterial(MaterialFace.Front, ColorMaterialParameter.AmbientAndDiffuse);
             GL.Color3(Color.Black);
-            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.AmbientAndDiffuse, Color.Black);
             GL.LineWidth(1.5f);
             if (calcZ > 0 && calcY < boundaries_Y - 1)
             {
@@ -890,9 +711,6 @@ namespace Inżynierka
 
         private void DrawBox(float size, Color color)
         {
-            //GL.PushMatrix();
-            //GL.Translate(position.X, position.Y, position.Z);
-            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.AmbientAndDiffuse, color);
             GL.ColorMaterial(MaterialFace.Front, ColorMaterialParameter.AmbientAndDiffuse);
             GL.Color3(Color.Black);
             float[,] n = new float[,]{
@@ -994,11 +812,7 @@ namespace Inżynierka
             GL.Translate(x, y, z);
             GL.ColorMaterial(MaterialFace.Front, ColorMaterialParameter.AmbientAndDiffuse);
             GL.Color3(color);
-            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.AmbientAndDiffuse, color);
             GL.Begin(PrimitiveType.Lines);
-            //GL.Vertex3(0.0f, 0.0f, 0.0f);
-            //GL.Vertex3(- 0.5f, - 0.5f, - 0.5f);
-            //GL.End();
             GL.Begin(PrimitiveType.Lines);
             GL.Vertex3(-0.5f, -0.5f, -0.5f);
             GL.Vertex3( + 0.5f,  - 0.5f,  - 0.5f);
@@ -1089,11 +903,7 @@ namespace Inżynierka
             GL.Translate((p1.X+p2.X)/2.0f, (p1.Y + p2.Y) / 2.0f, (p1.Z + p2.Z) / 2.0f);
             GL.ColorMaterial(MaterialFace.Front, ColorMaterialParameter.AmbientAndDiffuse);
             GL.Color3(color);
-            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.AmbientAndDiffuse, color);
             GL.Begin(PrimitiveType.Lines);
-            //GL.Vertex3(0.0f, 0.0f, 0.0f);
-            //GL.Vertex3(- 0.5f, - 0.5f, - 0.5f);
-            //GL.End();
             GL.Begin(PrimitiveType.Lines);
             GL.Vertex3(-distX / 2.0f, -distY / 2.0f, -distZ / 2.0f);
             GL.Vertex3(+distX / 2.0f, -distY / 2.0f, -distZ / 2.0f);
@@ -1165,7 +975,6 @@ namespace Inżynierka
             GL.Translate(position.X, position.Y, position.Z);
             GL.ColorMaterial(MaterialFace.Front, ColorMaterialParameter.AmbientAndDiffuse);
             GL.Color3(Color.White);
-            //GL.Material(MaterialFace.FrontAndBack, MaterialParameter.AmbientAndDiffuse, Color.Yellow);
             GL.Begin(PrimitiveType.Quads);
             GL.Normal3(0.0f, 1.0f, 0.0f);   // górna ściana (w płaszczyźnie XZ)
             GL.Vertex4(0.5f, 0.5f, 0.5f, 1.0f);
@@ -1754,7 +1563,7 @@ namespace Inżynierka
             glControl1.Invalidate();
         }
 
-        private void radioButton7_CheckedChanged(object sender, EventArgs e) //chyba wszystkie płaszczyzny
+        private void radioButton7_CheckedChanged(object sender, EventArgs e) //wszystkie płaszczyzny
         {
 
         }
@@ -1955,12 +1764,7 @@ namespace Inżynierka
                                         {
                                             if (j < boundaries_Y - 1)
                                             {
-                                                /*GL.Normal3(0.0f, 1.0f, 0.0f);   // górna ściana (w płaszczyźnie XZ)
-                                                GL.Vertex4(0.5f, 0.5f, 0.5f,1.0f);
-                                                GL.Vertex4(0.5f, 0.5f, -0.5f, 1.0f);
-                                                GL.Vertex4(-0.5f, 0.5f, -0.5f, 1.0f);
-                                                GL.Vertex4(-0.5f, 0.5f, 0.5f, 1.0f);*/
-                                                if (!cubeMatrix[i, j + 1, k]) //czy ma być górna ściana
+                                                if (!cubeMatrix[i, j + 1, k])
                                                 {
                                                     sw.WriteLine("facet normal 0.0 1.0 0.0");
                                                     sw.WriteLine("outer loop");
@@ -2547,7 +2351,7 @@ namespace Inżynierka
                                     }
                                     sw.Write(Environment.NewLine);
                                 }
-                            }
+                            } //zapis pozycji wokseli
                             for (int i = 0; i < boundaries_X; i++)
                             {
                                 for (int j = 0; j < boundaries_Y; j++)
@@ -2563,7 +2367,7 @@ namespace Inżynierka
                                     }
                                     sw.Write(Environment.NewLine);
                                 }
-                            }
+                            } //zapis kolorów wokseli
                         }
                     }
                     catch (Exception ex)
